@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T15:45:00+01:00",
+  "updatedAt": "2026-11-14T16:00:00+01:00",
   "games": [
     {
       "id": "arcs",
@@ -712,6 +712,526 @@
       ],
       "myNote": "Déjà à moi, très apprécié (+++).",
       "updatedAt": "2026-11-14"
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [
+        {
+          "label": "Essayer sur Board Game Arena",
+          "url": "https://fr.boardgamearena.com/gamepanel?game=arnak"
+        }
+      ],
+      "awards": [],
+      "myNote": "",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "compet"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "ruines-perdues-de-narak",
+      "name": "Les Ruines Perdues de Narak",
+      "bggName": "Lost Ruins of Arnak",
+      "pitch": "Expédition sur une île mystérieuse : deckbuilding + pose d'ouvriers",
+      "playersMin": 1,
+      "playersMax": 4,
+      "durMin": 30,
+      "durMax": 120,
+      "age": 12,
+      "weight": 2.93,
+      "rules": 3,
+      "strategy": 4,
+      "luck": 2,
+      "twoPlayer": 3,
+      "description": "On explore une île à la recherche d'un temple perdu. Le jeu mêle construction de deck (ses cartes servent à voyager, payer, agir), placement d'archéologues sur des sites et une piste de recherche. Peu de hasard, on peut planifier ses prochaines actions.",
+      "pros": [
+        "Prolongement naturel du deckbuilding Star Wars, en plus riche",
+        "Très peu de hasard",
+        "Thème bien présent, beau matériel",
+        "Jouable en ligne sur Board Game Arena"
+      ],
+      "cons": [
+        "Prend de la place sur la table, 15 min de mise en place",
+        "Un acheteur le trouve moins sympa à 2"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.08,
+          "max": 10,
+          "count": 55746,
+          "url": "https://boardgamefyi.com/fr/games/lost-ruins-of-arnak",
+          "note": "Classé #30"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4.9,
+          "max": 5,
+          "count": 25,
+          "url": "https://www.espritjeu.com/jeux-de-strategie/ruines-perdues-de-narak.html"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": 5,
+          "url": "https://gusandco.net/2021/04/12/les-ruines-perdues-de-narak-critique-jeu/",
+          "note": "Coup de cœur de la rédaction : « Grandiose ! »"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [
+        {
+          "label": "Gamme Concordia (Ludum)",
+          "url": "https://www.ludum.fr/9105-concordia"
+        }
+      ],
+      "awards": [],
+      "myNote": "",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "compet"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "concordia",
+      "name": "Concordia",
+      "bggName": "Concordia",
+      "pitch": "Commerce dans l'Empire romain : zéro hasard, règles simples, très profond",
+      "playersMin": 2,
+      "playersMax": 5,
+      "durMin": 90,
+      "durMax": 100,
+      "age": 13,
+      "weight": 2.99,
+      "rules": 2,
+      "strategy": 5,
+      "luck": 1,
+      "twoPlayer": 4,
+      "description": "Chaque joueur développe un réseau commercial autour de la Méditerranée : on joue une carte de sa main pour faire une action (déplacer ses colons, construire des maisons, produire, acheter de nouvelles cartes), puis on reprend toutes ses cartes. À 2 joueurs, on joue sur la carte de l'Italie.",
+      "pros": [
+        "Aucun hasard, on planifie plusieurs coups à l'avance",
+        "Règles très simples pour la profondeur",
+        "Carte adaptée au jeu à 2",
+        "Nombreuses cartes d'extension"
+      ],
+      "cons": [
+        "Jugé « froid et calculateur » par Gus&Co",
+        "Décompte final long",
+        "Gros avantage aux joueurs qui connaissent déjà"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.1,
+          "max": 10,
+          "url": "https://meeplelikeus.co.uk/concordia/",
+          "note": "Classé autour du #25"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": 5,
+          "url": "https://gusandco.net/2014/08/10/critique-de-jeu-concordia-vous-preferez-quelle-cuisson-pour-votre-cerveau/",
+          "note": "Critique mitigée : efficace et tendu, mais froid"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [
+        {
+          "label": "Board Game Arena",
+          "url": "https://en.boardgamearena.com/news?id=491"
+        }
+      ],
+      "awards": [
+        "As d'Or – Jeu de l'Année Expert 2020",
+        "Tric Trac de Bronze 2019",
+        "Recommandé Kennerspiel des Jahres 2020"
+      ],
+      "myNote": "",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "compet"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "res-arcana",
+      "name": "Res Arcana",
+      "bggName": "Res Arcana",
+      "pitch": "Duel de mages en 30 à 60 min : peu de cartes, beaucoup de combinaisons",
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "2",
+      "durMin": 20,
+      "durMax": 60,
+      "age": 12,
+      "weight": 2.65,
+      "rules": 2,
+      "strategy": 4,
+      "luck": 2,
+      "twoPlayer": 5,
+      "description": "Chaque mage dispose d'un petit paquet de 8 artefacts. On collecte des essences (vie, mort, élan, calme, or), on pose des artefacts et on s'empare de monuments et de lieux de puissance. Le premier à 10 points gagne.",
+      "pros": [
+        "Court et très dense",
+        "Excellent à 2",
+        "Grande rejouabilité",
+        "Jouable sur Board Game Arena"
+      ],
+      "cons": [
+        "On n'utilise parfois que 2 ou 3 cartes de son paquet",
+        "Petit jeu : moins d'« épopée »"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 7.6,
+          "max": 10,
+          "count": 24898,
+          "url": "https://boardgamematcher.com/game/res-arcana",
+          "note": "Classé autour du #175"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4.7,
+          "max": 5,
+          "count": 33,
+          "url": "https://www.espritjeu.com/res-arcana.html"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [],
+      "awards": [],
+      "myNote": "",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "compet"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "terraforming-mars-ares",
+      "name": "Terraforming Mars : Expédition Arès",
+      "bggName": "Terraforming Mars Ares Expedition",
+      "pitch": "Terraforming Mars plus rapide et plus simple, en jeu de cartes",
+      "playersMin": 1,
+      "playersMax": 4,
+      "durMin": 45,
+      "durMax": 60,
+      "age": 14,
+      "weight": 2.92,
+      "rules": 3,
+      "strategy": 4,
+      "luck": 3,
+      "twoPlayer": 3,
+      "description": "Chaque joueur dirige une corporation qui rend Mars habitable (température, oxygène, océans). On choisit en secret une phase à jouer, puis on pose des cartes projets qui construisent son moteur de production.",
+      "pros": [
+        "Plus rapide et plus accessible que l'original",
+        "Bon moteur de cartes",
+        "Plusieurs extensions (dont une coop)"
+      ],
+      "cons": [
+        "Presque aucune interaction entre joueurs",
+        "Les fans de l'original le trouvent appauvri"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 7.6,
+          "max": 10,
+          "url": "https://boardgamematcher.com/fr/jeu/terraforming-mars-ares-expedition",
+          "note": "Classé #186"
+        },
+        {
+          "site": "AV Club",
+          "score": 9,
+          "max": 10,
+          "url": "https://www.avclub.com/terrafarming-mars-ares-expedition-review"
+        },
+        {
+          "site": "Tabletop Gaming",
+          "score": null,
+          "max": 10,
+          "url": "https://www.tabletopgaming.co.uk/?p=2716",
+          "note": "Bon jeu, mais peu d'interaction"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [],
+      "awards": [],
+      "myNote": "",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "coop"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "pandemic-legacy-s1",
+      "name": "Pandemic Legacy – Saison 1",
+      "bggName": "Pandemic Legacy Season 1",
+      "pitch": "Campagne coopérative de 12 mois où le jeu change à chaque partie",
+      "playersMin": 2,
+      "playersMax": 4,
+      "durMin": 60,
+      "durMax": 60,
+      "age": 13,
+      "weight": 2.83,
+      "rules": 3,
+      "strategy": 4,
+      "luck": 3,
+      "twoPlayer": 4,
+      "description": "On joue en équipe contre quatre maladies, comme dans Pandemic. Mais chaque partie est un mois d'une campagne d'un an : on colle des autocollants, on ouvre des boîtes scellées, les règles et le plateau changent définitivement selon vos décisions. Environ 12 à 24 parties.",
+      "pros": [
+        "Narration et rebondissements (pour les fans de T.I.M.E Stories)",
+        "Très bien à 2",
+        "Longtemps n°1 sur BGG"
+      ],
+      "cons": [
+        "Ne se joue qu'une fois (campagne)",
+        "À faire avec le même groupe du début à la fin",
+        "Certains trouvent la fin de campagne longuette"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.5,
+          "max": 10,
+          "url": "https://www.wellplayed.ch/products/pandemic-legacy-season-1"
+        },
+        {
+          "site": "Tom's Guide FR",
+          "score": 9,
+          "max": 10,
+          "url": "https://www.tomsguide.fr/test-pandemic-legacy-lepidemie-nest-pas-un-jeu-vous-navez-droit-qua-une-partie/"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [],
+      "awards": [],
+      "myNote": "",
+      "price": 62,
+      "status": "etudier",
+      "modes": [
+        "coop"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "gloomhaven-machoires-du-lion",
+      "name": "Gloomhaven : Les Mâchoires du Lion",
+      "bggName": "Gloomhaven Jaws of the Lion",
+      "pitch": "Campagne coopérative de combats tactiques, sans dés",
+      "playersMin": 1,
+      "playersMax": 4,
+      "playersBest": "2",
+      "durMin": 30,
+      "durMax": 120,
+      "age": 12,
+      "weight": 3.64,
+      "rules": 4,
+      "strategy": 5,
+      "luck": 2,
+      "twoPlayer": 5,
+      "description": "Version d'entrée de Gloomhaven : une campagne d'environ 25 scénarios où l'on joue des mercenaires. À chaque tour, on choisit 2 cartes d'action (une moitié haute et une moitié basse) : tout se joue sur l'anticipation, pas aux dés. Les règles s'apprennent progressivement grâce à 5 scénarios d'initiation.",
+      "pros": [
+        "Prix raisonnable (≈ 62 €) comparé au grand Gloomhaven",
+        "Apprentissage progressif, mise en place rapide",
+        "Considéré comme meilleur à 2",
+        "Énorme durée de vie"
+      ],
+      "cons": [
+        "Règles plus costaudes que le reste de la liste",
+        "Campagne : à jouer avec le même partenaire"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.37,
+          "max": 10,
+          "count": 40478,
+          "url": "https://boardgamefyi.com/ko/games/gloomhaven-jaws-of-the-lion",
+          "note": "Classé #12"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 5,
+          "max": 5,
+          "count": 5,
+          "url": "https://www.espritjeu.com/jeux-de-strategie/gloomhaven-les-machoires-du-lion.html"
+        },
+        {
+          "site": "Play-In (clients)",
+          "score": 4.9,
+          "max": 5,
+          "url": "https://www.play-in.com/fr/produit/390426/gloomhaven-les-machoires-du-lion"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [],
+      "awards": [],
+      "myNote": "",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "compet"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "dominion",
+      "name": "Dominion (2e éd.)",
+      "bggName": "Dominion Second Edition",
+      "pitch": "Le jeu qui a inventé le deckbuilding",
+      "playersMin": 2,
+      "playersMax": 4,
+      "durMin": 30,
+      "durMax": 45,
+      "age": 13,
+      "weight": 2.18,
+      "rules": 2,
+      "strategy": 4,
+      "luck": 2,
+      "twoPlayer": 4,
+      "description": "Chacun commence avec le même petit paquet de cartes et achète de meilleures cartes pour l'améliorer. À chaque partie, on choisit 10 des 25 types de cartes royaume disponibles : les combinaisons changent à chaque fois.",
+      "pros": [
+        "Règles simples, vraie profondeur",
+        "Énorme variété (500 cartes)",
+        "Beaucoup d'extensions"
+      ],
+      "cons": [
+        "Thème très léger",
+        "Peu d'interaction dans la boîte de base"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 7.8,
+          "max": 10,
+          "url": "https://boardgamematcher.com/it/game/dominion-second-edition",
+          "note": "Classé autour du #178"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [],
+      "awards": [],
+      "myNote": "À essayer avant d'acheter : risque de lassitude.",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "compet",
+        "equipe"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "unmatched-vol1",
+      "name": "Unmatched – Vol. 1 Combats de Légende",
+      "bggName": "Unmatched Battle of Legends Volume One",
+      "pitch": "Duels de héros légendaires sans dés, en 20 à 40 min",
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "2",
+      "durMin": 20,
+      "durMax": 45,
+      "age": 9,
+      "weight": 1.95,
+      "rules": 1,
+      "strategy": 3,
+      "luck": 2,
+      "twoPlayer": 5,
+      "description": "Chaque joueur choisit un héros (Roi Arthur, Alice, Méduse, Sinbad dans cette boîte) avec son propre paquet de cartes. On se déplace sur un petit plateau et on attaque en comparant des cartes d'attaque et de défense. Toutes les boîtes Unmatched sont compatibles.",
+      "pros": [
+        "Très rapide à apprendre et à jouer",
+        "Héros très différents",
+        "Combats sans dés"
+      ],
+      "cons": [
+        "Formule simple qui peut lasser à la longue",
+        "Pensé surtout pour 2 joueurs",
+        "Le plaisir pousse à acheter d'autres boîtes"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 7.7,
+          "max": 10,
+          "url": "https://boardgamematcher.com/game/unmatched-battle-of-legends,-volume-one",
+          "note": "Classé autour du #286"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4.7,
+          "max": 5,
+          "count": 7,
+          "url": "https://www.espritjeu.com/jeux-de-strategie/unmatched-combats-de-legende.html"
+        },
+        {
+          "site": "T3",
+          "score": null,
+          "max": 10,
+          "url": "https://t3.com/reviews/unmatched-battle-of-legends-review",
+          "note": "Excellent à 2, mais se répète avec les extensions"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "photos": [],
+      "links": [],
+      "awards": [],
+      "myNote": "À la limite de mon critère « règles pas trop complexes ».",
+      "price": null,
+      "status": "etudier",
+      "modes": [
+        "compet"
+      ],
+      "updatedAt": "2026-11-14",
+      "id": "brass-birmingham",
+      "name": "Brass : Birmingham",
+      "bggName": "Brass Birmingham",
+      "pitch": "Révolution industrielle : le n°1 de BoardGameGeek",
+      "playersMin": 2,
+      "playersMax": 4,
+      "durMin": 60,
+      "durMax": 120,
+      "age": 14,
+      "weight": 3.87,
+      "rules": 4,
+      "strategy": 5,
+      "luck": 2,
+      "twoPlayer": 3,
+      "description": "On développe des industries (charbon, fer, coton, brasseries, poteries) et des réseaux de canaux puis de chemins de fer dans la région de Birmingham entre 1770 et 1870. Jeu économique très tendu, avec une mise en place qui change à chaque partie.",
+      "pros": [
+        "Classé n°1 sur BGG",
+        "Très stratégique, peu de hasard",
+        "Règles de base assez simples pour la profondeur"
+      ],
+      "cons": [
+        "Le plus exigeant de la liste (complexité 3,9/5)",
+        "Meilleur à 3–4 qu'à 2"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.6,
+          "max": 10,
+          "url": "https://www.wellplayed.ch/collections/all/products/brass-birmingham-engl",
+          "note": "Classé #1"
+        }
+      ]
     }
   ]
 }
