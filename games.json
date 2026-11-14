@@ -7,7 +7,7 @@
       "bggName": "Arcs",
       "pitch": "Space opera de Cole Wehrle : conquête et cartes façon jeu de plis",
       "status": "favori",
-      "price": 75,
+      "price": 58.5,
       "playersMin": 2,
       "playersMax": 4,
       "playersBest": "3–4 (très bon à 2)",
@@ -87,6 +87,14 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/arcs-review/",
           "note": "Plus accessible que Root, demande quelques parties"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.7,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/blog/articles/golden-geek-2024-decouvrez-tous-les-jeux-primes",
+          "note": "VF « Guerre et Déclin dans les Confins »"
         }
       ],
       "awards": [
@@ -103,7 +111,8 @@
         }
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "root",
@@ -111,7 +120,7 @@
       "bggName": "Root",
       "pitch": "Guerre asymétrique d'animaux mignons pour le contrôle de la forêt",
       "status": "etudier",
-      "price": 79,
+      "price": 81.95,
       "playersMin": 2,
       "playersMax": 4,
       "playersBest": "4 (VF avec La Rivière : jusqu'à 6)",
@@ -184,6 +193,14 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/root-review/",
           "note": "Jeu de l'année BGQ 2018"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.7,
+          "max": 5,
+          "count": 66,
+          "url": "https://www.philibertnet.com/fr/matagot/74046-root-3760146645165.html",
+          "note": ""
         }
       ],
       "awards": [
@@ -198,7 +215,8 @@
         }
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "scythe",
@@ -206,7 +224,7 @@
       "bggName": "Scythe",
       "pitch": "Développement et conquête dans une Europe rétro-futuriste des années 1920",
       "status": "possede",
-      "price": 75,
+      "price": 82.95,
       "playersMin": 1,
       "playersMax": 5,
       "durMin": 90,
@@ -279,6 +297,14 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/scythe-review/",
           "note": ""
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.8,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/matagot/44944-scythe-vf-3760146640214.html",
+          "note": ""
         }
       ],
       "awards": [
@@ -293,7 +319,8 @@
         }
       ],
       "myNote": "Déjà à moi, très apprécié (+++).",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "kemet",
@@ -301,7 +328,7 @@
       "bggName": "Kemet Blood and Sand",
       "pitch": "Dieux égyptiens en guerre : baston tactique, combats aux cartes",
       "status": "possede",
-      "price": null,
+      "price": 79.95,
       "playersMin": 2,
       "playersMax": 5,
       "playersBest": "4",
@@ -383,6 +410,14 @@
           "count": 4,
           "url": "https://www.vindjeu.eu/?s=Kemet%20%3A%20Sang%20et%20Sable",
           "note": "Moyenne de l'équipe (9 ; 7 ; 8,7 …)"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.9,
+          "max": 5,
+          "count": 10,
+          "url": "https://www.philibertnet.com/fr/matagot/95494-kemet-blood-and-sand-3760146648234.html",
+          "note": "Blood and Sand"
         }
       ],
       "awards": [],
@@ -393,7 +428,8 @@
         }
       ],
       "myNote": "Déjà à moi, très apprécié (+++).",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "tigre-euphrate",
@@ -468,6 +504,14 @@
           "count": 1,
           "url": "https://www.meeplemountain.com/?s=Tigris%20%26%20Euphrates",
           "note": "Verdict « Perfect »"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.9,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/en/public-list/5969-top-10-placements-de-tuiles",
+          "note": "Prix non trouvé"
         }
       ],
       "awards": [
@@ -492,7 +536,7 @@
       "bggName": "Star Wars Rebellion",
       "pitch": "L'Empire traque la base rebelle cachée : un film à jouer",
       "status": "reserve",
-      "price": 100,
+      "price": 99.95,
       "playersMin": 2,
       "playersMax": 4,
       "playersBest": "2",
@@ -568,12 +612,21 @@
           "count": 1,
           "url": "https://www.meeplemountain.com/?s=Star%20Wars%20Rebellion",
           "note": "Verdict « Perfect » ; « en réalité un jeu à 2 »"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.9,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/jeux-de-societe/41646-star-wars-rebellion-vf-3558380036135.html",
+          "note": ""
         }
       ],
       "awards": [],
       "links": [],
       "myNote": "Écarté : trop long, surtout pour 2 joueurs.",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "guerre-de-l-anneau",
@@ -581,7 +634,7 @@
       "bggName": "War of the Ring",
       "pitch": "L'Ombre contre les Peuples Libres, pendant que la Communauté avance vers la Montagne du Destin",
       "status": "reserve",
-      "price": 115,
+      "price": 94.9,
       "playersMin": 2,
       "playersMax": 4,
       "playersBest": "2",
@@ -656,6 +709,14 @@
           "count": 1,
           "url": "https://www.meeplemountain.com/?s=War%20of%20the%20Ring",
           "note": "« Chef-d'œuvre », 3 h et beaucoup de hasard"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 5,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/nuts-publishing/103672-la-guerre-de-l-anneau-3770009354486.html",
+          "note": "VF Nuts Publishing"
         }
       ],
       "awards": [],
@@ -666,7 +727,8 @@
         }
       ],
       "myNote": "Écarté : trop long et trop complexe.",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "dune-imperium-insurrection",
@@ -674,7 +736,7 @@
       "bggName": "Dune Imperium Uprising",
       "pitch": "Deckbuilding et placement d'ouvriers sur Arrakis",
       "status": "reserve",
-      "price": null,
+      "price": 53.95,
       "playersMin": 1,
       "playersMax": 6,
       "playersBest": "3–4 (6 en équipes)",
@@ -757,6 +819,14 @@
           "count": 1,
           "url": "https://www.meeplemountain.com/?s=Dune%20Imperium%20Uprising",
           "note": "Verdict « Excellent »"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.8,
+          "max": 5,
+          "count": 19,
+          "url": "https://www.philibertnet.com/en/lucky-duck-games/135254-dune-imperium-insurrection-5905965250116.html",
+          "note": ""
         }
       ],
       "awards": [
@@ -764,7 +834,8 @@
       ],
       "links": [],
       "myNote": "Écarté : moins bon à 2.",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "small-world",
@@ -772,7 +843,7 @@
       "bggName": "Small World",
       "pitch": "Conquête fun et légère avec des peuples aux pouvoirs loufoques",
       "status": "possede",
-      "price": null,
+      "price": 49.95,
       "playersMin": 2,
       "playersMax": 5,
       "durMin": 45,
@@ -823,6 +894,14 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/small-world-review/",
           "note": ""
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.5,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/days-of-wonder/9424-small-world-824968726815.html",
+          "note": ""
         }
       ],
       "awards": [
@@ -830,7 +909,8 @@
       ],
       "links": [],
       "myNote": "Déjà à moi : trop fouillis, trop de chance (+).",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "id": "everdell",
@@ -838,7 +918,7 @@
       "bggName": "Everdell",
       "pitch": "Bâtir la plus belle cité d'animaux de la forêt avant l'hiver",
       "status": "possede",
-      "price": null,
+      "price": 67.95,
       "playersMin": 1,
       "playersMax": 4,
       "durMin": 40,
@@ -897,6 +977,14 @@
           "count": 1,
           "url": "https://www.vindjeu.eu/?s=Everdell",
           "note": "Note de SwatSh (passée à 9,5)"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.5,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/starling-games/84458-everdell-610585962435.html",
+          "note": ""
         }
       ],
       "awards": [],
@@ -907,7 +995,8 @@
         }
       ],
       "myNote": "Déjà à moi, très apprécié (+++).",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-14",
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic5506860.jpg?v=1594266393&width=900",
@@ -923,7 +1012,7 @@
       ],
       "awards": [],
       "myNote": "",
-      "price": null,
+      "price": 59.95,
       "status": "etudier",
       "modes": [
         "compet"
@@ -992,8 +1081,17 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/the-lost-ruins-of-arnak-review/",
           "note": "Très bien à 2-3, faible interaction"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.4,
+          "max": 5,
+          "count": 48,
+          "url": "https://www.philibertnet.com/fr/iello/94025-les-ruines-perdues-de-narak-3760175518645.html",
+          "note": ""
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic3678983.jpg?v=1599449967&width=900",
@@ -1009,7 +1107,7 @@
       ],
       "awards": [],
       "myNote": "",
-      "price": null,
+      "price": 51.95,
       "status": "etudier",
       "modes": [
         "compet"
@@ -1079,8 +1177,17 @@
           "count": 2,
           "url": "https://www.cliquenabend.de/spiele/298100-Concordia.html",
           "note": "Testeurs : 9 et 8/10 · nommé Kennerspiel des Jahres 2014"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.6,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/pd-games/159222-concordia-2199000159790.html",
+          "note": "VF ; la VO anglaise est notée 5/5"
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic4422847.jpg?v=1578609489&width=900",
@@ -1100,7 +1207,7 @@
         "Recommandé Kennerspiel des Jahres 2020"
       ],
       "myNote": "",
-      "price": null,
+      "price": 34.95,
       "status": "etudier",
       "modes": [
         "compet"
@@ -1163,8 +1270,17 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/res-arcana-review/",
           "note": "Simple à apprendre, se révèle au fil des parties"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.7,
+          "max": 5,
+          "count": 90,
+          "url": "https://www.philibertnet.com/en/sand-castle-games/74536-res-arcana-850004236123.html?ae942=",
+          "note": ""
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic5909342.jpg?v=1617339373&width=900",
@@ -1175,7 +1291,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "price": null,
+      "price": 35.95,
       "status": "etudier",
       "modes": [
         "compet"
@@ -1241,8 +1357,17 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/terraforming-mars-ares-expedition-review/",
           "note": "Jugé très solitaire, sans draft"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.4,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/intrafin/105522-terraforming-mars-expedition-ares-5425037740753.html",
+          "note": ""
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic2452830.png?v=1578609003&width=900",
@@ -1253,7 +1378,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "price": null,
+      "price": 74.95,
       "status": "etudier",
       "modes": [
         "coop"
@@ -1336,8 +1461,17 @@
           "count": null,
           "url": "https://www.ludum.fr/jeux-de-societe-strategie/pandemic-legacy-saison-1-bleu-388",
           "note": "Affiché sur Ludum"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.9,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/blog/articles/selection-10-jeux-de-societe-legacy-pour-prolonger-le-plaisir-ludique",
+          "note": "Boîte rouge (la bleue est notée 4,6)"
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic5055631.jpg?v=1574370242&width=900",
@@ -1348,7 +1482,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "price": 62,
+      "price": 63.9,
       "status": "etudier",
       "modes": [
         "coop"
@@ -1417,8 +1551,17 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/gloomhaven-jaws-of-the-lion-review/",
           "note": "Porte d'entrée idéale vers Gloomhaven"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.8,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/cephalofair-games/105873-gloomhaven-les-machoires-du-lion-3558380085829.html",
+          "note": ""
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/Dominion_Big_Box_Edition_Second_Edition.jpg?v=1578609196&width=900",
@@ -1429,7 +1572,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "price": null,
+      "price": 41.95,
       "status": "etudier",
       "modes": [
         "compet"
@@ -1498,8 +1641,17 @@
           "count": null,
           "url": "https://www.ludum.fr/jeux-de-strategie-inities/dominion-seconde-edition-160",
           "note": "Affiché sur Ludum"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 5,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/recherche?search_query=dominion",
+          "note": "Seconde édition VF"
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic4621579.jpg?v=1578609505&width=900",
@@ -1510,7 +1662,7 @@
       "links": [],
       "awards": [],
       "myNote": "À essayer avant d'acheter : risque de lassitude.",
-      "price": null,
+      "price": 29.95,
       "status": "etudier",
       "modes": [
         "compet",
@@ -1580,8 +1732,17 @@
           "count": 7,
           "url": "https://us.trictrac.net/boardgame/unmatched-battle-of-legends",
           "note": "Peu d'avis (VF Iello)"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.8,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/iello/93733-unmatched-combat-de-legende-volume-1-3760175517563.html",
+          "note": ""
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "image": "https://www.boardgamebliss.com/cdn/shop/products/pic3490053_09f2aba1-2244-457c-bc8e-858d827574e8.jpg?v=1660013956&width=900",
@@ -1592,7 +1753,7 @@
       "links": [],
       "awards": [],
       "myNote": "À la limite de mon critère « règles pas trop complexes ».",
-      "price": null,
+      "price": 62.95,
       "status": "etudier",
       "modes": [
         "compet"
@@ -1653,8 +1814,17 @@
           "count": 1,
           "url": "https://zatu.com/en-us/blogs/reviews/brass-birmingham-review",
           "note": "« Brain burning euro »"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.6,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/funforge/75628-brass-birmingham-3770001556758.html",
+          "note": ""
         }
-      ]
+      ],
+      "priceSrc": "Philibert"
     },
     {
       "links": [
@@ -1703,7 +1873,7 @@
           "note": ""
         },
         {
-          "site": "Philibert (clients)",
+          "site": "Philibert (internautes)",
           "score": 4.5,
           "max": 5,
           "count": null,
@@ -1736,7 +1906,7 @@
       "bggName": "The Lord of the Rings: Journeys in Middle-earth",
       "pitch": "Campagne coopérative avec appli : la compagnie explore la Terre du Milieu",
       "status": "etudier",
-      "price": 99.9,
+      "price": 99.95,
       "playersMin": 1,
       "playersMax": 5,
       "playersBest": "2–3",
@@ -1752,7 +1922,8 @@
         "coop"
       ],
       "image": "https://www.ludum.fr/1252-large_default/voyages-en-terre-du-milieu-seigneur-des-anneaux.jpg",
-      "description": "Chaque joueur incarne un héros (Aragorn, Legolas, Gimli…) et la compagnie enchaîne des scénarios d'une campagne. Une application gratuite joue le maître du jeu : elle révèle la carte, déplace et fait attaquer les ennemis, raconte l'histoire.\nPas de dés : les tests se font avec un paquet de cartes de compétence que chaque héros améliore au fil de la campagne."
+      "description": "Chaque joueur incarne un héros (Aragorn, Legolas, Gimli…) et la compagnie enchaîne des scénarios d'une campagne. Une application gratuite joue le maître du jeu : elle révèle la carte, déplace et fait attaquer les ennemis, raconte l'histoire.\nPas de dés : les tests se font avec un paquet de cartes de compétence que chaque héros améliore au fil de la campagne.",
+      "priceSrc": "Philibert"
     },
     {
       "links": [
@@ -1816,6 +1987,14 @@
           "count": null,
           "url": "https://www.espritjeu.com/recherche?controller=search&s=Heredity%20%E2%80%93%20Le%20Livre%20de%20Swan",
           "note": ""
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.8,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/blog/articles/extra-salt-sky-team-et-exit-les-meilleures-ventes-doctobre-2023",
+          "note": ""
         }
       ],
       "photos": [
@@ -1827,7 +2006,7 @@
       "bggName": "Heredity",
       "pitch": "Aventure narrative coopérative : une famille survit dans un monde post-apocalyptique",
       "status": "etudier",
-      "price": 44.9,
+      "price": 44.95,
       "playersMin": 1,
       "playersMax": 4,
       "playersBest": "2",
@@ -1843,7 +2022,8 @@
         "coop"
       ],
       "image": "https://www.ludum.fr/47590-large_default/heredity.jpg",
-      "description": "On incarne les quatre membres d'une famille qui doit survivre après l'effondrement du monde. La campagne compte 5 chapitres (plus de 12 h au total), chacun avec ses lieux et ses règles propres. Le temps est la ressource clé : chaque action fait avancer la menace.\nÀ deux, les quatre personnages restent en jeu et les joueurs se les répartissent."
+      "description": "On incarne les quatre membres d'une famille qui doit survivre après l'effondrement du monde. La campagne compte 5 chapitres (plus de 12 h au total), chacun avec ses lieux et ses règles propres. Le temps est la ressource clé : chaque action fait avancer la menace.\nÀ deux, les quatre personnages restent en jeu et les joueurs se les répartissent.",
+      "priceSrc": "Philibert"
     },
     {
       "links": [
@@ -1894,7 +2074,7 @@
           "note": "« Un classique instantané »"
         },
         {
-          "site": "Philibert (clients)",
+          "site": "Philibert (internautes)",
           "score": 4.6,
           "max": 5,
           "count": 21,
@@ -1944,7 +2124,8 @@
         "equipe"
       ],
       "image": "https://www.ludum.fr/34972-large_default/star-wars-la-bataille-de-hoth.jpg",
-      "description": "Reprise du système Commands & Colors (Mémoire 44) par Richard Borg : on joue une carte de commandement pour activer des unités dans un secteur du plateau en hexagones, puis on lance les dés pour combattre. 74 figurines (AT-AT, snowspeeders, troupes…), des scénarios et un mode campagne."
+      "description": "Reprise du système Commands & Colors (Mémoire 44) par Richard Borg : on joue une carte de commandement pour activer des unités dans un secteur du plateau en hexagones, puis on lance les dés pour combattre. 74 figurines (AT-AT, snowspeeders, troupes…), des scénarios et un mode campagne.",
+      "priceSrc": "Philibert"
     },
     {
       "links": [],
@@ -2038,7 +2219,8 @@
         "coop"
       ],
       "image": "https://www.ludum.fr/9310-large_default/sleeping-gods.jpg",
-      "description": "L'équipage du Manticore, pris dans une tempête en 1929, se retrouve dans un monde où les dieux dorment. On navigue de page en page dans un atlas, on lit un livre d'histoires et on cherche 14 totems. Campagne de 10 à 20 h, sauvegardable à tout moment."
+      "description": "L'équipage du Manticore, pris dans une tempête en 1929, se retrouve dans un monde où les dieux dorment. On navigue de page en page dans un atlas, on lit un livre d'histoires et on cherche 14 totems. Campagne de 10 à 20 h, sauvegardable à tout moment.",
+      "priceSrc": "Ludum (VF absente chez Philibert)"
     },
     {
       "links": [],
@@ -2094,6 +2276,14 @@
           "count": null,
           "url": "https://www.play-in.com/fr/recherche?s=Le%20Hobbit%20%3A%20Histoire%20d%27un%20Aller%20et%20Retour",
           "note": ""
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.8,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/fr/office-dog/161914-le-hobbit-histoire-d-un-aller-et-retour-841333133764.html",
+          "note": ""
         }
       ],
       "photos": [
@@ -2105,7 +2295,7 @@
       "bggName": "The Hobbit: There and Back Again",
       "pitch": "Roll & write de Knizia en 8 chapitres qui suivent le roman",
       "status": "reserve",
-      "price": 26.9,
+      "price": 26.95,
       "playersMin": 1,
       "playersMax": 4,
       "playersBest": "2–4",
@@ -2121,7 +2311,8 @@
         "compet"
       ],
       "image": "https://www.ludum.fr/35008-large_default/le-hobbit-histoire-d-un-aller-et-retour.jpg",
-      "description": "On choisit des dés dans une réserve commune pour tracer son chemin et récolter des ressources sur son carnet d'aventure effaçable. Chaque chapitre (Cul-de-Sac, les trolls, les araignées…) a ses règles propres."
+      "description": "On choisit des dés dans une réserve commune pour tracer son chemin et récolter des ressources sur son carnet d'aventure effaçable. Chaque chapitre (Cul-de-Sac, les trolls, les araignées…) a ses règles propres.",
+      "priceSrc": "Philibert"
     },
     {
       "links": [],
@@ -2172,7 +2363,7 @@
           "note": "Rejouabilité limitée sans extension"
         },
         {
-          "site": "Philibert (clients)",
+          "site": "Philibert (internautes)",
           "score": 4.8,
           "max": 5,
           "count": null,
@@ -2205,7 +2396,8 @@
         "compet"
       ],
       "image": "https://www.ludum.fr/45448-large_default/star-wars-bordure-exterieure.jpg",
-      "description": "Chacun incarne un hors-la-loi (Han Solo, Boba Fett, Lando…) qui achète un vaisseau, recrute un équipage et enchaîne livraisons, primes et missions pour gagner de la renommée. Rencontres narratives et combats aux dés."
+      "description": "Chacun incarne un hors-la-loi (Han Solo, Boba Fett, Lando…) qui achète un vaisseau, recrute un équipage et enchaîne livraisons, primes et missions pour gagner de la renommée. Rencontres narratives et combats aux dés.",
+      "priceSrc": "Philibert"
     },
     {
       "links": [],
@@ -2257,7 +2449,7 @@
       "bggName": "Tainted Grail: Kings of Ruin",
       "pitch": "Campagne coopérative sombre en Avalon, avec un livre d'histoire de 340 pages",
       "status": "reserve",
-      "price": 133.9,
+      "price": 133.95,
       "playersMin": 1,
       "playersMax": 4,
       "playersBest": "1–2",
@@ -2273,7 +2465,8 @@
         "coop"
       ],
       "image": "https://www.ludum.fr/35013-large_default/tainted-grail-kings-of-ruin.jpg",
-      "description": "Campagne autonome dans l'univers de Tainted Grail : quatre héros explorent l'ouest maudit d'Avalon, gèrent leurs ressources, combattent ou négocient avec un deck évolutif, et leurs choix changent le monde."
+      "description": "Campagne autonome dans l'univers de Tainted Grail : quatre héros explorent l'ouest maudit d'Avalon, gèrent leurs ressources, combattent ou négocient avec un deck évolutif, et leurs choix changent le monde.",
+      "priceSrc": "Philibert"
     },
     {
       "links": [],
@@ -2339,6 +2532,14 @@
           "count": 1,
           "url": "https://www.vindjeu.eu/?s=Le%20Dilemme%20du%20Roi",
           "note": ""
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.1,
+          "max": 5,
+          "count": 15,
+          "url": "https://www.philibertnet.com/en/iello/90113-le-dilemme-du-roi-9782955227350.html",
+          "note": "Clients 3,9 (15) ; blogueurs 5/5"
         }
       ],
       "photos": [
@@ -2350,7 +2551,7 @@
       "bggName": "The King's Dilemma",
       "pitch": "Legacy narratif : chaque maison vote les décisions du conseil du roi",
       "status": "reserve",
-      "price": 76.5,
+      "price": 78.95,
       "playersMin": 3,
       "playersMax": 5,
       "playersBest": "4–5",
@@ -2366,7 +2567,215 @@
         "compet"
       ],
       "image": "https://www.ludum.fr/44470-large_default/le-dilemme-du-roi.jpg",
-      "description": "Chaque joueur dirige une grande Maison au conseil d'Anclisse. À chaque carte Dilemme, on vote Oui ou Non en misant des jetons de pouvoir ; les décisions modifient durablement le royaume (autocollants, enveloppes). Campagne d'environ 15 parties, non rejouable."
+      "description": "Chaque joueur dirige une grande Maison au conseil d'Anclisse. À chaque carte Dilemme, on vote Oui ou Non en misant des jetons de pouvoir ; les décisions modifient durablement le royaume (autocollants, enveloppes). Campagne d'environ 15 parties, non rejouable.",
+      "priceSrc": "Philibert"
+    },
+    {
+      "links": [],
+      "awards": [
+        "Dice Tower – jeu de l'année 2022"
+      ],
+      "myNote": "",
+      "updatedAt": "2026-11-14",
+      "pros": [
+        "Règles simples, décisions tendues",
+        "Pilotes automatiques (Légendes) pour étoffer les parties à 2",
+        "Dice Tower – jeu de l'année 2022"
+      ],
+      "cons": [
+        "Part de hasard dans la pioche (cartes Stress)",
+        "Circuits fixes : on finit par les connaître"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8,
+          "max": 10,
+          "count": null,
+          "url": "https://www.ludum.fr/jeux-de-strategie-inities/heat-3505",
+          "note": "Affiché sur Ludum ; complexité 2,2/5"
+        },
+        {
+          "site": "MyLudo",
+          "score": 8.2,
+          "max": 10,
+          "count": null,
+          "url": "https://www.ludum.fr/jeux-de-strategie-inities/heat-3505",
+          "note": "Affiché sur Ludum"
+        },
+        {
+          "site": "Ludum (clients)",
+          "score": 4.74,
+          "max": 5,
+          "count": 23,
+          "url": "https://www.ludum.fr/jeux-de-strategie-inities/heat-3505",
+          "note": ""
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.7,
+          "max": 5,
+          "count": null,
+          "url": "https://www.philibertnet.com/en/days-of-wonder/112362-heat-824968091210.html",
+          "note": "VF"
+        }
+      ],
+      "photos": [
+        "https://www.ludum.fr/9422-large_default/heat.jpg",
+        "https://www.ludum.fr/9425-large_default/heat.jpg"
+      ],
+      "status": "possede",
+      "id": "heat",
+      "name": "Heat",
+      "bggName": "Heat: Pedal to the Metal",
+      "pitch": "Course automobile des années 60 : gestion de main et surchauffe moteur",
+      "price": 59.95,
+      "priceSrc": "Philibert",
+      "playersMin": 1,
+      "playersMax": 6,
+      "playersBest": "3–6",
+      "durMin": 40,
+      "durMax": 60,
+      "age": 10,
+      "weight": 2.2,
+      "rules": 2,
+      "strategy": 3,
+      "luck": 2,
+      "twoPlayer": 4,
+      "modes": [
+        "compet"
+      ],
+      "image": "https://www.ludum.fr/34546-large_default/heat.jpg",
+      "description": "On choisit son rapport de boîte, puis on joue autant de cartes Vitesse face cachée. Dépasser la limite d'un virage coûte des cartes Heat qui encombrent ensuite la main. Modules avancés : améliorations de voiture, météo, pilotes Légendes (automates) et championnat."
+    },
+    {
+      "links": [],
+      "awards": [
+        "Finaliste Spiel des Jahres 2021 (selon Philibert)"
+      ],
+      "myNote": "",
+      "updatedAt": "2026-11-14",
+      "pros": [
+        "Matériel original, monde ouvert",
+        "Rejouable (pas de destruction)",
+        "Accessible dès 10 ans"
+      ],
+      "cons": [
+        "Tirage au sac : hasard présent",
+        "Léger pour des joueurs experts"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 7.4,
+          "max": 10,
+          "count": null,
+          "url": "https://www.ludum.fr/narratif-immersif-inities/les-aventures-de-robin-des-bois-2247",
+          "note": "Affiché sur Ludum ; complexité 1,8/5"
+        },
+        {
+          "site": "MyLudo",
+          "score": 7.9,
+          "max": 10,
+          "count": null,
+          "url": "https://www.ludum.fr/narratif-immersif-inities/les-aventures-de-robin-des-bois-2247",
+          "note": "Affiché sur Ludum"
+        },
+        {
+          "site": "Ludum (clients)",
+          "score": 5,
+          "max": 5,
+          "count": null,
+          "url": "https://www.ludum.fr/narratif-immersif-inities/les-aventures-de-robin-des-bois-2247",
+          "note": ""
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.8,
+          "max": 5,
+          "count": 19,
+          "url": "https://www.philibertnet.com/fr/iello/104244-les-aventures-de-robin-des-bois-9782492525025.html",
+          "note": ""
+        }
+      ],
+      "photos": [
+        "https://www.ludum.fr/5936-large_default/les-aventures-de-robin-des-bois.jpg",
+        "https://www.ludum.fr/5937-large_default/les-aventures-de-robin-des-bois.jpg"
+      ],
+      "status": "possede",
+      "id": "robin-des-bois",
+      "name": "Les Aventures de Robin des Bois",
+      "bggName": "The Adventures of Robin Hood",
+      "pitch": "Aventure coopérative en monde ouvert par l'auteur d'Andor, avec un plateau qui se transforme",
+      "price": 54.95,
+      "priceSrc": "Philibert",
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "2–3",
+      "durMin": 60,
+      "durMax": 90,
+      "age": 10,
+      "weight": 1.8,
+      "rules": 2,
+      "strategy": 2,
+      "luck": 3,
+      "twoPlayer": 4,
+      "modes": [
+        "coop"
+      ],
+      "image": "https://www.ludum.fr/5935-large_default/les-aventures-de-robin-des-bois.jpg",
+      "description": "7 chapitres racontés dans un livre relié. Les personnages se déplacent librement (sans cases) grâce à des gabarits en bois ; le plateau s'ouvre par fenêtres et « se souvient » de ce qui a été exploré. Résolution des actions par tirage dans un sac (bag building). Le jeu n'est pas détruit : la campagne est rejouable."
+    },
+    {
+      "links": [],
+      "awards": [],
+      "myNote": "",
+      "updatedAt": "2026-11-14",
+      "pros": [
+        "Négociation et bluff très forts",
+        "Combats sans dés"
+      ],
+      "cons": [
+        "3 joueurs minimum, idéal à 6",
+        "Parties de 3 à 4 h",
+        "Phase Westeros lourde à administrer"
+      ],
+      "ratings": [
+        {
+          "site": "Zatu (UK)",
+          "score": 85,
+          "max": 100,
+          "count": 1,
+          "url": "https://zatu.com/fr/blogs/reviews/a-game-of-thrones-bg-review",
+          "note": ""
+        }
+      ],
+      "photos": [
+        "https://boardgaming.com/wp-content/uploads/2003/01/A-Game-of-Thrones-The-Board-Game-game-in-play-580x290.jpg"
+      ],
+      "status": "possede",
+      "id": "trone-de-fer",
+      "name": "Le Trône de Fer – le jeu de plateau (2e éd.)",
+      "bggName": "A Game of Thrones: The Board Game (Second Edition)",
+      "pitch": "Conquête de Westeros à ordres cachés, alliances et trahisons",
+      "price": 89.9,
+      "priceSrc": "Amazon (Philibert indisponible)",
+      "playersMin": 3,
+      "playersMax": 6,
+      "playersBest": "6",
+      "durMin": 150,
+      "durMax": 240,
+      "age": 14,
+      "weight": 3.7,
+      "rules": 4,
+      "strategy": 5,
+      "luck": 1,
+      "twoPlayer": null,
+      "modes": [
+        "compet"
+      ],
+      "image": "https://boardgaming.com/wp-content/uploads/2003/01/A-Game-of-Thrones-The-Board-Game-Second-Edition-200x200.jpg",
+      "description": "Chaque joueur dirige une grande Maison de Westeros. On pose des ordres face cachée (proche de Diplomacy), on négocie, on enchérit sur les pistes d'influence, puis on résout les combats avec des cartes Maison, sans dés. Victoire à 7 châteaux ou au plus grand nombre au 10e tour."
     }
   ]
 }

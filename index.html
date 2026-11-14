@@ -170,6 +170,7 @@ function avgScore(g){
   return r.length? r.reduce((a,b)=>a+b,0)/r.length : null;
 }
 function fmtDur(g){const a=num(g.durMin),b=num(g.durMax);if(a==null&&b==null)return "?";const f=m=>m>=60?(m%60?`${Math.floor(m/60)}h${String(m%60).padStart(2,"0")}`:`${m/60}h`):`${m} min`;return a&&b&&a!==b?`${f(a)}–${f(b)}`:f(b||a)}
+function priceTxt(g){const p=num(g.price);if(p==null)return "";const s=p.toFixed(2).replace(".",",").replace(",00","");return "≈ "+s+" €"+(g.priceSrc?` <small style="opacity:.65">${esc(g.priceSrc)}</small>`:"")}
 function two(g){return (num(g.playersMin)??1)>2?'<span class="fact" style="font-size:.75em">Pas à 2</span>':dots(g.twoPlayer)}
 function dots(n,cls=""){n=num(n)||0;let h='<span class="dots">';for(let i=1;i<=5;i++)h+=`<span class="dot ${i<=n?"on "+cls:""}"></span>`;return h+"</span>"}
 function imgSrc(p){const u=String(p||"");if(/^https?:\/\//i.test(u))return u;if(!u)return "";return u.replace(/^\/+/,"")}
@@ -266,7 +267,7 @@ function render(){
       </div>
       <div class="cfoot">
         <span class="score">${a!=null?a.toFixed(1).replace(".",","):"–"}<small> /10 · ${(g.ratings||[]).filter(x=>num(x.score)!=null).length} sites</small></span>
-        <span class="note">${num(g.price)!=null?"≈ "+esc(g.price)+" €":""}</span>
+        <span class="note">${priceTxt(g)}</span>
       </div>
     </article>`}).join("");
 }
@@ -293,7 +294,7 @@ function drawSheet(){
       <span class="fact">⏱ ${esc(fmtDur(g))}</span>
       ${g.age?`<span class="fact">${esc(g.age)} ans +</span>`:""}
       ${num(g.weight)!=null?`<span class="fact">Complexité BGG ${esc(g.weight)}/5</span>`:""}
-      ${num(g.price)!=null?`<span class="fact">≈ ${esc(g.price)} €</span>`:""}
+      ${num(g.price)!=null?`<span class="fact">${priceTxt(g)}</span>`:""}
       ${(g.modes||[]).map(m=>`<span class="fact">${esc(MODE[m]||m)}</span>`).join("")}
     </div>
     <div class="sec meters" style="max-width:320px">
