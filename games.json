@@ -267,10 +267,20 @@
           "note": "Stratégie 4/5, chance 2/5 – jouable en ligne"
         },
         {
-          "site": "Tric Trac",
-          "score": null,
+          "site": "Tric Trac (FR)",
+          "score": 8.98,
           "max": 10,
-          "note": "Pas encore trouvée"
+          "count": 411,
+          "url": "https://us.trictrac.net/boardgame/scythe-1/reviews/complete",
+          "note": "Moyenne des membres (VF Matagot)"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 3,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/scythe-review/",
+          "note": ""
         }
       ],
       "awards": [
@@ -353,10 +363,20 @@
           "note": "Critique positive de la 1re édition : « très bon à 2 et encore plus violent »"
         },
         {
-          "site": "Tric Trac",
-          "score": null,
+          "site": "Tric Trac (FR)",
+          "score": 8.74,
           "max": 10,
-          "note": "Pas encore trouvée"
+          "count": 129,
+          "url": "https://us.trictrac.net/boardgame/kemet",
+          "note": "Moyenne des membres"
+        },
+        {
+          "site": "Cliquenabend (DE)",
+          "score": 8,
+          "max": 10,
+          "count": 1,
+          "url": "https://www.cliquenabend.de/spiele/400200-Kemet.html",
+          "note": "Chance 3/10, très interactif"
         }
       ],
       "awards": [],
@@ -502,6 +522,14 @@
           "max": 5,
           "url": "https://gusandco.net/2016/08/11/critique-de-jeu-star-wars-rebellion-tu-bluffes-leia/",
           "note": "Critique : un gros, gros jeu"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 9.36,
+          "max": 10,
+          "count": 136,
+          "url": "https://us.trictrac.net/boardgame/star-wars-rebellion",
+          "note": "Moyenne des membres ; parties de 3-4 h"
         }
       ],
       "awards": [],
@@ -566,6 +594,14 @@
           "score": 90,
           "max": 100,
           "url": "https://zatu.com/fr/blogs/reviews/war-of-the-ring-review"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.32,
+          "max": 10,
+          "count": 303,
+          "url": "https://uk.trictrac.net/boardgame/war-of-the-ring-2nd-edition",
+          "note": "2e édition ; règles jugées lourdes"
         }
       ],
       "awards": [],
@@ -643,6 +679,14 @@
           "max": 10,
           "url": "https://www.journaldugeek.com/dossier/test-du-jeu-de-plateau-dune-imperium-insurrection-le-meme-en-mieux/",
           "note": "« Le même en mieux », modes 2 joueurs moyens"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.6,
+          "max": 10,
+          "count": 168,
+          "url": "https://trictrac.net/jeu-de-societe/dune-imperium-1-1",
+          "note": "Note de la fiche (Uprising)"
         }
       ],
       "awards": [
@@ -692,6 +736,22 @@
           "max": 10,
           "url": "https://zatu.com/fr/products/a-grade-small-world",
           "note": "45–60 min, 2 plateaux selon le nombre de joueurs"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.38,
+          "max": 10,
+          "count": 1258,
+          "url": "https://us.trictrac.net/boardgame/small-world",
+          "note": "Moyenne des membres"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 4,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/small-world-review/",
+          "note": ""
         }
       ],
       "awards": [
@@ -750,6 +810,14 @@
           "max": 5,
           "count": 8,
           "url": "https://www.espritjeu.com/jeux-de-strategie/everdell.html"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.56,
+          "max": 10,
+          "count": 76,
+          "url": "https://us.trictrac.net/boardgame/everdell",
+          "note": "Moyenne des membres"
         }
       ],
       "awards": [],
@@ -1300,6 +1368,22 @@
           "max": 10,
           "url": "https://boardgamematcher.com/it/game/dominion-second-edition",
           "note": "Classé autour du #178"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.07,
+          "max": 10,
+          "count": 700,
+          "url": "https://us.trictrac.net/boardgame/dominion",
+          "note": "Moyenne des membres"
+        },
+        {
+          "site": "Cliquenabend (DE)",
+          "score": 7,
+          "max": 10,
+          "count": 1,
+          "url": "https://www.cliquenabend.de/spiele/723000-Dominion.html",
+          "note": "Spiel des Jahres 2009 ; jugé un peu solitaire, chance 6/10"
         }
       ]
     },
