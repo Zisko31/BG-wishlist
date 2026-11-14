@@ -24,9 +24,16 @@ header{padding:20px 16px 8px;max-width:1100px;margin:auto}
 h1{font-family:Fraunces,serif;font-size:28px;margin:0 0 4px;letter-spacing:-.01em}
 .sub{color:var(--muted);font-size:13px}
 .bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-.filters{max-width:1100px;margin:auto;padding:10px 16px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
-.filters::-webkit-scrollbar{display:none}
-.f{display:flex;flex-direction:column;gap:3px;flex:0 0 auto}
+.topf{max-width:1100px;margin:auto;padding:10px 16px 0;display:flex;gap:8px;align-items:center}
+.topf .search{flex:1;min-width:0}
+#ftog{white-space:nowrap}
+#ftog b{display:inline-block;min-width:18px;padding:0 5px;margin-left:4px;border-radius:9px;background:var(--ink);color:var(--bg);font-size:11px;line-height:18px;text-align:center}
+#ftog b:empty{display:none}
+.filters{max-width:1100px;margin:auto;padding:10px 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 10px}
+.f{display:flex;flex-direction:column;gap:3px;min-width:0}
+.f select{width:100%}
+@media (max-width:759px){.filters{display:none;grid-template-columns:1fr 1fr}.bar.open .filters{display:grid}.bar{max-height:100vh;overflow:auto}}
+@media (min-width:760px){#ftog{display:none}}
 .f label{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 select,input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 9px}
 .search{min-width:150px}
@@ -122,8 +129,8 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
   <div class="sub">Liste d'achats · notes regroupées de plusieurs sites · « Stratégie », « Hasard » et « À 2 » sont des estimations · <span id="upd"></span></div>
 </header>
 <div class="bar">
+  <div class="topf"><input id="q" class="search" placeholder="Rechercher un jeu…" aria-label="Recherche"><button class="ghost" id="ftog" aria-expanded="false">Filtres<b id="fcount"></b></button></div>
   <div class="filters">
-    <div class="f"><label>Recherche</label><input id="q" class="search" placeholder="Nom…"></div>
     <div class="f"><label>Joueurs</label><select id="fp"><option value="">Tous</option><option>1</option><option selected>2</option><option>3</option><option>4</option><option value="5">5+</option></select></div>
     <div class="f"><label>Bon à 2</label><select id="f2"><option value="">Peu importe</option><option value="4">Oui</option></select></div>
     <div class="f"><label>Durée max</label><select id="fd"><option value="">Toutes</option><option value="60">≤ 1 h</option><option value="90">≤ 1 h 30</option><option value="120">≤ 2 h</option><option value="180">≤ 3 h</option></select></div>
@@ -431,8 +438,11 @@ function bindForm(g){
 function errMsg(e){return e&&(e.status===401||e.status===403)?"Clé GitHub refusée ou expirée : réactivez l'édition (✎)":"Enregistrement impossible, réessayez"}
 
 /* ---------- événements ---------- */
-["q","fp","f2","fd","fr","fs","fl","fm","fst","so"].forEach(id=>$("#"+id).addEventListener(id==="q"?"input":"change",render));
-$("#reset").onclick=()=>{["q","fp","f2","fd","fr","fs","fl","fm","fst"].forEach(id=>$("#"+id).value="");$("#so").value="score";render()};
+function fcount(){const n=["fp","f2","fd","fr","fs","fl","fm","fst"].filter(id=>$("#"+id).value!=="").length;$("#fcount").textContent=n||""}
+["q","fp","f2","fd","fr","fs","fl","fm","fst","so"].forEach(id=>$("#"+id).addEventListener(id==="q"?"input":"change",()=>{fcount();render()}));
+$("#ftog").onclick=()=>{const b=document.querySelector(".bar");const o=b.classList.toggle("open");$("#ftog").setAttribute("aria-expanded",o)};
+fcount();
+$("#reset").onclick=()=>{["q","fp","f2","fd","fr","fs","fl","fm","fst"].forEach(id=>$("#"+id).value="");$("#so").value="score";fcount();render()};
 $("#grid").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)});
 $("#grid").addEventListener("keydown",e=>{if(e.key==="Enter"){const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)}});
 $("#ov").onclick=closeSheet;
