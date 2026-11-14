@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T16:00:00+01:00",
+  "updatedAt": "2026-11-14T17:00:00+01:00",
   "games": [
     {
       "id": "arcs",
@@ -22,8 +22,11 @@
       "modes": [
         "compet"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://wulfgaming.com/cdn/shop/files/Arcs-Base-Box-Left.webp?v=1717070988&width=1000",
+      "photos": [
+        "https://wulfgaming.com/cdn/shop/files/Arcs-Base-CardFan.webp?v=1717070989&width=1000",
+        "https://wulfgaming.com/cdn/shop/files/Arcs-Base-Meeples.webp?v=1717070989&width=1000"
+      ],
       "description": "Chaque joueur dirige une civilisation qui se bat pour contrôler les Confins de la galaxie. La partie se joue en chapitres : à chaque manche, on pose une carte de sa main, comme dans un jeu de plis, et cette carte donne ses actions (bouger, construire, attaquer, influencer).\nDans le jeu de base, tout le monde a les mêmes règles. Le pack Héros & Savoirs ajoute des pouvoirs, et l'extension Blighted Reach transforme le jeu en campagne de 3 parties.",
       "pros": [
         "Mêmes règles pour tous dans le jeu de base : moins de cas particuliers que Root",
@@ -115,8 +118,12 @@
       "modes": [
         "compet"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic3799727_5840cc55-5827-4f28-b715-3ecc40da8619.jpg?v=1578609544&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_3db97a9d-b556-4c80-88cd-01d27a6ee590.jpg?v=1599466915&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_a39b2ad8-0b35-406a-9af0-9032c8d9ba96.jpg?v=1599467021&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_9cb45318-7665-42c7-aa27-b5e0e03a4551.jpg?v=1599467143&width=900"
+      ],
       "description": "Chaque joueur incarne une faction animale qui joue presque à un jeu différent : la Marquise de Chat gère une logistique de bâtiments, la Canopée suit un décret de plus en plus contraignant, l'Alliance de la Forêt mène une guérilla, le Vagabond va de quête en quête.\nL'édition française inclut l'extension La Rivière (2 factions en plus et la Marquise Mécanique, un adversaire automatique).",
       "pros": [
         "Asymétrie remarquable, énorme rejouabilité",
@@ -198,8 +205,12 @@
       "modes": [
         "compet"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/Scythe_BOX_03102015.jpg?v=1578609141&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/bottom_of_box.png?v=1578609141&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_c889bc87-9bee-4563-bdb3-7e6c23dd356d.jpg?v=1598952703&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_b33b550e-92ba-44fe-af4c-194d94a48d5f.jpg?v=1770702754&width=900"
+      ],
       "description": "Chaque faction développe son économie (ouvriers, ressources, bâtiments), explore la carte et déploie des mechas. À chaque tour, on choisit une action sur son plateau puis une action de développement liée : on construit petit à petit son « moteur ».\nLes combats sont rares mais décisifs, et se règlent par des choix secrets (une roue de puissance), pas aux dés.",
       "pros": [
         "Très peu de hasard : on maîtrise presque tout",
@@ -281,8 +292,11 @@
       "modes": [
         "compet"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic6230640.jpg?v=1623820876&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_ec295804-d5bd-489e-afe7-6abc887a80fc.jpg?v=1770700860&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_557f07d9-72fc-4719-94a2-076108cc9096.jpg?v=1770701595&width=900"
+      ],
       "description": "Chaque joueur incarne un dieu de l'Égypte antique qui envoie ses troupes et ses créatures conquérir des temples. On choisit ses actions sur son plateau, on achète des tuiles de pouvoir pour se spécialiser, et on attaque beaucoup.\nLes combats se règlent avec des cartes choisies face cachée, pas aux dés.",
       "pros": [
         "Combats sans dés : peu de hasard",
@@ -359,8 +373,11 @@
       "modes": [
         "compet"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/Tigris_Euphrates.jpg?v=1578609017&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_cb9e2ebc-60f7-43af-9ce4-e730c089094e.jpg?v=1600681734&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_3b3eafd4-9539-4fcc-8063-61a9d502eba7.jpg?v=1600681869&width=900"
+      ],
       "description": "On pose des tuiles (fermes, temples, marchés, villes) pour bâtir des royaumes en Mésopotamie. Chaque joueur a quatre chefs (roi, prêtre, marchand, fermier). Quand deux chefs de même couleur se retrouvent dans le même royaume, ils s'affrontent.\nLe gagnant est celui qui a le plus de points dans sa MOINS bonne couleur : il faut rester équilibré.",
       "pros": [
         "Très stratégique, peu de hasard",
@@ -431,8 +448,11 @@
         "compet",
         "equipe"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic2737530.png?v=1578609057&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_075785a0-b141-4dd2-9930-e48334364beb.jpg?v=1599444810&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_d680020a-317c-476a-b3f4-944286057c69.jpg?v=1599444996&width=900"
+      ],
       "description": "Un joueur dirige l'Empire et cherche la base rebelle cachée pour l'écraser. L'autre dirige la Rébellion, en guérilla et sabotage. Le cœur du jeu, ce sont les personnages (Luke, Vador…), qu'on place face cachée sur des missions.",
       "pros": [
         "Immersion totale dans Star Wars",
@@ -493,8 +513,11 @@
         "compet",
         "equipe"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/War_of_the_Ring_second_edition.jpg?v=1597819276&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_a3bb7363-7c97-4175-ae8b-54b9d3ae8ae5.jpg?v=1597818995&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_727b5366-92a9-4e94-801c-cd5e61361489.jpg?v=1597819106&width=900"
+      ],
       "description": "L'Ombre veut conquérir la Terre du Milieu par la force militaire. Les Peuples Libres résistent tout en faisant avancer la Communauté pour détruire l'Anneau. Le jeu tourne avec des dés d'action et 96 cartes événement.",
       "pros": [
         "Très fidèle à Tolkien, épique",
@@ -559,8 +582,11 @@
         "compet",
         "equipe"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic7664424.jpg?v=1693335410&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_04012e32-14df-4013-a58d-e54e709eb1f4.jpg?v=1738304065&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_812373be-67ad-4032-874e-f55af7dad9b4.jpg?v=1770832292&width=900"
+      ],
       "description": "Suite indépendante de Dune Imperium. On construit son paquet de cartes, qui sert à envoyer ses agents sur le plateau pour gagner épice, influence et soutiens, et on se bat pour les conflits de chaque manche. Nouveautés : espions, vers des sables et un mode 6 joueurs en équipes.",
       "pros": [
         "Tendu et très stratégique",
@@ -628,8 +654,10 @@
       "modes": [
         "compet"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/Small_World.jpg?v=1578608845&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_a005a46e-ca33-45aa-a9b6-8d4e292a972f.jpg?v=1770708074&width=900"
+      ],
       "description": "On choisit un peuple combiné à un pouvoir spécial, on conquiert des régions sur un plateau trop petit pour tout le monde, puis on fait décliner son peuple pour en prendre un nouveau. Deux plateaux recto-verso s'adaptent au nombre de joueurs.",
       "pros": [
         "Simple et rapide",
@@ -675,8 +703,11 @@
       "modes": [
         "compet"
       ],
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic3918905.png?v=1569221205&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_f3b553f8-62ce-4dd4-b73c-258b0813f94a.jpg?v=1770698596&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_e19f245d-e7e5-4005-908b-f1860c4c795a.jpg?v=1770698861&width=900"
+      ],
       "description": "Chaque joueur dirige une petite communauté d'animaux et construit sa cité en combinant pose d'ouvriers, collecte de ressources (bois, résine, galets, baies) et cartes de constructions et de créatures. La cité est limitée à 15 emplacements : tout l'enjeu est de trouver les bons enchaînements.",
       "pros": [
         "Règles simples, vraie profondeur",
@@ -714,8 +745,11 @@
       "updatedAt": "2026-11-14"
     },
     {
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic5506860.jpg?v=1594266393&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_b97ef793-cdcf-4cb6-a2d7-ed06ad7b0af5.jpg?v=1656662824&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_b17677e7-cdbb-418c-befa-a61fbc28f254.jpg?v=1770702142&width=900"
+      ],
       "links": [
         {
           "label": "Essayer sur Board Game Arena",
@@ -781,8 +815,11 @@
       ]
     },
     {
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic3678983.jpg?v=1599449967&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_fcf8fb49-b2d1-42d1-9cc5-636305471cf2.jpg?v=1599450435&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_fcddf031-0f44-40e7-8f65-ffaeb8a82232.jpg?v=1599450486&width=900"
+      ],
       "links": [
         {
           "label": "Gamme Concordia (Ludum)",
@@ -841,8 +878,11 @@
       ]
     },
     {
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic4422847.jpg?v=1578609489&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_5cc2e46f-277a-40ef-9433-2574bb2ab46c.jpg?v=1597974913&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_a3663029-f593-4397-bab1-c1186ffc7183.jpg?v=1597975043&width=900"
+      ],
       "links": [
         {
           "label": "Board Game Arena",
@@ -906,8 +946,11 @@
       ]
     },
     {
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic5909342.jpg?v=1617339373&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_3c170053-377c-4b16-8d42-238529c1431a.jpg?v=1664558346&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_696e16b5-9c18-4536-9a98-3ac2525fb18a.jpg?v=1664558371&width=900"
+      ],
       "links": [],
       "awards": [],
       "myNote": "",
@@ -965,8 +1008,11 @@
       ]
     },
     {
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic2452830.png?v=1578609003&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_a15785c1-3f2f-44b5-9516-f388d54f89a4.jpg?v=1597746203&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_f1ae417b-9772-466b-821c-cacce252862a.jpg?v=1597746474&width=900"
+      ],
       "links": [],
       "awards": [],
       "myNote": "",
@@ -1017,8 +1063,11 @@
       ]
     },
     {
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic5055631.jpg?v=1574370242&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_89481132-5063-4277-9888-e324ea16247d.jpg?v=1596801976&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/products/hqdefault_4e62de0d-6d98-45d5-b942-312ff49f583f.jpg?v=1596801942&width=900"
+      ],
       "links": [],
       "awards": [],
       "myNote": "",
@@ -1079,7 +1128,7 @@
       ]
     },
     {
-      "image": "",
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/Dominion_Big_Box_Edition_Second_Edition.jpg?v=1578609196&width=900",
       "photos": [],
       "links": [],
       "awards": [],
@@ -1125,8 +1174,11 @@
       ]
     },
     {
-      "image": "",
-      "photos": [],
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic4621579.jpg?v=1578609505&width=900",
+      "photos": [
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_bb8df055-d4b0-49f6-b1d6-241b1a8af9b8.jpg?v=1770703971&width=900",
+        "https://www.boardgamebliss.com/cdn/shop/files/preview_images/hqdefault_38ff60a9-80ec-49e1-bd7b-c986e58c7491.jpg?v=1770704368&width=900"
+      ],
       "links": [],
       "awards": [],
       "myNote": "À essayer avant d'acheter : risque de lassitude.",
@@ -1188,7 +1240,7 @@
       ]
     },
     {
-      "image": "",
+      "image": "https://www.boardgamebliss.com/cdn/shop/products/pic3490053_09f2aba1-2244-457c-bc8e-858d827574e8.jpg?v=1660013956&width=900",
       "photos": [],
       "links": [],
       "awards": [],
