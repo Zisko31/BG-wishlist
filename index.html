@@ -163,6 +163,7 @@ function avgScore(g){
   return r.length? r.reduce((a,b)=>a+b,0)/r.length : null;
 }
 function fmtDur(g){const a=num(g.durMin),b=num(g.durMax);if(a==null&&b==null)return "?";const f=m=>m>=60?(m%60?`${Math.floor(m/60)}h${String(m%60).padStart(2,"0")}`:`${m/60}h`):`${m} min`;return a&&b&&a!==b?`${f(a)}–${f(b)}`:f(b||a)}
+function two(g){return (num(g.playersMin)??1)>2?'<span class="fact" style="font-size:.75em">Pas à 2</span>':dots(g.twoPlayer)}
 function dots(n,cls=""){n=num(n)||0;let h='<span class="dots">';for(let i=1;i<=5;i++)h+=`<span class="dot ${i<=n?"on "+cls:""}"></span>`;return h+"</span>"}
 function imgSrc(p){const u=String(p||"");if(/^https?:\/\//i.test(u))return u;if(!u)return "";return u.replace(/^\/+/,"")}
 function photosOf(g){return [g.image,...(g.photos||[])].filter(Boolean).map(imgSrc).filter((v,i,a)=>v&&a.indexOf(v)===i)}
@@ -254,7 +255,7 @@ function render(){
         <span>Règles</span>${dots(g.rules,"r")}
         <span>Stratégie</span>${dots(g.strategy)}
         <span>Hasard</span>${dots(g.luck,"l")}
-        <span>À 2</span>${dots(g.twoPlayer)}
+        <span>À 2</span>${two(g)}
       </div>
       <div class="cfoot">
         <span class="score">${a!=null?a.toFixed(1).replace(".",","):"–"}<small> /10 · ${(g.ratings||[]).filter(x=>num(x.score)!=null).length} sites</small></span>
@@ -289,7 +290,7 @@ function drawSheet(){
       ${(g.modes||[]).map(m=>`<span class="fact">${esc(MODE[m]||m)}</span>`).join("")}
     </div>
     <div class="sec meters" style="max-width:320px">
-      <span>Règles</span>${dots(g.rules,"r")}<span>Stratégie</span>${dots(g.strategy)}<span>Hasard</span>${dots(g.luck,"l")}<span>À 2 joueurs</span>${dots(g.twoPlayer)}
+      <span>Règles</span>${dots(g.rules,"r")}<span>Stratégie</span>${dots(g.strategy)}<span>Hasard</span>${dots(g.luck,"l")}<span>À 2 joueurs</span>${two(g)}
     </div>
     ${g.myNote?`<div class="sec"><h3>Mes notes</h3><div class="mine">${esc(g.myNote)}</div></div>`:""}
     ${g.description?`<div class="sec"><h3>Le jeu en bref</h3><div class="desc">${esc(g.description)}</div></div>`:""}

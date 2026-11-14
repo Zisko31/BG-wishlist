@@ -2361,7 +2361,7 @@
       "rules": 2,
       "strategy": 3,
       "luck": 2,
-      "twoPlayer": 1,
+      "twoPlayer": null,
       "modes": [
         "compet"
       ],
