@@ -11,7 +11,7 @@
 :root{
   --bg:#f6f1e7; --card:#fffdf8; --ink:#2a2420; --muted:#7a6f66; --line:#e6dccb;
   --accent:#b5532b; --accent2:#2f6b5e; --chip:#efe6d6; --chipOn:#2a2420;
-  --fav:#c9871a; --study:#2f6b5e; --out:#9a8f86;
+  --fav:#c9871a; --study:#2f6b5e; --out:#8a5a2b;
   --r:14px;
 }
 @media (prefers-color-scheme: dark){
@@ -39,7 +39,7 @@ button.danger{color:#b3261e;border-color:#e3b4ad}
 main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;cursor:pointer;display:flex;flex-direction:column;gap:10px;transition:transform .12s, box-shadow .12s}
 .card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
-.card.out{opacity:.62}
+.card.mine{border-style:dashed}
 .ctop{display:flex;gap:12px;align-items:flex-start}
 .thumb{width:62px;height:62px;border-radius:10px;flex:0 0 auto;background:var(--chip);display:grid;place-items:center;font-family:Fraunces,serif;font-size:24px;color:var(--muted);overflow:hidden}
 .thumb img{width:100%;height:100%;object-fit:cover}
@@ -57,7 +57,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 .score{font-family:Fraunces,serif;font-size:22px}
 .score small{font-family:Inter;font-size:12px;color:var(--muted)}
 .badge{font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:999px;color:#fff}
-.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-ecarte{background:var(--out)} .b-achete{background:#5b4bb5} .b-possede{background:#3d6fb5}
+.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-reserve{background:var(--out)} .b-achete{background:#5b4bb5} .b-possede{background:#3d6fb5}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
 /* sheet */
 .overlay{position:fixed;inset:0;background:rgba(20,15,10,.45);z-index:20;display:none}
@@ -101,6 +101,19 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 .confirm{display:none;gap:8px;align-items:center}
 .confirm.on{display:flex}
 .status{max-width:1100px;margin:6px auto 0;padding:0 16px;color:var(--muted);font-size:13px}
+
+.edit-bar{max-width:1100px;margin:auto;padding:0 16px;display:flex;gap:8px;justify-content:flex-end}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form .full{grid-column:1/-1}
+.form label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--muted)}
+.form textarea{min-height:70px}
+.hint{font-size:11.5px;color:var(--muted)}
+.confirm{display:none;gap:8px;align-items:center}
+.confirm.on{display:flex}
+.thumbs{display:flex;flex-wrap:wrap;gap:6px}
+.thumbs img{width:64px;height:64px;object-fit:cover;border-radius:8px}
+.steps{padding-left:20px;margin:6px 0 12px}
+.steps li{margin:4px 0}
 </style>
 </head>
 <body>
@@ -118,13 +131,13 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
     <div class="f"><label>Stratégie min</label><select id="fs"><option value="">Toutes</option><option value="3">≥ 3</option><option value="4">≥ 4</option><option value="5">5</option></select></div>
     <div class="f"><label>Hasard max</label><select id="fl"><option value="">Tous</option><option value="2">≤ 2 · faible</option><option value="3">≤ 3</option></select></div>
     <div class="f"><label>Mode</label><select id="fm"><option value="">Tous</option><option value="compet">Compétitif</option><option value="coop">Coopératif</option><option value="equipe">Par équipes</option></select></div>
-    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="possede">Déjà à moi</option><option value="ecarte">Écarté</option></select></div>
+    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="possede">Déjà à moi</option><option value="reserve">En réserve</option></select></div>
     <div class="f"><label>Trier par</label><select id="so"><option value="score">Note moyenne</option><option value="name">Nom</option><option value="dur">Durée</option><option value="rules">Règles (simple → dur)</option><option value="price">Prix</option></select></div>
   </div>
 </div>
 <div class="toolbar">
   <span class="count" id="count"></span>
-  <span><button class="ghost" id="reset">Réinitialiser</button></span>
+  <span><button class="ghost" id="reset">Réinitialiser</button> <button class="ghost" id="editmode" title="Modifier la liste">✎</button> <button class="primary" id="add" hidden>+ Ajouter</button></span>
 </div>
 <div class="status" id="status">Chargement de la liste…</div>
 <main id="grid"></main>
@@ -138,20 +151,55 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "";
-const STATUS = {favori:"Favori", etudier:"À étudier", achete:"Acheté", possede:"Déjà à moi", ecarte:"Écarté"};
+const STATUS = {favori:"Favori", etudier:"À étudier", reserve:"En réserve", achete:"Acheté", possede:"Déjà à moi"};
 const MODE = {compet:"Compétitif", coop:"Coopératif", equipe:"Par équipes"};
-let games=[], loaded=false, openId=null;
+const REPO = "Zisko31/BG-wishlist", BRANCH = "main", API = "https://api.github.com/repos/" + REPO + "/contents/";
+let games=[], meta={}, loaded=false, openId=null, editing=false, saving=false;
 
 function num(v){if(v===null||v===undefined||String(v).trim()==="")return null;const n=Number(v);return Number.isFinite(n)?n:null}
+function toast(m){const t=$("#toast");t.textContent=m;t.style.display="block";clearTimeout(t._h);t._h=setTimeout(()=>t.style.display="none",3200)}
 function avgScore(g){
   const r=(g.ratings||[]).map(x=>{const s=num(x.score),m=num(x.max)||10;return s==null?null:s/m*10}).filter(x=>x!=null);
   return r.length? r.reduce((a,b)=>a+b,0)/r.length : null;
 }
 function fmtDur(g){const a=num(g.durMin),b=num(g.durMax);if(a==null&&b==null)return "?";const f=m=>m>=60?(m%60?`${Math.floor(m/60)}h${String(m%60).padStart(2,"0")}`:`${m/60}h`):`${m} min`;return a&&b&&a!==b?`${f(a)}–${f(b)}`:f(b||a)}
 function dots(n,cls=""){n=num(n)||0;let h='<span class="dots">';for(let i=1;i<=5;i++)h+=`<span class="dot ${i<=n?"on "+cls:""}"></span>`;return h+"</span>"}
-function imgSrc(p){const u=String(p||"");return /^https?:\/\//i.test(u)?u:(u?u.replace(/^\/+/,""):"")}
+function imgSrc(p){const u=String(p||"");if(/^https?:\/\//i.test(u))return u;if(!u)return "";return u.replace(/^\/+/,"")}
 function photosOf(g){return [g.image,...(g.photos||[])].filter(Boolean).map(imgSrc).filter((v,i,a)=>v&&a.indexOf(v)===i)}
 
+/* ---------- GitHub (édition) ---------- */
+function getToken(){try{return localStorage.getItem("bgw_token")||""}catch(e){return ""}}
+function setToken(t){try{t?localStorage.setItem("bgw_token",t):localStorage.removeItem("bgw_token")}catch(e){}}
+const canEdit=()=>!!getToken();
+function b64ToUtf8(b){const bin=atob(b.replace(/\n/g,""));const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));return new TextDecoder().decode(bytes)}
+function utf8ToB64(s){const bytes=new TextEncoder().encode(s);let bin="";for(let i=0;i<bytes.length;i+=0x8000)bin+=String.fromCharCode.apply(null,bytes.subarray(i,i+0x8000));return btoa(bin)}
+async function gh(path,opts={}){
+  const res=await fetch(API+path+(opts.method?"":"?ref="+BRANCH+"&t="+Date.now()),{...opts,headers:{"Accept":"application/vnd.github+json","Authorization":"Bearer "+getToken(),...(opts.headers||{})}});
+  if(!res.ok){const e=new Error("GitHub "+res.status);e.status=res.status;throw e}
+  return res.json();
+}
+async function readRemote(){const f=await gh("games.json");return {sha:f.sha,data:JSON.parse(b64ToUtf8(f.content))}}
+async function writeRemote(mutate,message){
+  for(let attempt=0;attempt<2;attempt++){
+    const {sha,data}=await readRemote();
+    mutate(data);
+    data.updatedAt=new Date().toISOString();
+    try{
+      await gh("games.json",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify({message,branch:BRANCH,sha,content:utf8ToB64(JSON.stringify(data,null,2)+"\n")})});
+      meta=data;games=(data.games||[]).filter(g=>g&&g.id);return;
+    }catch(e){if(e.status!==409||attempt)throw e}
+  }
+}
+async function uploadImage(file,id){
+  const blob=await shrink(file,1600);
+  const b64=await new Promise((ok,ko)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=ko;r.readAsDataURL(blob)});
+  const path=`images/${id}-${Date.now().toString(36)}.jpg`;
+  await gh(path,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:"Photo : "+id,branch:BRANCH,content:b64})});
+  return path;
+}
+function shrink(file,max){return new Promise((ok,ko)=>{const img=new Image();img.onload=()=>{const k=Math.min(1,max/Math.max(img.width,img.height));const c=document.createElement("canvas");c.width=Math.round(img.width*k);c.height=Math.round(img.height*k);c.getContext("2d").drawImage(img,0,0,c.width,c.height);c.toBlob(b=>b?ok(b):ko(new Error("image")),"image/jpeg",0.85);URL.revokeObjectURL(img.src)};img.onerror=ko;img.src=URL.createObjectURL(file)})}
+
+/* ---------- liste ---------- */
 function filtered(){
   const q=$("#q").value.trim().toLowerCase(), p=num($("#fp").value), two=num($("#f2").value), d=num($("#fd").value),
         r=num($("#fr").value), s=num($("#fs").value), l=num($("#fl").value), m=$("#fm").value, st=$("#fst").value;
@@ -167,7 +215,7 @@ function filtered(){
     if(st && g.status!==st) return false;
     return true;
   });
-  const so=$("#so").value, rank={favori:0,etudier:1,achete:2,possede:3,ecarte:4};
+  const so=$("#so").value, rank={favori:0,etudier:1,reserve:2,achete:3,possede:4};
   out.sort((a,b)=>{
     if(so==="name") return String(a.name).localeCompare(String(b.name),"fr");
     if(so==="dur") return (num(a.durMax)??999)-(num(b.durMax)??999);
@@ -181,13 +229,15 @@ function filtered(){
 function render(){
   const list=filtered(), grid=$("#grid");
   $("#count").textContent=`${list.length} jeu${list.length>1?"x":""} sur ${games.length}`;
+  $("#add").hidden=!canEdit();
+  $("#editmode").textContent=canEdit()?"✎ ✔":"✎";$("#editmode").title=canEdit()?"Édition activée":"Activer l'édition";
   if(!games.length){grid.innerHTML=loaded?`<div class="empty">La liste est vide pour l'instant.</div>`:"";return}
   if(!list.length){grid.innerHTML=`<div class="empty">Aucun jeu ne correspond à ces critères.</div>`;return}
   grid.innerHTML=list.map(g=>{
-    const a=avgScore(g), ph=photosOf(g)[0];
-    return `<article class="card ${g.status==="ecarte"||g.status==="possede"?"out":""}" data-id="${esc(g.id)}" tabindex="0">
+    const a=avgScore(g), ph=photosOf(g)[0], L=esc(String(g.name||"?").trim()[0]||"?");
+    return `<article class="card ${g.status==="possede"?"mine":""}" data-id="${esc(g.id)}" tabindex="0">
       <div class="ctop">
-        <div class="thumb">${ph?`<img src="${esc(ph)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.textContent=this.dataset.l" data-l="${esc(String(g.name||"?").trim()[0]||"?")}">`:esc(String(g.name||"?").trim()[0]||"?")}</div>
+        <div class="thumb">${ph?`<img src="${esc(ph)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-l="${L}" onerror="this.parentNode.textContent=this.dataset.l">`:L}</div>
         <div style="flex:1;min-width:0">
           <h2 class="cname">${esc(g.name)}</h2>
           <p class="pitch">${esc(g.pitch)}</p>
@@ -213,15 +263,20 @@ function render(){
     </article>`}).join("");
 }
 
-function openSheet(id){openId=id;drawSheet();$("#ov").classList.add("on");$("#sheet").classList.add("on");document.body.style.overflow="hidden";if(location.hash!=="#"+id)history.replaceState(null,"","#"+id)}
-function closeSheet(){openId=null;$("#ov").classList.remove("on");$("#sheet").classList.remove("on");document.body.style.overflow="";history.replaceState(null,"",location.pathname+location.search)}
+/* ---------- fiche ---------- */
+function showSheet(){$("#ov").classList.add("on");$("#sheet").classList.add("on");document.body.style.overflow="hidden"}
+function openSheet(id){openId=id;editing=false;drawSheet();showSheet();if(location.hash!=="#"+id)history.replaceState(null,"","#"+id)}
+function closeSheet(){openId=null;editing=false;$("#ov").classList.remove("on");$("#sheet").classList.remove("on");document.body.style.overflow="";if(location.hash)history.replaceState(null,"",location.pathname+location.search)}
 
 function drawSheet(){
-  const sh=$("#sheet"), g=games.find(x=>x.id===openId);
+  const sh=$("#sheet");
+  if(openId==="__token"){sh.innerHTML=tokenHtml();bindToken();return}
+  const g=openId==="__new"?{id:"__new",name:"",status:"etudier",modes:["compet"],ratings:[],photos:[]}:games.find(x=>x.id===openId);
   if(!g){closeSheet();return}
+  if(editing||openId==="__new"){sh.innerHTML=formHtml(g);bindForm(g);return}
   const a=avgScore(g), rated=g.ratings||[], pics=photosOf(g);
   sh.innerHTML=`
-  <div class="shead"><h2>${esc(g.name)}</h2><button class="ghost" id="close" aria-label="Fermer">✕</button></div>
+  <div class="shead"><h2>${esc(g.name)}</h2><span>${canEdit()?'<button id="edit">Modifier</button> ':''}<button class="ghost" id="close" aria-label="Fermer">✕</button></span></div>
   <div class="sbody">
     ${pics.length?`<div class="sec gal">${pics.map(p=>`<figure><img src="${esc(p)}" data-full="${esc(p)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.style.display='none'"></figure>`).join("")}</div>`:""}
     <div class="sec facts">
@@ -236,6 +291,7 @@ function drawSheet(){
     <div class="sec meters" style="max-width:320px">
       <span>Règles</span>${dots(g.rules,"r")}<span>Stratégie</span>${dots(g.strategy)}<span>Hasard</span>${dots(g.luck,"l")}<span>À 2 joueurs</span>${dots(g.twoPlayer)}
     </div>
+    ${g.myNote?`<div class="sec"><h3>Mes notes</h3><div class="mine">${esc(g.myNote)}</div></div>`:""}
     ${g.description?`<div class="sec"><h3>Le jeu en bref</h3><div class="desc">${esc(g.description)}</div></div>`:""}
     ${(g.pros?.length||g.cons?.length)?`<div class="sec pc">
       <div><h3>Points forts</h3><ul>${(g.pros||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
@@ -249,30 +305,149 @@ function drawSheet(){
     </div>
     ${(g.awards||[]).length?`<div class="sec"><h3>Récompenses</h3><ul style="margin:0;padding-left:18px">${g.awards.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
     <div class="sec links"><h3>Liens</h3>${(g.links||[]).map(l=>{const u=safeUrl(l.url);return u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(l.label||u)} ↗</a>`:""}).join("")}
-      <a href="https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=${encodeURIComponent(g.bggName||g.name||"")}" target="_blank" rel="noopener">Photos et fiche BoardGameGeek ↗</a></div>
-    ${g.myNote?`<div class="sec"><h3>Mes notes</h3><div class="mine">${esc(g.myNote)}</div></div>`:""}
+      <a href="https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=${encodeURIComponent(g.bggName||g.name||"")}" target="_blank" rel="noopener">Fiche BoardGameGeek ↗</a></div>
     ${g.updatedAt?`<p class="note">Fiche mise à jour le ${esc(new Date(g.updatedAt).toLocaleDateString("fr-FR"))}</p>`:""}
   </div>`;
   $("#close").onclick=closeSheet;
+  if($("#edit")) $("#edit").onclick=()=>{editing=true;drawSheet()};
   sh.querySelectorAll(".gal img").forEach(i=>i.onclick=()=>{$("#lb img").src=i.dataset.full;$("#lb").classList.add("on")});
 }
 
+/* ---------- connexion GitHub ---------- */
+function tokenHtml(){
+  const on=canEdit();
+  return `<div class="shead"><h2>Édition de la liste</h2><button class="ghost" id="close">✕</button></div>
+  <div class="sbody">
+    ${on?`<p>L'édition est activée sur cet appareil. Les modifications sont enregistrées directement dans le dépôt GitHub, puis visibles par tous d'ici une minute environ.</p>
+      <button class="danger" id="logout">Désactiver l'édition sur cet appareil</button>`:
+    `<p>Pour modifier la liste depuis le site, il faut une clé GitHub (« jeton ») qui autorise ce site à écrire dans le dépôt <b>${REPO}</b>. À faire une seule fois par appareil :</p>
+    <ol class="steps">
+      <li>Ouvrir <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Fine-grained token ↗</a></li>
+      <li>Nom : « BG-wishlist », Expiration : 1 an (ou plus)</li>
+      <li>Repository access : <b>Only select repositories</b> → <b>BG-wishlist</b></li>
+      <li>Permissions → Repository permissions → <b>Contents : Read and write</b></li>
+      <li>« Generate token », copier la clé et la coller ici :</li>
+    </ol>
+    <form id="tokform" class="form"><label class="full">Clé GitHub<input id="tok" autocomplete="off" placeholder="github_pat_…"></label>
+    <p class="hint full">La clé reste uniquement dans ce navigateur (jamais dans le site public). Elle ne donne accès qu'à ce dépôt.</p>
+    <div class="full"><button class="primary" type="submit">Activer l'édition</button></div></form>`}
+  </div>`;
+}
+function bindToken(){
+  $("#close").onclick=closeSheet;
+  if($("#logout")) $("#logout").onclick=()=>{setToken("");toast("Édition désactivée");closeSheet();render()};
+  if($("#tokform")) $("#tokform").onsubmit=async e=>{
+    e.preventDefault();const t=$("#tok").value.trim();if(!t)return;
+    setToken(t);
+    try{const {data}=await readRemote();meta=data;games=(data.games||[]).filter(g=>g&&g.id);toast("Édition activée ✔");closeSheet();render()}
+    catch(err){setToken("");toast(err.status===401||err.status===403||err.status===404?"Clé refusée : vérifiez le dépôt et la permission Contents":"Connexion à GitHub impossible")}
+  };
+}
+
+/* ---------- formulaire ---------- */
+const lines=a=>(a||[]).join("\n");
+const parseLines=t=>String(t||"").split("\n").map(s=>s.trim()).filter(Boolean);
+function slugify(s){return String(s).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,60)||("jeu-"+Date.now())}
+function formHtml(g){
+  const opt=(o,v)=>Object.entries(o).map(([k,l])=>`<option value="${k}" ${v===k?"selected":""}>${l}</option>`).join("");
+  const n15=(id,v,lab)=>`<label>${lab}<select id="${id}"><option value="">?</option>${[1,2,3,4,5].map(i=>`<option ${num(v)===i?"selected":""}>${i}</option>`).join("")}</select></label>`;
+  const pics=[g.image,...(g.photos||[])].filter(Boolean);
+  return `<div class="shead"><h2>${g.id==="__new"?"Nouveau jeu":"Modifier · "+esc(g.name)}</h2><button class="ghost" id="cancel">Annuler</button></div>
+  <div class="sbody"><form class="form" id="frm">
+    <label class="full">Nom<input id="e_name" required value="${esc(g.name)}"></label>
+    <label class="full">Résumé en une ligne<input id="e_pitch" value="${esc(g.pitch)}"></label>
+    <label>Statut<select id="e_status">${opt(STATUS,g.status)}</select></label>
+    <label>Prix approx. (€)<input id="e_price" type="number" inputmode="decimal" value="${esc(g.price??"")}"></label>
+    <label class="full">Mes notes<textarea id="e_mine">${esc(g.myNote)}</textarea></label>
+    <label>Joueurs min<input id="e_pmin" type="number" value="${esc(g.playersMin??"")}"></label>
+    <label>Joueurs max<input id="e_pmax" type="number" value="${esc(g.playersMax??"")}"></label>
+    <label>Durée min (min)<input id="e_dmin" type="number" value="${esc(g.durMin??"")}"></label>
+    <label>Durée max (min)<input id="e_dmax" type="number" value="${esc(g.durMax??"")}"></label>
+    <label>Âge minimum<input id="e_age" type="number" value="${esc(g.age??"")}"></label>
+    <label>Complexité BGG (/5)<input id="e_weight" type="number" step="0.01" value="${esc(g.weight??"")}"></label>
+    ${n15("e_rules",g.rules,"Règles (1 simple → 5 dur)")}
+    ${n15("e_strat",g.strategy,"Stratégie (1–5)")}
+    ${n15("e_luck",g.luck,"Hasard (1 faible → 5 fort)")}
+    ${n15("e_two",g.twoPlayer,"Qualité à 2 (1–5)")}
+    <label class="full">Mode<span style="display:flex;gap:14px;color:var(--ink);flex-wrap:wrap">${Object.entries(MODE).map(([k,l])=>`<span><input type="checkbox" class="e_mode" value="${k}" ${(g.modes||[]).includes(k)?"checked":""}> ${l}</span>`).join("")}</span></label>
+    <label class="full">Photos <span class="hint">une adresse par ligne, la première sert de vignette</span>
+      <div class="thumbs" id="thumbs">${pics.map(p=>`<img src="${esc(imgSrc(p))}" alt="" referrerpolicy="no-referrer">`).join("")}</div>
+      <textarea id="e_photos" rows="3">${esc(pics.join("\n"))}</textarea>
+      <span><button type="button" id="addph">+ Ajouter une photo depuis l'appareil</button> <input type="file" id="phfile" accept="image/*" multiple hidden></span></label>
+    <label class="full">Description<textarea id="e_desc" rows="5">${esc(g.description)}</textarea></label>
+    <label>Points forts <span class="hint">une ligne chacun</span><textarea id="e_pros">${esc(lines(g.pros))}</textarea></label>
+    <label>Points faibles <span class="hint">une ligne chacun</span><textarea id="e_cons">${esc(lines(g.cons))}</textarea></label>
+    <label class="full">Notes des sites <span class="hint">Site | note | sur | nb d'avis | lien | commentaire</span>
+      <textarea id="e_rat" rows="5">${esc((g.ratings||[]).map(r=>[r.site,r.score??"",r.max??10,r.count??"",r.url??"",r.note??""].join(" | ")).join("\n"))}</textarea></label>
+    <label class="full">Récompenses <span class="hint">une ligne chacune</span><textarea id="e_aw">${esc(lines(g.awards))}</textarea></label>
+    <label class="full">Liens <span class="hint">Libellé | lien</span><textarea id="e_links">${esc((g.links||[]).map(l=>`${l.label} | ${l.url}`).join("\n"))}</textarea></label>
+    <div class="full" style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap">
+      <span>${g.id!=="__new"?`<button type="button" class="danger" id="del">Supprimer</button><span class="confirm" id="cf"><span>Supprimer ce jeu ?</span><button type="button" class="danger" id="delok">Oui</button><button type="button" id="delno">Non</button></span>`:""}</span>
+      <button class="primary" type="submit" id="save">Enregistrer</button>
+    </div>
+  </form></div>`;
+}
+function bindForm(g){
+  $("#cancel").onclick=()=>{if(g.id==="__new")closeSheet();else{editing=false;drawSheet()}};
+  $("#addph").onclick=()=>$("#phfile").click();
+  $("#phfile").onchange=async ev=>{
+    const files=[...ev.target.files];ev.target.value="";if(!files.length)return;
+    const id=g.id==="__new"?slugify($("#e_name").value||"jeu"):g.id;
+    toast("Envoi de la photo…");
+    for(const f of files){try{const p=await uploadImage(f,id);$("#e_photos").value=($("#e_photos").value.trim()+"\n"+p).trim();
+      $("#thumbs").insertAdjacentHTML("beforeend",`<img src="${esc(URL.createObjectURL(f))}" alt="">`)}catch(e){toast("Envoi impossible")}}
+    toast("Photo ajoutée : pensez à Enregistrer");
+  };
+  if($("#del")){$("#del").onclick=()=>$("#cf").classList.add("on");$("#delno").onclick=()=>$("#cf").classList.remove("on");
+    $("#delok").onclick=async()=>{try{await writeRemote(d=>{d.games=d.games.filter(x=>x.id!==g.id)},"Suppression : "+g.name);toast("Jeu supprimé");closeSheet();render()}catch(e){toast(errMsg(e))}}}
+  $("#frm").onsubmit=async ev=>{
+    ev.preventDefault(); if(saving) return;
+    const v=id=>$("#"+id).value.trim(), n=id=>{const x=v(id);return x===""?null:num(x.replace(",","."))};
+    const name=v("e_name"); if(!name){toast("Le nom est obligatoire");return}
+    const pics=parseLines($("#e_photos").value);
+    const fields={
+      name, pitch:v("e_pitch"), status:v("e_status"), price:n("e_price"),
+      playersMin:n("e_pmin"), playersMax:n("e_pmax"), durMin:n("e_dmin"), durMax:n("e_dmax"), age:n("e_age"), weight:n("e_weight"),
+      rules:n("e_rules"), strategy:n("e_strat"), luck:n("e_luck"), twoPlayer:n("e_two"),
+      modes:[...document.querySelectorAll(".e_mode:checked")].map(x=>x.value),
+      image:pics[0]||"", photos:pics.slice(1),
+      description:$("#e_desc").value.trim(), pros:parseLines(v("e_pros")), cons:parseLines(v("e_cons")),
+      ratings:parseLines($("#e_rat").value).map(l=>{const p=l.split("|").map(s=>s.trim());return {site:p[0]||"?",score:p[1]?num(String(p[1]).replace(",",".")):null,max:num(p[2])||10,count:p[3]?num(p[3]):null,url:p[4]||"",note:p.slice(5).join(" | ")}}),
+      awards:parseLines($("#e_aw").value),
+      links:parseLines($("#e_links").value).map(l=>{const i=l.lastIndexOf("|");return i<0?{label:l,url:l}:{label:l.slice(0,i).trim(),url:l.slice(i+1).trim()}}),
+      myNote:$("#e_mine").value.trim(), updatedAt:new Date().toISOString().slice(0,10)
+    };
+    let id=g.id;
+    if(id==="__new"){id=slugify(name);if(games.some(x=>x.id===id))id+="-"+Date.now().toString(36)}
+    saving=true;$("#save").disabled=true;$("#save").textContent="Enregistrement…";
+    try{
+      await writeRemote(d=>{const i=d.games.findIndex(x=>x.id===id);if(i<0)d.games.push({id,bggName:"",playersBest:"",...fields});else d.games[i]={...d.games[i],...fields}},(g.id==="__new"?"Ajout : ":"Modif : ")+name);
+      toast("Enregistré ✔ (en ligne pour tous d'ici ~1 min)");openId=id;editing=false;drawSheet();render();
+    }catch(e){toast(errMsg(e))}
+    finally{saving=false;const b=$("#save");if(b){b.disabled=false;b.textContent="Enregistrer"}}
+  };
+}
+function errMsg(e){return e&&(e.status===401||e.status===403)?"Clé GitHub refusée ou expirée : réactivez l'édition (✎)":"Enregistrement impossible, réessayez"}
+
+/* ---------- événements ---------- */
 ["q","fp","f2","fd","fr","fs","fl","fm","fst","so"].forEach(id=>$("#"+id).addEventListener(id==="q"?"input":"change",render));
 $("#reset").onclick=()=>{["q","fp","f2","fd","fr","fs","fl","fm","fst"].forEach(id=>$("#"+id).value="");$("#so").value="score";render()};
 $("#grid").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)});
 $("#grid").addEventListener("keydown",e=>{if(e.key==="Enter"){const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)}});
 $("#ov").onclick=closeSheet;
 $("#lb").onclick=()=>$("#lb").classList.remove("on");
+$("#editmode").onclick=()=>{openId="__token";drawSheet();showSheet()};
+$("#add").onclick=()=>{openId="__new";editing=true;drawSheet();showSheet()};
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){if($("#lb").classList.contains("on"))$("#lb").classList.remove("on");else if(openId)closeSheet()}});
-window.addEventListener("hashchange",()=>{const h=decodeURIComponent(location.hash.slice(1));if(h&&games.some(g=>g.id===h))openSheet(h);else if(!h&&openId)closeSheet()});
+window.addEventListener("hashchange",()=>{const h=decodeURIComponent(location.hash.slice(1));if(h&&games.some(g=>g.id===h)){if(openId!==h)openSheet(h)}else if(!h&&openId&&!openId.startsWith("__"))closeSheet()});
 
 (async function init(){
   try{
-    const res=await fetch("games.json",{cache:"no-cache"});
-    if(!res.ok) throw new Error(res.status);
-    const data=await res.json();
-    games=(data.games||data).filter(g=>g&&g.id);
-    loaded=true; $("#status").textContent="";
+    let data;
+    if(canEdit()){try{data=(await readRemote()).data}catch(e){}}
+    if(!data){const res=await fetch("games.json",{cache:"no-cache"});if(!res.ok)throw new Error(res.status);data=await res.json()}
+    meta=data;games=(data.games||data).filter(g=>g&&g.id);
+    loaded=true;$("#status").textContent="";
     if(data.updatedAt) $("#upd").textContent="liste mise à jour le "+new Date(data.updatedAt).toLocaleDateString("fr-FR");
     render();
     const h=decodeURIComponent(location.hash.slice(1)); if(h&&games.some(g=>g.id===h)) openSheet(h);

@@ -183,7 +183,7 @@
       "name": "Scythe",
       "bggName": "Scythe",
       "pitch": "Développement et conquête dans une Europe rétro-futuriste des années 1920",
-      "status": "favori",
+      "status": "possede",
       "price": 75,
       "playersMin": 1,
       "playersMax": 5,
@@ -257,7 +257,7 @@
           "url": "https://en.boardgamearena.com/gamepanel?game=scythe"
         }
       ],
-      "myNote": "",
+      "myNote": "Déjà à moi, très apprécié (+++).",
       "updatedAt": "2026-11-14"
     },
     {
@@ -414,7 +414,7 @@
       "name": "Star Wars Rébellion",
       "bggName": "Star Wars Rebellion",
       "pitch": "L'Empire traque la base rebelle cachée : un film à jouer",
-      "status": "ecarte",
+      "status": "reserve",
       "price": 100,
       "playersMin": 2,
       "playersMax": 4,
@@ -476,7 +476,7 @@
       "name": "La Guerre de l'Anneau (2e éd.)",
       "bggName": "War of the Ring",
       "pitch": "L'Ombre contre les Peuples Libres, pendant que la Communauté avance vers la Montagne du Destin",
-      "status": "ecarte",
+      "status": "reserve",
       "price": 115,
       "playersMin": 2,
       "playersMax": 4,
@@ -542,7 +542,7 @@
       "name": "Dune Imperium : Insurrection",
       "bggName": "Dune Imperium Uprising",
       "pitch": "Deckbuilding et placement d'ouvriers sur Arrakis",
-      "status": "ecarte",
+      "status": "reserve",
       "price": null,
       "playersMin": 1,
       "playersMax": 6,
