@@ -64,7 +64,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 .score{font-family:Fraunces,serif;font-size:22px}
 .score small{font-family:Inter;font-size:12px;color:var(--muted)}
 .badge{font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:999px;color:#fff}
-.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-reserve{background:var(--out)} .b-achete{background:#5b4bb5} .b-possede{background:#3d6fb5}
+.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-reserve{background:var(--out)} .b-achete{background:#5b4bb5} .b-possede{background:#3d6fb5} .b-propose{background:#b5743d}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
 /* sheet */
 .overlay{position:fixed;inset:0;background:rgba(20,15,10,.45);z-index:20;display:none}
@@ -138,7 +138,8 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
     <div class="f"><label>Stratégie min</label><select id="fs"><option value="">Toutes</option><option value="3">≥ 3</option><option value="4">≥ 4</option><option value="5">5</option></select></div>
     <div class="f"><label>Hasard max</label><select id="fl"><option value="">Tous</option><option value="2">≤ 2 · faible</option><option value="3">≤ 3</option></select></div>
     <div class="f"><label>Mode</label><select id="fm"><option value="">Tous</option><option value="compet">Compétitif</option><option value="coop">Coopératif</option><option value="equipe">Par équipes</option></select></div>
-    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="possede">Déjà à moi</option><option value="reserve">En réserve</option></select></div>
+    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="possede">Déjà à moi</option><option value="reserve">En réserve</option><option value="propose">Suggestion</option></select></div>
+    <div class="f"><label>Prix</label><select id="fpr"><option value="">Tous</option><option value="lt50">&lt; 50 €</option><option value="50-90">50 à 90 €</option><option value="gt90">&gt; 90 €</option></select></div>
     <div class="f"><label>Trier par</label><select id="so"><option value="score">Note moyenne</option><option value="name">Nom</option><option value="dur">Durée</option><option value="rules">Règles (simple → dur)</option><option value="price">Prix</option></select></div>
   </div>
 </div>
@@ -158,7 +159,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "";
-const STATUS = {favori:"Favori", etudier:"À étudier", reserve:"En réserve", achete:"Acheté", possede:"Déjà à moi"};
+const STATUS = {favori:"Favori", etudier:"À étudier", reserve:"En réserve", achete:"Acheté", possede:"Déjà à moi", propose:"Suggestion"};
 const MODE = {compet:"Compétitif", coop:"Coopératif", equipe:"Par équipes"};
 const REPO = "Zisko31/BG-wishlist", BRANCH = "main", API = "https://api.github.com/repos/" + REPO + "/contents/";
 let games=[], meta={}, loaded=false, openId=null, editing=false, saving=false;
@@ -211,7 +212,7 @@ function shrink(file,max){return new Promise((ok,ko)=>{const img=new Image();img
 /* ---------- liste ---------- */
 function filtered(){
   const q=$("#q").value.trim().toLowerCase(), p=num($("#fp").value), two=num($("#f2").value), d=num($("#fd").value),
-        r=num($("#fr").value), s=num($("#fs").value), l=num($("#fl").value), m=$("#fm").value, st=$("#fst").value;
+        r=num($("#fr").value), s=num($("#fs").value), l=num($("#fl").value), m=$("#fm").value, st=$("#fst").value, pr=$("#fpr").value;
   let out=games.filter(g=>{
     if(q && !String(g.name||"").toLowerCase().includes(q)) return false;
     if(p!=null){const mn=num(g.playersMin)??1, mx=num(g.playersMax)??99; if(p===5? mx<5 : (p<mn||p>mx)) return false;}
@@ -222,9 +223,10 @@ function filtered(){
     if(l!=null && (num(g.luck)??9)>l) return false;
     if(m && !(g.modes||[]).includes(m)) return false;
     if(st && g.status!==st) return false;
+    if(pr){const v=num(g.price); if(v==null) return false; if(pr==="lt50"&&v>=50) return false; if(pr==="50-90"&&(v<50||v>90)) return false; if(pr==="gt90"&&v<=90) return false;}
     return true;
   });
-  const so=$("#so").value, rank={favori:0,etudier:1,reserve:2,achete:3,possede:4};
+  const so=$("#so").value, rank={favori:0,etudier:1,propose:2,reserve:3,achete:4,possede:5};
   out.sort((a,b)=>{
     if(so==="name") return String(a.name).localeCompare(String(b.name),"fr");
     if(so==="dur") return (num(a.durMax)??999)-(num(b.durMax)??999);
@@ -439,11 +441,11 @@ function bindForm(g){
 function errMsg(e){return e&&(e.status===401||e.status===403)?"Clé GitHub refusée ou expirée : réactivez l'édition (✎)":"Enregistrement impossible, réessayez"}
 
 /* ---------- événements ---------- */
-function fcount(){const n=["fp","f2","fd","fr","fs","fl","fm","fst"].filter(id=>$("#"+id).value!=="").length;$("#fcount").textContent=n||""}
-["q","fp","f2","fd","fr","fs","fl","fm","fst","so"].forEach(id=>$("#"+id).addEventListener(id==="q"?"input":"change",()=>{fcount();render()}));
+function fcount(){const n=["fp","f2","fd","fr","fs","fl","fm","fst","fpr"].filter(id=>$("#"+id).value!=="").length;$("#fcount").textContent=n||""}
+["q","fp","f2","fd","fr","fs","fl","fm","fst","fpr","so"].forEach(id=>$("#"+id).addEventListener(id==="q"?"input":"change",()=>{fcount();render()}));
 $("#ftog").onclick=()=>{const b=document.querySelector(".bar");const o=b.classList.toggle("open");$("#ftog").setAttribute("aria-expanded",o)};
 fcount();
-$("#reset").onclick=()=>{["q","fp","f2","fd","fr","fs","fl","fm","fst"].forEach(id=>$("#"+id).value="");$("#so").value="score";fcount();render()};
+$("#reset").onclick=()=>{["q","fp","f2","fd","fr","fs","fl","fm","fst","fpr"].forEach(id=>$("#"+id).value="");$("#so").value="score";fcount();render()};
 $("#grid").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)});
 $("#grid").addEventListener("keydown",e=>{if(e.key==="Enter"){const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)}});
 $("#ov").onclick=closeSheet;
