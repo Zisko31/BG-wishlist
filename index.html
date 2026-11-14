@@ -57,7 +57,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 .score{font-family:Fraunces,serif;font-size:22px}
 .score small{font-family:Inter;font-size:12px;color:var(--muted)}
 .badge{font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:999px;color:#fff}
-.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-ecarte{background:var(--out)} .b-achete{background:#5b4bb5}
+.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-ecarte{background:var(--out)} .b-achete{background:#5b4bb5} .b-possede{background:#3d6fb5}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
 /* sheet */
 .overlay{position:fixed;inset:0;background:rgba(20,15,10,.45);z-index:20;display:none}
@@ -118,7 +118,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
     <div class="f"><label>Stratégie min</label><select id="fs"><option value="">Toutes</option><option value="3">≥ 3</option><option value="4">≥ 4</option><option value="5">5</option></select></div>
     <div class="f"><label>Hasard max</label><select id="fl"><option value="">Tous</option><option value="2">≤ 2 · faible</option><option value="3">≤ 3</option></select></div>
     <div class="f"><label>Mode</label><select id="fm"><option value="">Tous</option><option value="compet">Compétitif</option><option value="coop">Coopératif</option><option value="equipe">Par équipes</option></select></div>
-    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="ecarte">Écarté</option></select></div>
+    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="possede">Déjà à moi</option><option value="ecarte">Écarté</option></select></div>
     <div class="f"><label>Trier par</label><select id="so"><option value="score">Note moyenne</option><option value="name">Nom</option><option value="dur">Durée</option><option value="rules">Règles (simple → dur)</option><option value="price">Prix</option></select></div>
   </div>
 </div>
@@ -138,7 +138,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "";
-const STATUS = {favori:"Favori", etudier:"À étudier", achete:"Acheté", ecarte:"Écarté"};
+const STATUS = {favori:"Favori", etudier:"À étudier", achete:"Acheté", possede:"Déjà à moi", ecarte:"Écarté"};
 const MODE = {compet:"Compétitif", coop:"Coopératif", equipe:"Par équipes"};
 let games=[], loaded=false, openId=null;
 
@@ -167,7 +167,7 @@ function filtered(){
     if(st && g.status!==st) return false;
     return true;
   });
-  const so=$("#so").value, rank={favori:0,etudier:1,achete:2,ecarte:3};
+  const so=$("#so").value, rank={favori:0,etudier:1,achete:2,possede:3,ecarte:4};
   out.sort((a,b)=>{
     if(so==="name") return String(a.name).localeCompare(String(b.name),"fr");
     if(so==="dur") return (num(a.durMax)??999)-(num(b.durMax)??999);
@@ -185,7 +185,7 @@ function render(){
   if(!list.length){grid.innerHTML=`<div class="empty">Aucun jeu ne correspond à ces critères.</div>`;return}
   grid.innerHTML=list.map(g=>{
     const a=avgScore(g), ph=photosOf(g)[0];
-    return `<article class="card ${g.status==="ecarte"?"out":""}" data-id="${esc(g.id)}" tabindex="0">
+    return `<article class="card ${g.status==="ecarte"||g.status==="possede"?"out":""}" data-id="${esc(g.id)}" tabindex="0">
       <div class="ctop">
         <div class="thumb">${ph?`<img src="${esc(ph)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.textContent=this.dataset.l" data-l="${esc(String(g.name||"?").trim()[0]||"?")}">`:esc(String(g.name||"?").trim()[0]||"?")}</div>
         <div style="flex:1;min-width:0">

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T14:30:00+01:00",
+  "updatedAt": "2026-11-14T15:20:00+01:00",
   "games": [
     {
       "id": "arcs",
@@ -8,26 +8,88 @@
       "pitch": "Space opera de Cole Wehrle : conquête et cartes façon jeu de plis",
       "status": "favori",
       "price": 75,
-      "playersMin": 2, "playersMax": 4, "playersBest": "3–4 (très bon à 2)",
-      "durMin": 60, "durMax": 120, "age": 14, "weight": 3.4,
-      "rules": 3, "strategy": 4, "luck": 2, "twoPlayer": 4,
-      "modes": ["compet"],
-      "image": "", "photos": [],
-      "description": "Chaque joueur dirige une civilisation qui se bat pour contrôler les Confins de la galaxie. La partie se joue en chapitres : à chaque manche, on pose une carte de sa main, comme dans un jeu de plis, et cette carte donne ses actions (bouger, construire, attaquer, influencer).\nDans le jeu de base, tout le monde a les mêmes règles. Le pack Héros & Savoirs ajoute des pouvoirs, et l'extension Blighted Reach transforme le jeu en campagne de 3 parties.",
-      "pros": ["Mêmes règles pour tous dans le jeu de base : moins de cas particuliers que Root", "Règles adaptées pour 2 joueurs", "Plateau modulaire : chaque mise en place est différente", "Très rejouable"],
-      "cons": ["Boîte indiquée 14 ans et plus", "Plus « méchant » à 2 (on se tape dessus en direct)", "Jeu clivant : on adore son chaos ou on le fuit", "Première partie longue (environ 45 min par joueur)"],
-      "ratings": [
-        {"site": "BoardGameGeek", "score": 8, "max": 10, "url": "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Arcs", "note": "Classé autour du #100"},
-        {"site": "Zatu (critique)", "score": 95, "max": 100, "url": "https://zatu.com/fr/blogs/reviews/arcs-review", "note": "Une des conceptions les plus excitantes de ces dernières années"},
-        {"site": "Play-In (clients)", "score": 5, "max": 5, "url": "https://www.play-in.com/fr/produit/571249/arcs"},
-        {"site": "GamesRadar+", "score": null, "max": 10, "url": "https://gamesradar.com/tabletop-gaming/arcs-review", "note": "Le meilleur jeu Leder à 2 joueurs"},
-        {"site": "Tric Trac", "score": null, "max": 10, "note": "Pas encore trouvée"},
-        {"site": "Gus&Co", "score": null, "max": 5, "note": "Pas de critique trouvée"}
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "3–4 (très bon à 2)",
+      "durMin": 60,
+      "durMax": 120,
+      "age": 14,
+      "weight": 3.4,
+      "rules": 3,
+      "strategy": 4,
+      "luck": 2,
+      "twoPlayer": 4,
+      "modes": [
+        "compet"
       ],
-      "awards": ["Nommé As d'Or Jeu de l'Année Expert 2026"],
+      "image": "",
+      "photos": [],
+      "description": "Chaque joueur dirige une civilisation qui se bat pour contrôler les Confins de la galaxie. La partie se joue en chapitres : à chaque manche, on pose une carte de sa main, comme dans un jeu de plis, et cette carte donne ses actions (bouger, construire, attaquer, influencer).\nDans le jeu de base, tout le monde a les mêmes règles. Le pack Héros & Savoirs ajoute des pouvoirs, et l'extension Blighted Reach transforme le jeu en campagne de 3 parties.",
+      "pros": [
+        "Mêmes règles pour tous dans le jeu de base : moins de cas particuliers que Root",
+        "Règles adaptées pour 2 joueurs",
+        "Plateau modulaire : chaque mise en place est différente",
+        "Très rejouable"
+      ],
+      "cons": [
+        "Boîte indiquée 14 ans et plus",
+        "Plus « méchant » à 2 (on se tape dessus en direct)",
+        "Jeu clivant : on adore son chaos ou on le fuit",
+        "Première partie longue (environ 45 min par joueur)"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8,
+          "max": 10,
+          "url": "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Arcs",
+          "note": "Classé autour du #100"
+        },
+        {
+          "site": "Zatu (critique)",
+          "score": 95,
+          "max": 100,
+          "url": "https://zatu.com/fr/blogs/reviews/arcs-review",
+          "note": "Une des conceptions les plus excitantes de ces dernières années"
+        },
+        {
+          "site": "Play-In (clients)",
+          "score": 5,
+          "max": 5,
+          "url": "https://www.play-in.com/fr/produit/571249/arcs"
+        },
+        {
+          "site": "GamesRadar+",
+          "score": null,
+          "max": 10,
+          "url": "https://gamesradar.com/tabletop-gaming/arcs-review",
+          "note": "Le meilleur jeu Leder à 2 joueurs"
+        },
+        {
+          "site": "Tric Trac",
+          "score": null,
+          "max": 10,
+          "note": "Pas encore trouvée"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": 5,
+          "note": "Pas de critique trouvée"
+        }
+      ],
+      "awards": [
+        "Nommé As d'Or Jeu de l'Année Expert 2026"
+      ],
       "links": [
-        {"label": "Fiche et FAQ Ludum", "url": "https://www.ludum.fr/conquete-affrontement/arcs-9366?aff=56"},
-        {"label": "Arcs sur Wikipédia (EN)", "url": "https://en.wikipedia.org/wiki/Arcs_(board_game)"}
+        {
+          "label": "Fiche et FAQ Ludum",
+          "url": "https://www.ludum.fr/conquete-affrontement/arcs-9366?aff=56"
+        },
+        {
+          "label": "Arcs sur Wikipédia (EN)",
+          "url": "https://en.wikipedia.org/wiki/Arcs_(board_game)"
+        }
       ],
       "myNote": "",
       "updatedAt": "2026-11-14"
@@ -39,23 +101,80 @@
       "pitch": "Guerre asymétrique d'animaux mignons pour le contrôle de la forêt",
       "status": "etudier",
       "price": 79,
-      "playersMin": 2, "playersMax": 4, "playersBest": "4 (VF avec La Rivière : jusqu'à 6)",
-      "durMin": 60, "durMax": 90, "age": 10, "weight": 3.8,
-      "rules": 4, "strategy": 4, "luck": 3, "twoPlayer": 2,
-      "modes": ["compet"],
-      "image": "", "photos": [],
-      "description": "Chaque joueur incarne une faction animale qui joue presque à un jeu différent : la Marquise de Chat gère une logistique de bâtiments, la Canopée suit un décret de plus en plus contraignant, l'Alliance de la Forêt mène une guérilla, le Vagabond va de quête en quête.\nL'édition française inclut l'extension La Rivière (2 factions en plus et la Marquise Mécanique, un adversaire automatique).",
-      "pros": ["Asymétrie remarquable, énorme rejouabilité", "Très interactif, chaque partie raconte une histoire", "Beaucoup d'extensions"],
-      "cons": ["Chaque faction a ses propres règles : beaucoup de cas particuliers", "À 2, il faut choisir des factions précises pour que ce soit équilibré", "Demande plusieurs parties pour bien comprendre les factions des autres"],
-      "ratings": [
-        {"site": "BoardGameGeek", "score": 8.07, "max": 10, "count": 62939, "url": "https://boardgamefyi.com/games/root", "note": "Classé #34"},
-        {"site": "Tric Trac", "score": 8.7, "max": 10, "count": 131, "url": "https://us.trictrac.net/boardgame/list/boardgames-of-this-people/cole-wehrle?order_type=release&order_dir=DESC"},
-        {"site": "Ludum", "score": 8.6, "max": 10, "url": "https://www.ludum.fr/conquete-affrontement/root-271"},
-        {"site": "Play-In (clients)", "score": 4.8, "max": 5, "url": "https://www.play-in.com/produit/249561-root"},
-        {"site": "Gus&Co", "score": null, "max": 5, "url": "https://gusandco.net/tag/root/", "note": "Critique très positive en 2018 (sans note chiffrée)"}
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "4 (VF avec La Rivière : jusqu'à 6)",
+      "durMin": 60,
+      "durMax": 90,
+      "age": 10,
+      "weight": 3.8,
+      "rules": 4,
+      "strategy": 4,
+      "luck": 3,
+      "twoPlayer": 2,
+      "modes": [
+        "compet"
       ],
-      "awards": ["Golden Geek 2018 – Jeu de l'Année", "Nommé As d'Or Expert 2020", "Vainqueur de la Tric Trac Cup n°12"],
-      "links": [{"label": "Ludum – fiche", "url": "https://www.ludum.fr/conquete-affrontement/root-271"}],
+      "image": "",
+      "photos": [],
+      "description": "Chaque joueur incarne une faction animale qui joue presque à un jeu différent : la Marquise de Chat gère une logistique de bâtiments, la Canopée suit un décret de plus en plus contraignant, l'Alliance de la Forêt mène une guérilla, le Vagabond va de quête en quête.\nL'édition française inclut l'extension La Rivière (2 factions en plus et la Marquise Mécanique, un adversaire automatique).",
+      "pros": [
+        "Asymétrie remarquable, énorme rejouabilité",
+        "Très interactif, chaque partie raconte une histoire",
+        "Beaucoup d'extensions"
+      ],
+      "cons": [
+        "Chaque faction a ses propres règles : beaucoup de cas particuliers",
+        "À 2, il faut choisir des factions précises pour que ce soit équilibré",
+        "Demande plusieurs parties pour bien comprendre les factions des autres"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.07,
+          "max": 10,
+          "count": 62939,
+          "url": "https://boardgamefyi.com/games/root",
+          "note": "Classé #34"
+        },
+        {
+          "site": "Tric Trac",
+          "score": 8.7,
+          "max": 10,
+          "count": 131,
+          "url": "https://us.trictrac.net/boardgame/list/boardgames-of-this-people/cole-wehrle?order_type=release&order_dir=DESC"
+        },
+        {
+          "site": "Ludum",
+          "score": 8.6,
+          "max": 10,
+          "url": "https://www.ludum.fr/conquete-affrontement/root-271"
+        },
+        {
+          "site": "Play-In (clients)",
+          "score": 4.8,
+          "max": 5,
+          "url": "https://www.play-in.com/produit/249561-root"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": 5,
+          "url": "https://gusandco.net/tag/root/",
+          "note": "Critique très positive en 2018 (sans note chiffrée)"
+        }
+      ],
+      "awards": [
+        "Golden Geek 2018 – Jeu de l'Année",
+        "Nommé As d'Or Expert 2020",
+        "Vainqueur de la Tric Trac Cup n°12"
+      ],
+      "links": [
+        {
+          "label": "Ludum – fiche",
+          "url": "https://www.ludum.fr/conquete-affrontement/root-271"
+        }
+      ],
       "myNote": "",
       "updatedAt": "2026-11-14"
     },
@@ -66,23 +185,78 @@
       "pitch": "Développement et conquête dans une Europe rétro-futuriste des années 1920",
       "status": "favori",
       "price": 75,
-      "playersMin": 1, "playersMax": 5,
-      "durMin": 90, "durMax": 120, "age": 14, "weight": 3.5,
-      "rules": 3, "strategy": 5, "luck": 2, "twoPlayer": 3,
-      "modes": ["compet"],
-      "image": "", "photos": [],
-      "description": "Chaque faction développe son économie (ouvriers, ressources, bâtiments), explore la carte et déploie des mechas. À chaque tour, on choisit une action sur son plateau puis une action de développement liée : on construit petit à petit son « moteur ».\nLes combats sont rares mais décisifs, et se règlent par des choix secrets (une roue de puissance), pas aux dés.",
-      "pros": ["Très peu de hasard : on maîtrise presque tout", "Plusieurs façons de gagner", "Règles claires et bien écrites", "Superbe matériel"],
-      "cons": ["Peu d'interaction directe, combats rares", "Première partie longue (prévoir 2–3 h avec les explications)", "Boîte indiquée 14 ans et plus"],
-      "ratings": [
-        {"site": "BoardGameGeek", "score": 8.1, "max": 10, "url": "https://www.ludum.fr/jeux-de-societe-expert/scythe-304", "note": "Note BGG relevée par Ludum"},
-        {"site": "Ludum", "score": 8.6, "max": 10, "url": "https://www.ludum.fr/jeux-de-societe-expert/scythe-304"},
-        {"site": "Esprit Jeu (clients)", "score": 4.7, "max": 5, "url": "https://www.espritjeu.com/jeu-de-societe/scythe.html"},
-        {"site": "Board Game Arena", "score": null, "max": 5, "url": "https://en.boardgamearena.com/gamepanel?game=scythe", "note": "Stratégie 4/5, chance 2/5 – jouable en ligne"},
-        {"site": "Tric Trac", "score": null, "max": 10, "note": "Pas encore trouvée"}
+      "playersMin": 1,
+      "playersMax": 5,
+      "durMin": 90,
+      "durMax": 120,
+      "age": 14,
+      "weight": 3.5,
+      "rules": 3,
+      "strategy": 5,
+      "luck": 2,
+      "twoPlayer": 3,
+      "modes": [
+        "compet"
       ],
-      "awards": ["As d'Or – Jeu de l'Année Expert 2017", "Tric Trac d'Or 2016", "Dice Tower – Meilleur jeu de l'année 2016"],
-      "links": [{"label": "Essayer sur Board Game Arena", "url": "https://en.boardgamearena.com/gamepanel?game=scythe"}],
+      "image": "",
+      "photos": [],
+      "description": "Chaque faction développe son économie (ouvriers, ressources, bâtiments), explore la carte et déploie des mechas. À chaque tour, on choisit une action sur son plateau puis une action de développement liée : on construit petit à petit son « moteur ».\nLes combats sont rares mais décisifs, et se règlent par des choix secrets (une roue de puissance), pas aux dés.",
+      "pros": [
+        "Très peu de hasard : on maîtrise presque tout",
+        "Plusieurs façons de gagner",
+        "Règles claires et bien écrites",
+        "Superbe matériel"
+      ],
+      "cons": [
+        "Peu d'interaction directe, combats rares",
+        "Première partie longue (prévoir 2–3 h avec les explications)",
+        "Boîte indiquée 14 ans et plus"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.1,
+          "max": 10,
+          "url": "https://www.ludum.fr/jeux-de-societe-expert/scythe-304",
+          "note": "Note BGG relevée par Ludum"
+        },
+        {
+          "site": "Ludum",
+          "score": 8.6,
+          "max": 10,
+          "url": "https://www.ludum.fr/jeux-de-societe-expert/scythe-304"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4.7,
+          "max": 5,
+          "url": "https://www.espritjeu.com/jeu-de-societe/scythe.html"
+        },
+        {
+          "site": "Board Game Arena",
+          "score": null,
+          "max": 5,
+          "url": "https://en.boardgamearena.com/gamepanel?game=scythe",
+          "note": "Stratégie 4/5, chance 2/5 – jouable en ligne"
+        },
+        {
+          "site": "Tric Trac",
+          "score": null,
+          "max": 10,
+          "note": "Pas encore trouvée"
+        }
+      ],
+      "awards": [
+        "As d'Or – Jeu de l'Année Expert 2017",
+        "Tric Trac d'Or 2016",
+        "Dice Tower – Meilleur jeu de l'année 2016"
+      ],
+      "links": [
+        {
+          "label": "Essayer sur Board Game Arena",
+          "url": "https://en.boardgamearena.com/gamepanel?game=scythe"
+        }
+      ],
       "myNote": "",
       "updatedAt": "2026-11-14"
     },
@@ -91,26 +265,78 @@
       "name": "Kemet : Sang et Sable",
       "bggName": "Kemet Blood and Sand",
       "pitch": "Dieux égyptiens en guerre : baston tactique, combats aux cartes",
-      "status": "etudier",
+      "status": "possede",
       "price": null,
-      "playersMin": 2, "playersMax": 5, "playersBest": "4",
-      "durMin": 90, "durMax": 120, "age": 13, "weight": 3.2,
-      "rules": 3, "strategy": 4, "luck": 2, "twoPlayer": 3,
-      "modes": ["compet"],
-      "image": "", "photos": [],
+      "playersMin": 2,
+      "playersMax": 5,
+      "playersBest": "4",
+      "durMin": 90,
+      "durMax": 120,
+      "age": 13,
+      "weight": 3.2,
+      "rules": 3,
+      "strategy": 4,
+      "luck": 2,
+      "twoPlayer": 3,
+      "modes": [
+        "compet"
+      ],
+      "image": "",
+      "photos": [],
       "description": "Chaque joueur incarne un dieu de l'Égypte antique qui envoie ses troupes et ses créatures conquérir des temples. On choisit ses actions sur son plateau, on achète des tuiles de pouvoir pour se spécialiser, et on attaque beaucoup.\nLes combats se règlent avec des cartes choisies face cachée, pas aux dés.",
-      "pros": ["Combats sans dés : peu de hasard", "Très dynamique, retournements fréquents", "Belles figurines"],
-      "cons": ["Beaucoup d'interactions entre tuiles, cartes et règles (des « micro-règles »)", "Très conflictuel, pas pour tout le monde", "Meilleur à 3-5 qu'à 2"],
+      "pros": [
+        "Combats sans dés : peu de hasard",
+        "Très dynamique, retournements fréquents",
+        "Belles figurines"
+      ],
+      "cons": [
+        "Beaucoup d'interactions entre tuiles, cartes et règles (des « micro-règles »)",
+        "Très conflictuel, pas pour tout le monde",
+        "Meilleur à 3-5 qu'à 2"
+      ],
       "ratings": [
-        {"site": "BoardGameGeek", "score": 7.99, "max": 10, "url": "https://meeplescorner.co.uk/?p=22345", "note": "Classé #311"},
-        {"site": "Zatu (critique)", "score": 94, "max": 100, "url": "https://zatu.com/fr/blogs/reviews/kemet-blood-and-sand-review-1"},
-        {"site": "Esprit Jeu (clients)", "score": 4, "max": 5, "count": 1, "url": "https://www.espritjeu.com/jeu-de-societe/kemet.html"},
-        {"site": "Gus&Co", "score": null, "max": 5, "url": "https://gusandco.net/2013/04/18/critique-de-jeu-kemet/", "note": "Critique positive de la 1re édition : « très bon à 2 et encore plus violent »"},
-        {"site": "Tric Trac", "score": null, "max": 10, "note": "Pas encore trouvée"}
+        {
+          "site": "BoardGameGeek",
+          "score": 7.99,
+          "max": 10,
+          "url": "https://meeplescorner.co.uk/?p=22345",
+          "note": "Classé #311"
+        },
+        {
+          "site": "Zatu (critique)",
+          "score": 94,
+          "max": 100,
+          "url": "https://zatu.com/fr/blogs/reviews/kemet-blood-and-sand-review-1"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.espritjeu.com/jeu-de-societe/kemet.html"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": 5,
+          "url": "https://gusandco.net/2013/04/18/critique-de-jeu-kemet/",
+          "note": "Critique positive de la 1re édition : « très bon à 2 et encore plus violent »"
+        },
+        {
+          "site": "Tric Trac",
+          "score": null,
+          "max": 10,
+          "note": "Pas encore trouvée"
+        }
       ],
       "awards": [],
-      "links": [{"label": "Critique Gus&Co (1re édition)", "url": "https://gusandco.net/2013/04/18/critique-de-jeu-kemet/"}],
-      "myNote": "",
+      "links": [
+        {
+          "label": "Critique Gus&Co (1re édition)",
+          "url": "https://gusandco.net/2013/04/18/critique-de-jeu-kemet/"
+        }
+      ],
+      "myNote": "Déjà à moi, très apprécié (+++).",
       "updatedAt": "2026-11-14"
     },
     {
@@ -120,23 +346,65 @@
       "pitch": "Classique de Knizia : bâtir des royaumes et se disputer leurs chefs",
       "status": "etudier",
       "price": null,
-      "playersMin": 2, "playersMax": 4,
-      "durMin": 60, "durMax": 120, "age": 12, "weight": null,
-      "rules": 3, "strategy": 5, "luck": 2, "twoPlayer": 4,
-      "modes": ["compet"],
-      "image": "", "photos": [],
-      "description": "On pose des tuiles (fermes, temples, marchés, villes) pour bâtir des royaumes en Mésopotamie. Chaque joueur a quatre chefs (roi, prêtre, marchand, fermier). Quand deux chefs de même couleur se retrouvent dans le même royaume, ils s'affrontent.\nLe gagnant est celui qui a le plus de points dans sa MOINS bonne couleur : il faut rester équilibré.",
-      "pros": ["Très stratégique, peu de hasard", "Beaucoup de conflit pour un jeu « allemand »", "Mise en place rapide (5 min)", "Jouable en ligne sur Board Game Arena"],
-      "cons": ["Thème assez abstrait", "Visuellement moins spectaculaire"],
-      "ratings": [
-        {"site": "BoardGameGeek", "score": null, "max": 10, "note": "Note à relever"},
-        {"site": "Tric Trac", "score": null, "max": 10, "note": "Pas encore trouvée"},
-        {"site": "Board Game Arena", "score": null, "max": 10, "url": "https://fr.boardgamearena.com/news?id=608", "note": "« Chef-d'œuvre intemporel »"}
+      "playersMin": 2,
+      "playersMax": 4,
+      "durMin": 60,
+      "durMax": 120,
+      "age": 12,
+      "weight": null,
+      "rules": 3,
+      "strategy": 5,
+      "luck": 2,
+      "twoPlayer": 4,
+      "modes": [
+        "compet"
       ],
-      "awards": ["Deutscher Spielepreis 1998 (1er prix)"],
+      "image": "",
+      "photos": [],
+      "description": "On pose des tuiles (fermes, temples, marchés, villes) pour bâtir des royaumes en Mésopotamie. Chaque joueur a quatre chefs (roi, prêtre, marchand, fermier). Quand deux chefs de même couleur se retrouvent dans le même royaume, ils s'affrontent.\nLe gagnant est celui qui a le plus de points dans sa MOINS bonne couleur : il faut rester équilibré.",
+      "pros": [
+        "Très stratégique, peu de hasard",
+        "Beaucoup de conflit pour un jeu « allemand »",
+        "Mise en place rapide (5 min)",
+        "Jouable en ligne sur Board Game Arena"
+      ],
+      "cons": [
+        "Thème assez abstrait",
+        "Visuellement moins spectaculaire"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": null,
+          "max": 10,
+          "note": "Note à relever"
+        },
+        {
+          "site": "Tric Trac",
+          "score": null,
+          "max": 10,
+          "note": "Pas encore trouvée"
+        },
+        {
+          "site": "Board Game Arena",
+          "score": null,
+          "max": 10,
+          "url": "https://fr.boardgamearena.com/news?id=608",
+          "note": "« Chef-d'œuvre intemporel »"
+        }
+      ],
+      "awards": [
+        "Deutscher Spielepreis 1998 (1er prix)"
+      ],
       "links": [
-        {"label": "Wikipédia (EN)", "url": "https://en.wikipedia.org/wiki/Tigris_and_Euphrates"},
-        {"label": "Essayer sur Board Game Arena", "url": "https://fr.boardgamearena.com/news?id=608"}
+        {
+          "label": "Wikipédia (EN)",
+          "url": "https://en.wikipedia.org/wiki/Tigris_and_Euphrates"
+        },
+        {
+          "label": "Essayer sur Board Game Arena",
+          "url": "https://fr.boardgamearena.com/news?id=608"
+        }
       ],
       "myNote": "",
       "updatedAt": "2026-11-14"
@@ -148,18 +416,55 @@
       "pitch": "L'Empire traque la base rebelle cachée : un film à jouer",
       "status": "ecarte",
       "price": 100,
-      "playersMin": 2, "playersMax": 4, "playersBest": "2",
-      "durMin": 180, "durMax": 240, "age": 14, "weight": null,
-      "rules": 4, "strategy": 4, "luck": 3, "twoPlayer": 5,
-      "modes": ["compet", "equipe"],
-      "image": "", "photos": [],
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "2",
+      "durMin": 180,
+      "durMax": 240,
+      "age": 14,
+      "weight": null,
+      "rules": 4,
+      "strategy": 4,
+      "luck": 3,
+      "twoPlayer": 5,
+      "modes": [
+        "compet",
+        "equipe"
+      ],
+      "image": "",
+      "photos": [],
       "description": "Un joueur dirige l'Empire et cherche la base rebelle cachée pour l'écraser. L'autre dirige la Rébellion, en guérilla et sabotage. Le cœur du jeu, ce sont les personnages (Luke, Vador…), qu'on place face cachée sur des missions.",
-      "pros": ["Immersion totale dans Star Wars", "Excellent à 2", "Matériel très riche"],
-      "cons": ["Très long (3–4 h)", "Pour joueurs chevronnés", "Pensé surtout pour 2"],
+      "pros": [
+        "Immersion totale dans Star Wars",
+        "Excellent à 2",
+        "Matériel très riche"
+      ],
+      "cons": [
+        "Très long (3–4 h)",
+        "Pour joueurs chevronnés",
+        "Pensé surtout pour 2"
+      ],
       "ratings": [
-        {"site": "BoardGameGeek", "score": 8.4, "max": 10, "url": "https://www.boardgamebliss.com/collections/bgg-top-10-ip-games/products/star-wars-rebellion"},
-        {"site": "Esprit Jeu (clients)", "score": 5, "max": 5, "count": 8, "url": "https://www.espritjeu.com/jeu-de-societe/star-wars-rebellion.html"},
-        {"site": "Gus&Co", "score": null, "max": 5, "url": "https://gusandco.net/2016/08/11/critique-de-jeu-star-wars-rebellion-tu-bluffes-leia/", "note": "Critique : un gros, gros jeu"}
+        {
+          "site": "BoardGameGeek",
+          "score": 8.4,
+          "max": 10,
+          "url": "https://www.boardgamebliss.com/collections/bgg-top-10-ip-games/products/star-wars-rebellion"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 5,
+          "max": 5,
+          "count": 8,
+          "url": "https://www.espritjeu.com/jeu-de-societe/star-wars-rebellion.html"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": 5,
+          "url": "https://gusandco.net/2016/08/11/critique-de-jeu-star-wars-rebellion-tu-bluffes-leia/",
+          "note": "Critique : un gros, gros jeu"
+        }
       ],
       "awards": [],
       "links": [],
@@ -173,21 +478,62 @@
       "pitch": "L'Ombre contre les Peuples Libres, pendant que la Communauté avance vers la Montagne du Destin",
       "status": "ecarte",
       "price": 115,
-      "playersMin": 2, "playersMax": 4, "playersBest": "2",
-      "durMin": 150, "durMax": 180, "age": 14, "weight": 4.2,
-      "rules": 5, "strategy": 5, "luck": 3, "twoPlayer": 5,
-      "modes": ["compet", "equipe"],
-      "image": "", "photos": [],
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "2",
+      "durMin": 150,
+      "durMax": 180,
+      "age": 14,
+      "weight": 4.2,
+      "rules": 5,
+      "strategy": 5,
+      "luck": 3,
+      "twoPlayer": 5,
+      "modes": [
+        "compet",
+        "equipe"
+      ],
+      "image": "",
+      "photos": [],
       "description": "L'Ombre veut conquérir la Terre du Milieu par la force militaire. Les Peuples Libres résistent tout en faisant avancer la Communauté pour détruire l'Anneau. Le jeu tourne avec des dés d'action et 96 cartes événement.",
-      "pros": ["Très fidèle à Tolkien, épique", "Très bien équilibré malgré l'asymétrie", "Chaque partie différente grâce aux cartes"],
-      "cons": ["Le plus complexe de la liste", "Mise en place longue, puis environ 3 h de jeu", "Pensé pour 2"],
+      "pros": [
+        "Très fidèle à Tolkien, épique",
+        "Très bien équilibré malgré l'asymétrie",
+        "Chaque partie différente grâce aux cartes"
+      ],
+      "cons": [
+        "Le plus complexe de la liste",
+        "Mise en place longue, puis environ 3 h de jeu",
+        "Pensé pour 2"
+      ],
       "ratings": [
-        {"site": "BoardGameGeek", "score": 8.6, "max": 10, "url": "https://www.ludum.fr/adoptez-un-rescape/la-guerre-de-l-anneau-15824", "note": "Note BGG relevée par Ludum"},
-        {"site": "Ludum", "score": 8.4, "max": 10, "url": "https://www.ludum.fr/adoptez-un-rescape/la-guerre-de-l-anneau-15824"},
-        {"site": "Zatu (critique)", "score": 90, "max": 100, "url": "https://zatu.com/fr/blogs/reviews/war-of-the-ring-review"}
+        {
+          "site": "BoardGameGeek",
+          "score": 8.6,
+          "max": 10,
+          "url": "https://www.ludum.fr/adoptez-un-rescape/la-guerre-de-l-anneau-15824",
+          "note": "Note BGG relevée par Ludum"
+        },
+        {
+          "site": "Ludum",
+          "score": 8.4,
+          "max": 10,
+          "url": "https://www.ludum.fr/adoptez-un-rescape/la-guerre-de-l-anneau-15824"
+        },
+        {
+          "site": "Zatu (critique)",
+          "score": 90,
+          "max": 100,
+          "url": "https://zatu.com/fr/blogs/reviews/war-of-the-ring-review"
+        }
       ],
       "awards": [],
-      "links": [{"label": "Version courte : le jeu de cartes", "url": "https://www.play-in.com/fr/produit/466535/la-guerre-de-l-anneau-le-jeu-de-cartes"}],
+      "links": [
+        {
+          "label": "Version courte : le jeu de cartes",
+          "url": "https://www.play-in.com/fr/produit/466535/la-guerre-de-l-anneau-le-jeu-de-cartes"
+        }
+      ],
       "myNote": "Écarté : trop long et trop complexe.",
       "updatedAt": "2026-11-14"
     },
@@ -198,21 +544,66 @@
       "pitch": "Deckbuilding et placement d'ouvriers sur Arrakis",
       "status": "ecarte",
       "price": null,
-      "playersMin": 1, "playersMax": 6, "playersBest": "3–4 (6 en équipes)",
-      "durMin": 60, "durMax": 120, "age": 13, "weight": 3.42,
-      "rules": 3, "strategy": 4, "luck": 2, "twoPlayer": 2,
-      "modes": ["compet", "equipe"],
-      "image": "", "photos": [],
-      "description": "Suite indépendante de Dune Imperium. On construit son paquet de cartes, qui sert à envoyer ses agents sur le plateau pour gagner épice, influence et soutiens, et on se bat pour les conflits de chaque manche. Nouveautés : espions, vers des sables et un mode 6 joueurs en équipes.",
-      "pros": ["Tendu et très stratégique", "Meilleur équilibrage que le premier", "Un joueur l'a pratiqué sans souci avec une ado de 12 ans"],
-      "cons": ["À 2, il faut un adversaire automatique : moins sympa", "Modes solo et 2 joueurs jugés moyens"],
-      "ratings": [
-        {"site": "BoardGameGeek", "score": 8.76, "max": 10, "url": "https://meeplescorner.co.uk/?p=35028", "note": "Classé #143"},
-        {"site": "Esprit Jeu (clients)", "score": 4.7, "max": 5, "count": 14, "url": "https://www.espritjeu.com/dune-imperium-insurrection.html"},
-        {"site": "Gus&Co", "score": null, "max": 5, "url": "https://gusandco.net/2024/09/03/dune-imperium-insurrection-critique-jeu/", "note": "Critique détaillée (2024)"},
-        {"site": "Journal du Geek", "score": null, "max": 10, "url": "https://www.journaldugeek.com/dossier/test-du-jeu-de-plateau-dune-imperium-insurrection-le-meme-en-mieux/", "note": "« Le même en mieux », modes 2 joueurs moyens"}
+      "playersMin": 1,
+      "playersMax": 6,
+      "playersBest": "3–4 (6 en équipes)",
+      "durMin": 60,
+      "durMax": 120,
+      "age": 13,
+      "weight": 3.42,
+      "rules": 3,
+      "strategy": 4,
+      "luck": 2,
+      "twoPlayer": 2,
+      "modes": [
+        "compet",
+        "equipe"
       ],
-      "awards": ["Dune Imperium (1er) : As d'Or Expert 2022, Tric Trac d'Or 2021"],
+      "image": "",
+      "photos": [],
+      "description": "Suite indépendante de Dune Imperium. On construit son paquet de cartes, qui sert à envoyer ses agents sur le plateau pour gagner épice, influence et soutiens, et on se bat pour les conflits de chaque manche. Nouveautés : espions, vers des sables et un mode 6 joueurs en équipes.",
+      "pros": [
+        "Tendu et très stratégique",
+        "Meilleur équilibrage que le premier",
+        "Un joueur l'a pratiqué sans souci avec une ado de 12 ans"
+      ],
+      "cons": [
+        "À 2, il faut un adversaire automatique : moins sympa",
+        "Modes solo et 2 joueurs jugés moyens"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 8.76,
+          "max": 10,
+          "url": "https://meeplescorner.co.uk/?p=35028",
+          "note": "Classé #143"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4.7,
+          "max": 5,
+          "count": 14,
+          "url": "https://www.espritjeu.com/dune-imperium-insurrection.html"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": 5,
+          "url": "https://gusandco.net/2024/09/03/dune-imperium-insurrection-critique-jeu/",
+          "note": "Critique détaillée (2024)"
+        },
+        {
+          "site": "Journal du Geek",
+          "score": null,
+          "max": 10,
+          "url": "https://www.journaldugeek.com/dossier/test-du-jeu-de-plateau-dune-imperium-insurrection-le-meme-en-mieux/",
+          "note": "« Le même en mieux », modes 2 joueurs moyens"
+        }
+      ],
+      "awards": [
+        "Dune Imperium (1er) : As d'Or Expert 2022, Tric Trac d'Or 2021"
+      ],
       "links": [],
       "myNote": "Écarté : moins bon à 2.",
       "updatedAt": "2026-11-14"
@@ -222,22 +613,46 @@
       "name": "Small World",
       "bggName": "Small World",
       "pitch": "Conquête fun et légère avec des peuples aux pouvoirs loufoques",
-      "status": "ecarte",
+      "status": "possede",
       "price": null,
-      "playersMin": 2, "playersMax": 5,
-      "durMin": 45, "durMax": 80, "age": 10, "weight": 2.35,
-      "rules": 2, "strategy": 2, "luck": 4, "twoPlayer": 4,
-      "modes": ["compet"],
-      "image": "", "photos": [],
-      "description": "On choisit un peuple combiné à un pouvoir spécial, on conquiert des régions sur un plateau trop petit pour tout le monde, puis on fait décliner son peuple pour en prendre un nouveau. Deux plateaux recto-verso s'adaptent au nombre de joueurs.",
-      "pros": ["Simple et rapide", "S'adapte bien de 2 à 5 joueurs"],
-      "cons": ["Trop léger et fouillis pour nous", "Le hasard pèse plus que la stratégie"],
-      "ratings": [
-        {"site": "Zatu (boutique)", "score": null, "max": 10, "url": "https://zatu.com/fr/products/a-grade-small-world", "note": "45–60 min, 2 plateaux selon le nombre de joueurs"}
+      "playersMin": 2,
+      "playersMax": 5,
+      "durMin": 45,
+      "durMax": 80,
+      "age": 10,
+      "weight": 2.35,
+      "rules": 2,
+      "strategy": 2,
+      "luck": 4,
+      "twoPlayer": 4,
+      "modes": [
+        "compet"
       ],
-      "awards": ["Jeu de l'Année (France 2010)"],
+      "image": "",
+      "photos": [],
+      "description": "On choisit un peuple combiné à un pouvoir spécial, on conquiert des régions sur un plateau trop petit pour tout le monde, puis on fait décliner son peuple pour en prendre un nouveau. Deux plateaux recto-verso s'adaptent au nombre de joueurs.",
+      "pros": [
+        "Simple et rapide",
+        "S'adapte bien de 2 à 5 joueurs"
+      ],
+      "cons": [
+        "Trop léger et fouillis pour nous",
+        "Le hasard pèse plus que la stratégie"
+      ],
+      "ratings": [
+        {
+          "site": "Zatu (boutique)",
+          "score": null,
+          "max": 10,
+          "url": "https://zatu.com/fr/products/a-grade-small-world",
+          "note": "45–60 min, 2 plateaux selon le nombre de joueurs"
+        }
+      ],
+      "awards": [
+        "Jeu de l'Année (France 2010)"
+      ],
       "links": [],
-      "myNote": "Écarté : trop simple, trop de hasard.",
+      "myNote": "Déjà à moi : trop fouillis, trop de chance (+).",
       "updatedAt": "2026-11-14"
     }
   ]
