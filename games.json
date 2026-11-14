@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T15:20:00+01:00",
+  "updatedAt": "2026-11-14T15:45:00+01:00",
   "games": [
     {
       "id": "arcs",
@@ -653,6 +653,64 @@
       ],
       "links": [],
       "myNote": "Déjà à moi : trop fouillis, trop de chance (+).",
+      "updatedAt": "2026-11-14"
+    },
+    {
+      "id": "everdell",
+      "name": "Everdell",
+      "bggName": "Everdell",
+      "pitch": "Bâtir la plus belle cité d'animaux de la forêt avant l'hiver",
+      "status": "possede",
+      "price": null,
+      "playersMin": 1,
+      "playersMax": 4,
+      "durMin": 40,
+      "durMax": 80,
+      "age": 10,
+      "weight": 2.83,
+      "rules": 2,
+      "strategy": 3,
+      "luck": 2,
+      "twoPlayer": 4,
+      "modes": [
+        "compet"
+      ],
+      "image": "",
+      "photos": [],
+      "description": "Chaque joueur dirige une petite communauté d'animaux et construit sa cité en combinant pose d'ouvriers, collecte de ressources (bois, résine, galets, baies) et cartes de constructions et de créatures. La cité est limitée à 15 emplacements : tout l'enjeu est de trouver les bons enchaînements.",
+      "pros": [
+        "Règles simples, vraie profondeur",
+        "Magnifique",
+        "Tourne très bien à 2",
+        "Nombreuses extensions"
+      ],
+      "cons": [
+        "Peu de confrontation directe : c'est surtout de l'optimisation"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek",
+          "score": 7.99,
+          "max": 10,
+          "url": "https://boardgamefyi.com/fr/games/everdell/",
+          "note": "Classé #42"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4.9,
+          "max": 5,
+          "count": 8,
+          "url": "https://www.espritjeu.com/jeux-de-strategie/everdell.html"
+        }
+      ],
+      "awards": [],
+      "links": [
+        {
+          "label": "Guide des extensions (Play-In)",
+          "url": "https://www.play-in.com/article/690-quel_jeu_ou_extension_everdell_choisir_"
+        }
+      ],
+      "myNote": "Déjà à moi, très apprécié (+++).",
       "updatedAt": "2026-11-14"
     }
   ]
