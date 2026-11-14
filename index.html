@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ma liste de jeux de société</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --card:#fffdf8; --ink:#2a2420; --muted:#7a6f66; --line:#e6dccb;
+  --accent:#b5532b; --accent2:#2f6b5e; --chip:#efe6d6; --chipOn:#2a2420;
+  --fav:#c9871a; --study:#2f6b5e; --out:#9a8f86;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1b1815; --card:#25211d; --ink:#f1e9dc; --muted:#a99d90; --line:#3a332c;
+    --chip:#332d27; --chipOn:#f1e9dc; --accent:#e07a4c; --accent2:#5fb3a0; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,sans-serif}
+header{padding:20px 16px 8px;max-width:1100px;margin:auto}
+h1{font-family:Fraunces,serif;font-size:28px;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:13px}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.filters{max-width:1100px;margin:auto;padding:10px 16px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.f{display:flex;flex-direction:column;gap:3px;flex:0 0 auto}
+.f label{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+select,input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 9px}
+.search{min-width:150px}
+.toolbar{max-width:1100px;margin:auto;padding:10px 16px 0;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.count{color:var(--muted);font-size:13px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+button.ghost{background:transparent}
+button.danger{color:#b3261e;border-color:#e3b4ad}
+main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;cursor:pointer;display:flex;flex-direction:column;gap:10px;transition:transform .12s, box-shadow .12s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.card.out{opacity:.62}
+.ctop{display:flex;gap:12px;align-items:flex-start}
+.thumb{width:62px;height:62px;border-radius:10px;flex:0 0 auto;background:var(--chip);display:grid;place-items:center;font-family:Fraunces,serif;font-size:24px;color:var(--muted);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.cname{font-family:Fraunces,serif;font-size:19px;line-height:1.15;margin:0}
+.pitch{color:var(--muted);font-size:13px;margin:3px 0 0}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.fact{background:var(--chip);border-radius:999px;padding:3px 9px;font-size:12.5px}
+.meters{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:12.5px;align-items:center}
+.dots{display:flex;gap:3px}
+.dot{width:14px;height:6px;border-radius:3px;background:var(--line)}
+.dot.on{background:var(--accent2)}
+.dot.on.r{background:var(--accent)}
+.dot.on.l{background:#8a7d70}
+.cfoot{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.score{font-family:Fraunces,serif;font-size:22px}
+.score small{font-family:Inter;font-size:12px;color:var(--muted)}
+.badge{font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:999px;color:#fff}
+.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-ecarte{background:var(--out)} .b-achete{background:#5b4bb5}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
+/* sheet */
+.overlay{position:fixed;inset:0;background:rgba(20,15,10,.45);z-index:20;display:none}
+.overlay.on{display:block}
+.sheet{position:fixed;z-index:21;background:var(--card);inset:0;overflow:auto;display:none}
+@media (min-width:760px){.sheet{inset:4vh auto 4vh 50%;transform:translateX(-50%);width:min(760px,94vw);border-radius:18px}}
+.sheet.on{display:block}
+.shead{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;z-index:2}
+.shead h2{font-family:Fraunces,serif;margin:0;font-size:22px}
+.sbody{padding:16px}
+.sec{margin:0 0 20px}
+.sec h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px}
+.desc{white-space:pre-line}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.pc{grid-template-columns:1fr}}
+.pc ul{margin:0;padding-left:18px}
+.rt{width:100%;border-collapse:collapse;font-size:14px}
+.rt td{padding:7px 4px;border-bottom:1px solid var(--line);vertical-align:middle}
+.rt .bar10{height:7px;background:var(--line);border-radius:4px;overflow:hidden;min-width:70px}
+.rt .bar10 i{display:block;height:100%;background:var(--accent)}
+.rt a{color:var(--accent2)}
+.avg{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
+.avg b{font-family:Fraunces,serif;font-size:34px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
+.gal figure{margin:0;position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;background:var(--chip)}
+.gal img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.gal .x{position:absolute;top:4px;right:4px;padding:2px 7px;font-size:12px;background:rgba(0,0,0,.55);color:#fff;border:0}
+.note{font-size:12.5px;color:var(--muted)}
+.links a{display:inline-block;margin:0 10px 6px 0;color:var(--accent2)}
+.mine{background:var(--chip);border-radius:10px;padding:10px;white-space:pre-line}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:40;display:none;place-items:center}
+.lightbox.on{display:grid}
+.lightbox img{max-width:94vw;max-height:90vh;border-radius:8px}
+/* form */
+.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form .full{grid-column:1/-1}
+.form label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--muted)}
+.form textarea{min-height:70px}
+.hint{font-size:11.5px;color:var(--muted)}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:10px;z-index:50;display:none;font-size:14px}
+.confirm{display:none;gap:8px;align-items:center}
+.confirm.on{display:flex}
+.status{max-width:1100px;margin:6px auto 0;padding:0 16px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Ma liste de jeux</h1>
+  <div class="sub">Liste d'achats · notes regroupées de plusieurs sites · « Stratégie », « Hasard » et « À 2 » sont des estimations · <span id="upd"></span></div>
+</header>
+<div class="bar">
+  <div class="filters">
+    <div class="f"><label>Recherche</label><input id="q" class="search" placeholder="Nom…"></div>
+    <div class="f"><label>Joueurs</label><select id="fp"><option value="">Tous</option><option>1</option><option selected>2</option><option>3</option><option>4</option><option value="5">5+</option></select></div>
+    <div class="f"><label>Bon à 2</label><select id="f2"><option value="">Peu importe</option><option value="4">Oui</option></select></div>
+    <div class="f"><label>Durée max</label><select id="fd"><option value="">Toutes</option><option value="60">≤ 1 h</option><option value="90">≤ 1 h 30</option><option value="120">≤ 2 h</option><option value="180">≤ 3 h</option></select></div>
+    <div class="f"><label>Règles max</label><select id="fr"><option value="">Toutes</option><option value="2">≤ 2 · simples</option><option value="3">≤ 3 · moyennes</option><option value="4">≤ 4 · costaudes</option></select></div>
+    <div class="f"><label>Stratégie min</label><select id="fs"><option value="">Toutes</option><option value="3">≥ 3</option><option value="4">≥ 4</option><option value="5">5</option></select></div>
+    <div class="f"><label>Hasard max</label><select id="fl"><option value="">Tous</option><option value="2">≤ 2 · faible</option><option value="3">≤ 3</option></select></div>
+    <div class="f"><label>Mode</label><select id="fm"><option value="">Tous</option><option value="compet">Compétitif</option><option value="coop">Coopératif</option><option value="equipe">Par équipes</option></select></div>
+    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="ecarte">Écarté</option></select></div>
+    <div class="f"><label>Trier par</label><select id="so"><option value="score">Note moyenne</option><option value="name">Nom</option><option value="dur">Durée</option><option value="rules">Règles (simple → dur)</option><option value="price">Prix</option></select></div>
+  </div>
+</div>
+<div class="toolbar">
+  <span class="count" id="count"></span>
+  <span><button class="ghost" id="reset">Réinitialiser</button></span>
+</div>
+<div class="status" id="status">Chargement de la liste…</div>
+<main id="grid"></main>
+
+<div class="overlay" id="ov"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true"></div>
+<div class="lightbox" id="lb"><img alt=""></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "";
+const STATUS = {favori:"Favori", etudier:"À étudier", achete:"Acheté", ecarte:"Écarté"};
+const MODE = {compet:"Compétitif", coop:"Coopératif", equipe:"Par équipes"};
+let games=[], loaded=false, openId=null;
+
+function num(v){if(v===null||v===undefined||String(v).trim()==="")return null;const n=Number(v);return Number.isFinite(n)?n:null}
+function avgScore(g){
+  const r=(g.ratings||[]).map(x=>{const s=num(x.score),m=num(x.max)||10;return s==null?null:s/m*10}).filter(x=>x!=null);
+  return r.length? r.reduce((a,b)=>a+b,0)/r.length : null;
+}
+function fmtDur(g){const a=num(g.durMin),b=num(g.durMax);if(a==null&&b==null)return "?";const f=m=>m>=60?(m%60?`${Math.floor(m/60)}h${String(m%60).padStart(2,"0")}`:`${m/60}h`):`${m} min`;return a&&b&&a!==b?`${f(a)}–${f(b)}`:f(b||a)}
+function dots(n,cls=""){n=num(n)||0;let h='<span class="dots">';for(let i=1;i<=5;i++)h+=`<span class="dot ${i<=n?"on "+cls:""}"></span>`;return h+"</span>"}
+function imgSrc(p){const u=String(p||"");return /^https?:\/\//i.test(u)?u:(u?u.replace(/^\/+/,""):"")}
+function photosOf(g){return [g.image,...(g.photos||[])].filter(Boolean).map(imgSrc).filter((v,i,a)=>v&&a.indexOf(v)===i)}
+
+function filtered(){
+  const q=$("#q").value.trim().toLowerCase(), p=num($("#fp").value), two=num($("#f2").value), d=num($("#fd").value),
+        r=num($("#fr").value), s=num($("#fs").value), l=num($("#fl").value), m=$("#fm").value, st=$("#fst").value;
+  let out=games.filter(g=>{
+    if(q && !String(g.name||"").toLowerCase().includes(q)) return false;
+    if(p!=null){const mn=num(g.playersMin)??1, mx=num(g.playersMax)??99; if(p===5? mx<5 : (p<mn||p>mx)) return false;}
+    if(two!=null && (num(g.twoPlayer)??0)<two) return false;
+    if(d!=null && (num(g.durMax)??num(g.durMin)??999)>d) return false;
+    if(r!=null && (num(g.rules)??9)>r) return false;
+    if(s!=null && (num(g.strategy)??0)<s) return false;
+    if(l!=null && (num(g.luck)??9)>l) return false;
+    if(m && !(g.modes||[]).includes(m)) return false;
+    if(st && g.status!==st) return false;
+    return true;
+  });
+  const so=$("#so").value, rank={favori:0,etudier:1,achete:2,ecarte:3};
+  out.sort((a,b)=>{
+    if(so==="name") return String(a.name).localeCompare(String(b.name),"fr");
+    if(so==="dur") return (num(a.durMax)??999)-(num(b.durMax)??999);
+    if(so==="rules") return (num(a.rules)??9)-(num(b.rules)??9);
+    if(so==="price") return (num(a.price)??9999)-(num(b.price)??9999);
+    return (rank[a.status]??1)-(rank[b.status]??1) || (avgScore(b)??0)-(avgScore(a)??0);
+  });
+  return out;
+}
+
+function render(){
+  const list=filtered(), grid=$("#grid");
+  $("#count").textContent=`${list.length} jeu${list.length>1?"x":""} sur ${games.length}`;
+  if(!games.length){grid.innerHTML=loaded?`<div class="empty">La liste est vide pour l'instant.</div>`:"";return}
+  if(!list.length){grid.innerHTML=`<div class="empty">Aucun jeu ne correspond à ces critères.</div>`;return}
+  grid.innerHTML=list.map(g=>{
+    const a=avgScore(g), ph=photosOf(g)[0];
+    return `<article class="card ${g.status==="ecarte"?"out":""}" data-id="${esc(g.id)}" tabindex="0">
+      <div class="ctop">
+        <div class="thumb">${ph?`<img src="${esc(ph)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.textContent=this.dataset.l" data-l="${esc(String(g.name||"?").trim()[0]||"?")}">`:esc(String(g.name||"?").trim()[0]||"?")}</div>
+        <div style="flex:1;min-width:0">
+          <h2 class="cname">${esc(g.name)}</h2>
+          <p class="pitch">${esc(g.pitch)}</p>
+        </div>
+        ${g.status?`<span class="badge b-${esc(g.status)}">${esc(STATUS[g.status]||g.status)}</span>`:""}
+      </div>
+      <div class="facts">
+        <span class="fact">👥 ${esc(g.playersMin??"?")}–${esc(g.playersMax??"?")}</span>
+        <span class="fact">⏱ ${esc(fmtDur(g))}</span>
+        ${g.age?`<span class="fact">${esc(g.age)} ans +</span>`:""}
+        ${(g.modes||[]).map(m=>`<span class="fact">${esc(MODE[m]||m)}</span>`).join("")}
+      </div>
+      <div class="meters">
+        <span>Règles</span>${dots(g.rules,"r")}
+        <span>Stratégie</span>${dots(g.strategy)}
+        <span>Hasard</span>${dots(g.luck,"l")}
+        <span>À 2</span>${dots(g.twoPlayer)}
+      </div>
+      <div class="cfoot">
+        <span class="score">${a!=null?a.toFixed(1).replace(".",","):"–"}<small> /10 · ${(g.ratings||[]).filter(x=>num(x.score)!=null).length} sites</small></span>
+        <span class="note">${num(g.price)!=null?"≈ "+esc(g.price)+" €":""}</span>
+      </div>
+    </article>`}).join("");
+}
+
+function openSheet(id){openId=id;drawSheet();$("#ov").classList.add("on");$("#sheet").classList.add("on");document.body.style.overflow="hidden";if(location.hash!=="#"+id)history.replaceState(null,"","#"+id)}
+function closeSheet(){openId=null;$("#ov").classList.remove("on");$("#sheet").classList.remove("on");document.body.style.overflow="";history.replaceState(null,"",location.pathname+location.search)}
+
+function drawSheet(){
+  const sh=$("#sheet"), g=games.find(x=>x.id===openId);
+  if(!g){closeSheet();return}
+  const a=avgScore(g), rated=g.ratings||[], pics=photosOf(g);
+  sh.innerHTML=`
+  <div class="shead"><h2>${esc(g.name)}</h2><button class="ghost" id="close" aria-label="Fermer">✕</button></div>
+  <div class="sbody">
+    ${pics.length?`<div class="sec gal">${pics.map(p=>`<figure><img src="${esc(p)}" data-full="${esc(p)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.style.display='none'"></figure>`).join("")}</div>`:""}
+    <div class="sec facts">
+      ${g.status?`<span class="badge b-${esc(g.status)}">${esc(STATUS[g.status]||g.status)}</span>`:""}
+      <span class="fact">👥 ${esc(g.playersMin??"?")}–${esc(g.playersMax??"?")} joueurs${g.playersBest?` · idéal ${esc(g.playersBest)}`:""}</span>
+      <span class="fact">⏱ ${esc(fmtDur(g))}</span>
+      ${g.age?`<span class="fact">${esc(g.age)} ans +</span>`:""}
+      ${num(g.weight)!=null?`<span class="fact">Complexité BGG ${esc(g.weight)}/5</span>`:""}
+      ${num(g.price)!=null?`<span class="fact">≈ ${esc(g.price)} €</span>`:""}
+      ${(g.modes||[]).map(m=>`<span class="fact">${esc(MODE[m]||m)}</span>`).join("")}
+    </div>
+    <div class="sec meters" style="max-width:320px">
+      <span>Règles</span>${dots(g.rules,"r")}<span>Stratégie</span>${dots(g.strategy)}<span>Hasard</span>${dots(g.luck,"l")}<span>À 2 joueurs</span>${dots(g.twoPlayer)}
+    </div>
+    ${g.description?`<div class="sec"><h3>Le jeu en bref</h3><div class="desc">${esc(g.description)}</div></div>`:""}
+    ${(g.pros?.length||g.cons?.length)?`<div class="sec pc">
+      <div><h3>Points forts</h3><ul>${(g.pros||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+      <div><h3>Points faibles</h3><ul>${(g.cons||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>`:""}
+    <div class="sec"><h3>Notes des sites</h3>
+      ${a!=null?`<div class="avg"><b>${a.toFixed(1).replace(".",",")}</b><span class="note">/10, moyenne ramenée sur 10</span></div>`:""}
+      ${rated.length?`<table class="rt">${rated.map(r=>{const s=num(r.score),m=num(r.max)||10,p=s==null?0:Math.max(0,Math.min(100,s/m*100));const u=safeUrl(r.url);
+        return `<tr><td>${u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(r.site)}</a>`:esc(r.site)}${r.note?`<div class="note">${esc(r.note)}</div>`:""}</td>
+        <td style="white-space:nowrap">${s==null?'<span class="note">pas de note</span>':`<b>${esc(String(s).replace(".",","))}</b>/${esc(m)}`}${r.count?`<div class="note">${esc(r.count)} avis</div>`:""}</td>
+        <td style="width:30%">${s==null?"":`<div class="bar10"><i style="width:${p}%"></i></div>`}</td></tr>`}).join("")}</table>`:'<p class="note">Aucune note pour l\'instant.</p>'}
+    </div>
+    ${(g.awards||[]).length?`<div class="sec"><h3>Récompenses</h3><ul style="margin:0;padding-left:18px">${g.awards.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
+    <div class="sec links"><h3>Liens</h3>${(g.links||[]).map(l=>{const u=safeUrl(l.url);return u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(l.label||u)} ↗</a>`:""}).join("")}
+      <a href="https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=${encodeURIComponent(g.bggName||g.name||"")}" target="_blank" rel="noopener">Photos et fiche BoardGameGeek ↗</a></div>
+    ${g.myNote?`<div class="sec"><h3>Mes notes</h3><div class="mine">${esc(g.myNote)}</div></div>`:""}
+    ${g.updatedAt?`<p class="note">Fiche mise à jour le ${esc(new Date(g.updatedAt).toLocaleDateString("fr-FR"))}</p>`:""}
+  </div>`;
+  $("#close").onclick=closeSheet;
+  sh.querySelectorAll(".gal img").forEach(i=>i.onclick=()=>{$("#lb img").src=i.dataset.full;$("#lb").classList.add("on")});
+}
+
+["q","fp","f2","fd","fr","fs","fl","fm","fst","so"].forEach(id=>$("#"+id).addEventListener(id==="q"?"input":"change",render));
+$("#reset").onclick=()=>{["q","fp","f2","fd","fr","fs","fl","fm","fst"].forEach(id=>$("#"+id).value="");$("#so").value="score";render()};
+$("#grid").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)});
+$("#grid").addEventListener("keydown",e=>{if(e.key==="Enter"){const c=e.target.closest(".card");if(c)openSheet(c.dataset.id)}});
+$("#ov").onclick=closeSheet;
+$("#lb").onclick=()=>$("#lb").classList.remove("on");
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if($("#lb").classList.contains("on"))$("#lb").classList.remove("on");else if(openId)closeSheet()}});
+window.addEventListener("hashchange",()=>{const h=decodeURIComponent(location.hash.slice(1));if(h&&games.some(g=>g.id===h))openSheet(h);else if(!h&&openId)closeSheet()});
+
+(async function init(){
+  try{
+    const res=await fetch("games.json",{cache:"no-cache"});
+    if(!res.ok) throw new Error(res.status);
+    const data=await res.json();
+    games=(data.games||data).filter(g=>g&&g.id);
+    loaded=true; $("#status").textContent="";
+    if(data.updatedAt) $("#upd").textContent="liste mise à jour le "+new Date(data.updatedAt).toLocaleDateString("fr-FR");
+    render();
+    const h=decodeURIComponent(location.hash.slice(1)); if(h&&games.some(g=>g.id===h)) openSheet(h);
+  }catch(e){$("#status").textContent="Impossible de charger la liste (games.json).";loaded=true;render()}
+})();
+</script>
+</body>
+</html>
