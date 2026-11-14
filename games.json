@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T17:00:00+01:00",
+  "updatedAt": "2026-11-14",
   "games": [
     {
       "id": "arcs",
@@ -79,6 +79,14 @@
           "score": null,
           "max": 5,
           "note": "Pas de critique trouvée"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 4.5,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/arcs-review/",
+          "note": "Plus accessible que Root, demande quelques parties"
         }
       ],
       "awards": [
@@ -169,6 +177,14 @@
           "max": 5,
           "url": "https://gusandco.net/tag/root/",
           "note": "Critique très positive en 2018 (sans note chiffrée)"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 5,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/root-review/",
+          "note": "Jeu de l'année BGQ 2018"
         }
       ],
       "awards": [
@@ -397,17 +413,19 @@
           "note": "Note à relever"
         },
         {
-          "site": "Tric Trac",
-          "score": null,
-          "max": 10,
-          "note": "Pas encore trouvée"
-        },
-        {
           "site": "Board Game Arena",
           "score": null,
           "max": 10,
           "url": "https://fr.boardgamearena.com/news?id=608",
           "note": "« Chef-d'œuvre intemporel »"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.93,
+          "max": 10,
+          "count": 520,
+          "url": "https://us.trictrac.net/boardgame/tigre-et-euphrate-0",
+          "note": "Moyenne des membres (éd. 2015)"
         }
       ],
       "awards": [
@@ -811,6 +829,22 @@
           "max": 5,
           "url": "https://gusandco.net/2021/04/12/les-ruines-perdues-de-narak-critique-jeu/",
           "note": "Coup de cœur de la rédaction : « Grandiose ! »"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.24,
+          "max": 10,
+          "count": 83,
+          "url": "https://www.trictrac.net/jeu-de-societe/les-ruines-perdues-de-narak-1/avis/positive?order_type=best&order_dir=DESC&page=2",
+          "note": "Moyenne des membres (VF Iello)"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 4.5,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/the-lost-ruins-of-arnak-review/",
+          "note": "Très bien à 2-3, faible interaction"
         }
       ]
     },
@@ -874,6 +908,30 @@
           "max": 5,
           "url": "https://gusandco.net/2014/08/10/critique-de-jeu-concordia-vous-preferez-quelle-cuisson-pour-votre-cerveau/",
           "note": "Critique mitigée : efficace et tendu, mais froid"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.76,
+          "max": 10,
+          "count": 135,
+          "url": "https://us.trictrac.net/boardgame/concordia",
+          "note": "Moyenne des membres"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 5,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/concordia-review/",
+          "note": "Règles simples, très peu de chance, forte maîtrise (2025)"
+        },
+        {
+          "site": "Cliquenabend (DE)",
+          "score": 8.5,
+          "max": 10,
+          "count": 2,
+          "url": "https://www.cliquenabend.de/spiele/298100-Concordia.html",
+          "note": "Testeurs : 9 et 8/10 · nommé Kennerspiel des Jahres 2014"
         }
       ]
     },
@@ -942,6 +1000,22 @@
           "max": 5,
           "count": 33,
           "url": "https://www.espritjeu.com/res-arcana.html"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.78,
+          "max": 10,
+          "count": 235,
+          "url": "https://us.trictrac.net/boardgame/res-arcana",
+          "note": "Moyenne des membres"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 5,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/res-arcana-review/",
+          "note": "Simple à apprendre, se révèle au fil des parties"
         }
       ]
     },
@@ -1004,6 +1078,22 @@
           "max": 10,
           "url": "https://www.tabletopgaming.co.uk/?p=2716",
           "note": "Bon jeu, mais peu d'interaction"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 7.96,
+          "max": 10,
+          "count": 27,
+          "url": "https://us.trictrac.net/boardgame/terraforming-mars-expedition-ares",
+          "note": "Moyenne des membres"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 3,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/terraforming-mars-ares-expedition-review/",
+          "note": "Jugé très solitaire, sans draft"
         }
       ]
     },
@@ -1059,6 +1149,30 @@
           "score": 9,
           "max": 10,
           "url": "https://www.tomsguide.fr/test-pandemic-legacy-lepidemie-nest-pas-un-jeu-vous-navez-droit-qua-une-partie/"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 9.08,
+          "max": 10,
+          "count": 163,
+          "url": "https://us.trictrac.net/boardgame/pandemic-legacy-saison-1",
+          "note": "Moyenne des membres"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 5,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/pandemic-legacy-review/",
+          "note": ""
+        },
+        {
+          "site": "Cliquenabend (DE)",
+          "score": 10,
+          "max": 10,
+          "count": 1,
+          "url": "https://www.cliquenabend.de/spiele/559300-Pandemic-Legacy-Pandemie-Legacy.html",
+          "note": "« Topspiel »"
         }
       ]
     },
@@ -1124,6 +1238,22 @@
           "score": 4.9,
           "max": 5,
           "url": "https://www.play-in.com/fr/produit/390426/gloomhaven-les-machoires-du-lion"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.5,
+          "max": 10,
+          "count": 14,
+          "url": "https://uk.trictrac.net/boardgame/gloomhaven-les-machoires-du-lion",
+          "note": "Moyenne des membres (VF)"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 4,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/gloomhaven-jaws-of-the-lion-review/",
+          "note": "Porte d'entrée idéale vers Gloomhaven"
         }
       ]
     },
@@ -1236,6 +1366,22 @@
           "max": 10,
           "url": "https://t3.com/reviews/unmatched-battle-of-legends-review",
           "note": "Excellent à 2, mais se répète avec les extensions"
+        },
+        {
+          "site": "Board Game Quest (US)",
+          "score": 4,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.boardgamequest.com/unmatched-review/",
+          "note": "Facile à apprendre, rapide"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.0,
+          "max": 10,
+          "count": 7,
+          "url": "https://us.trictrac.net/boardgame/unmatched-battle-of-legends",
+          "note": "Peu d'avis (VF Iello)"
         }
       ]
     },
@@ -1282,6 +1428,14 @@
           "max": 10,
           "url": "https://www.wellplayed.ch/collections/all/products/brass-birmingham-engl",
           "note": "Classé #1"
+        },
+        {
+          "site": "Tric Trac (FR)",
+          "score": 8.99,
+          "max": 10,
+          "count": 37,
+          "url": "https://uk.trictrac.net/boardgame/brass-birmingham",
+          "note": "Moyenne des membres (VO) ; VF 8,75/10 sur 39 avis"
         }
       ]
     }
