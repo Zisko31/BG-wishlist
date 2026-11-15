@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T15:18:05.455Z",
+  "updatedAt": "2026-11-15T15:18:56.668Z",
   "games": [
     {
       "id": "arcs",
@@ -1108,11 +1108,11 @@
       "awards": [],
       "myNote": "",
       "price": 51.95,
-      "status": "etudier",
+      "status": "reserve",
       "modes": [
         "compet"
       ],
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "id": "concordia",
       "name": "Concordia",
       "bggName": "Concordia",
@@ -1144,6 +1144,7 @@
           "site": "BoardGameGeek",
           "score": 8.1,
           "max": 10,
+          "count": null,
           "url": "https://meeplelikeus.co.uk/concordia/",
           "note": "Classé autour du #25"
         },
@@ -1151,6 +1152,7 @@
           "site": "Gus&Co",
           "score": null,
           "max": 5,
+          "count": null,
           "url": "https://gusandco.net/2014/08/10/critique-de-jeu-concordia-vous-preferez-quelle-cuisson-pour-votre-cerveau/",
           "note": "Critique mitigée : efficace et tendu, mais froid"
         },
