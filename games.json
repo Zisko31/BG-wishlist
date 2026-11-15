@@ -3111,6 +3111,113 @@
       ],
       "image": "https://www.ludum.fr/16415-large_default/five-tribes.jpg",
       "description": "De Bruno Cathala, chez Days of Wonder (Heat, Small World). On prend tous les pions d'une tuile et on les sème un par un sur les tuiles voisines ; la couleur du dernier pion déclenche l'action (assassins, marchands, bâtisseurs, vizirs, sages). On enchérit pour l'ordre du tour, on invoque des Djinns aux pouvoirs spéciaux et on contrôle des territoires. À 2, chacun joue deux tours par manche."
+    },
+    {
+      "id": "cyclades",
+      "name": "Cyclades",
+      "bggName": "Cyclades",
+      "pitch": "Grèce antique : enchères pour la faveur des dieux, conquête d'îles et monstres mythologiques",
+      "status": "possede",
+      "price": 64.9,
+      "priceSrc": "Philibert (Legendary Edition)",
+      "playersMin": 2,
+      "playersMax": 5,
+      "playersBest": "4-5",
+      "durMin": 60,
+      "durMax": 120,
+      "age": 13,
+      "weight": 2.8,
+      "rules": 2,
+      "strategy": 3,
+      "luck": 3,
+      "twoPlayer": 2,
+      "modes": [
+        "compet"
+      ],
+      "image": "https://www.ludum.fr/50523-large_default/cyclades-legendary-edition.jpg",
+      "photos": [
+        "https://www.ludum.fr/23121-large_default/cyclades-legendary-edition.jpg",
+        "https://i0.wp.com/gusandco.net/wp-content/uploads/2025/07/20250707-3107.jpg?resize=1024%2C576&ssl=1"
+      ],
+      "description": "Chaque joueur dirige une cité grecque. À chaque tour, on fait des enchères pour obtenir la faveur d'un dieu (Arès pour l'armée, Poséidon pour la flotte, Athéna pour les philosophes…), puis on construit et on conquiert des îles. On peut aussi acheter des créatures mythologiques qui chamboulent la partie.\nLe premier à posséder 2 métropoles gagne (3 dans la Legendary Edition, qui intègre les extensions, un plateau modulable et un mode 2 joueurs revu). Photos : Legendary Edition.",
+      "pros": [
+        "Thème Grèce antique, dieux et monstres superbe",
+        "Enchères tendues et très interactives",
+        "Combats : le dé compte peu face à une grosse armée"
+      ],
+      "cons": [
+        "Un peu fouillis : les créatures provoquent des retournements",
+        "Tourne moins bien à 2 qu'à 4-5",
+        "Le joueur en retard peut avoir du mal à revenir"
+      ],
+      "ratings": [
+        {
+          "site": "Tric Trac",
+          "score": 8.53,
+          "max": 10,
+          "count": 485,
+          "url": "https://uk.trictrac.net/boardgame/cyclades",
+          "note": "Édition 2009 (la tienne)"
+        },
+        {
+          "site": "BoardGameGeek (via Ludum)",
+          "score": 8.1,
+          "max": 10,
+          "url": "https://www.ludum.fr/conquete-affrontement/cyclades-legendary-edition-7067",
+          "note": "Legendary Edition"
+        },
+        {
+          "site": "MyLudo (via Ludum)",
+          "score": 7.8,
+          "max": 10,
+          "url": "https://www.ludum.fr/conquete-affrontement/cyclades-legendary-edition-7067",
+          "note": "Legendary Edition"
+        },
+        {
+          "site": "Ludum (clients)",
+          "score": 4,
+          "max": 5,
+          "count": 1,
+          "url": "https://www.ludum.fr/conquete-affrontement/cyclades-legendary-edition-7067"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.5,
+          "max": 5,
+          "url": "https://www.philibertnet.com/fr/studio-h/141453-cyclades-3616450013698.html",
+          "note": "Legendary Edition"
+        },
+        {
+          "site": "Gus&Co",
+          "score": 4.5,
+          "max": 5,
+          "url": "https://gusandco.net/2025/07/15/cyclades-legendary-edition-critique-2025/",
+          "note": "Legendary : nouveau mode duel « plus technique » ; le hasard des dés et des créatures ne plaira pas à tous"
+        },
+        {
+          "site": "Vin d'jeu",
+          "score": null,
+          "max": null,
+          "url": "https://www.vindjeu.eu/prd/2023/06/29/cyclades-legendary-edition-est-lance-sur-ks/",
+          "note": "Legendary : « un must à ne pas rater » pour qui aime le contrôle de territoire"
+        },
+        {
+          "site": "Tric Trac (forum)",
+          "score": null,
+          "max": null,
+          "url": "https://forum.trictrac.net/t/kickstarter-cyclades/187568?page=3",
+          "note": "Avis partagés : certains le jugent chaotique, « catégorie Small World »"
+        }
+      ],
+      "awards": [],
+      "links": [
+        {
+          "label": "Critique Gus&Co (Legendary Edition)",
+          "url": "https://gusandco.net/2025/07/15/cyclades-legendary-edition-critique-2025/"
+        }
+      ],
+      "myNote": "Déjà à moi (version normale, pas Legendary). Coche beaucoup de cases, thème Grèce antique / dieux / monstres topissime, mais un poil fouillis et tourne pas top à 2.",
+      "updatedAt": "2026-11-15"
     }
   ]
 }

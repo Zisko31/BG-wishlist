@@ -64,7 +64,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 .score{font-family:Fraunces,serif;font-size:22px}
 .score small{font-family:Inter;font-size:12px;color:var(--muted)}
 .badge{font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:999px;color:#fff}
-.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-reserve{background:var(--out)} .b-achete{background:#5b4bb5} .b-possede{background:#3d6fb5} .b-propose{background:#b5743d}
+.b-favori{background:var(--fav)} .b-etudier{background:var(--study)} .b-reserve{background:var(--out)} .b-possede{background:#3d6fb5}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
 /* sheet */
 .overlay{position:fixed;inset:0;background:rgba(20,15,10,.45);z-index:20;display:none}
@@ -138,7 +138,7 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
     <div class="f"><label>Stratégie min</label><select id="fs"><option value="">Toutes</option><option value="3">≥ 3</option><option value="4">≥ 4</option><option value="5">5</option></select></div>
     <div class="f"><label>Hasard max</label><select id="fl"><option value="">Tous</option><option value="2">≤ 2 · faible</option><option value="3">≤ 3</option></select></div>
     <div class="f"><label>Mode</label><select id="fm"><option value="">Tous</option><option value="compet">Compétitif</option><option value="coop">Coopératif</option><option value="equipe">Par équipes</option></select></div>
-    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="favori">Favori</option><option value="etudier">À étudier</option><option value="achete">Acheté</option><option value="possede">Déjà à moi</option><option value="reserve">En réserve</option><option value="propose">Suggestion</option></select></div>
+    <div class="f"><label>Statut</label><select id="fst"><option value="">Tous</option><option value="!possede">Tous sauf déjà à moi</option><option value="favori">Top</option><option value="etudier">À étudier</option><option value="reserve">En réserve</option><option value="possede">Déjà à moi</option></select></div>
     <div class="f"><label>Prix</label><select id="fpr"><option value="">Tous</option><option value="lt50">&lt; 50 €</option><option value="50-90">50 à 90 €</option><option value="gt90">&gt; 90 €</option></select></div>
     <div class="f"><label>Trier par</label><select id="so"><option value="score">Note moyenne</option><option value="name">Nom</option><option value="dur">Durée</option><option value="rules">Règles (simple → dur)</option><option value="price">Prix</option></select></div>
   </div>
@@ -159,7 +159,8 @@ main{max-width:1100px;margin:auto;padding:12px 16px 60px;display:grid;grid-templ
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(String(u||"")) ? String(u) : "";
-const STATUS = {favori:"Favori", etudier:"À étudier", reserve:"En réserve", achete:"Acheté", possede:"Déjà à moi", propose:"Suggestion"};
+const STATUS = {favori:"Top", etudier:"À étudier", reserve:"En réserve", possede:"Déjà à moi"};
+const ALIAS = {achete:"possede", propose:"etudier"};
 const MODE = {compet:"Compétitif", coop:"Coopératif", equipe:"Par équipes"};
 const REPO = "Zisko31/BG-wishlist", BRANCH = "main", API = "https://api.github.com/repos/" + REPO + "/contents/";
 let games=[], meta={}, loaded=false, openId=null, editing=false, saving=false;
@@ -196,7 +197,7 @@ async function writeRemote(mutate,message){
     data.updatedAt=new Date().toISOString();
     try{
       await gh("games.json",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify({message,branch:BRANCH,sha,content:utf8ToB64(JSON.stringify(data,null,2)+"\n")})});
-      meta=data;games=(data.games||[]).filter(g=>g&&g.id);return;
+      meta=data;games=(data.games||[]).filter(g=>g&&g.id);games.forEach(g=>{if(ALIAS[g.status])g.status=ALIAS[g.status]});return;
     }catch(e){if(e.status!==409||attempt)throw e}
   }
 }
@@ -222,11 +223,11 @@ function filtered(){
     if(s!=null && (num(g.strategy)??0)<s) return false;
     if(l!=null && (num(g.luck)??9)>l) return false;
     if(m && !(g.modes||[]).includes(m)) return false;
-    if(st && g.status!==st) return false;
+    if(st==="!possede"){if(g.status==="possede")return false}else if(st && g.status!==st) return false;
     if(pr){const v=num(g.price); if(v==null) return false; if(pr==="lt50"&&v>=50) return false; if(pr==="50-90"&&(v<50||v>90)) return false; if(pr==="gt90"&&v<=90) return false;}
     return true;
   });
-  const so=$("#so").value, rank={favori:0,etudier:1,propose:2,reserve:3,achete:4,possede:5};
+  const so=$("#so").value, rank={favori:0,etudier:1,reserve:2,possede:3};
   out.sort((a,b)=>{
     if(so==="name") return String(a.name).localeCompare(String(b.name),"fr");
     if(so==="dur") return (num(a.durMax)??999)-(num(b.durMax)??999);
@@ -350,7 +351,7 @@ function bindToken(){
   if($("#tokform")) $("#tokform").onsubmit=async e=>{
     e.preventDefault();const t=$("#tok").value.trim();if(!t)return;
     setToken(t);
-    try{const {data}=await readRemote();meta=data;games=(data.games||[]).filter(g=>g&&g.id);toast("Édition activée ✔");closeSheet();render()}
+    try{const {data}=await readRemote();meta=data;games=(data.games||[]).filter(g=>g&&g.id);games.forEach(g=>{if(ALIAS[g.status])g.status=ALIAS[g.status]});toast("Édition activée ✔");closeSheet();render()}
     catch(err){setToken("");toast(err.status===401||err.status===403||err.status===404?"Clé refusée : vérifiez le dépôt et la permission Contents":"Connexion à GitHub impossible")}
   };
 }
@@ -460,7 +461,7 @@ window.addEventListener("hashchange",()=>{const h=decodeURIComponent(location.ha
     let data;
     if(canEdit()){try{data=(await readRemote()).data}catch(e){}}
     if(!data){const res=await fetch("games.json",{cache:"no-cache"});if(!res.ok)throw new Error(res.status);data=await res.json()}
-    meta=data;games=(data.games||data).filter(g=>g&&g.id);
+    meta=data;games=(data.games||data).filter(g=>g&&g.id);games.forEach(g=>{if(ALIAS[g.status])g.status=ALIAS[g.status]});
     loaded=true;$("#status").textContent="";
     if(data.updatedAt) $("#upd").textContent="liste mise à jour le "+new Date(data.updatedAt).toLocaleDateString("fr-FR");
     render();
