@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T15:27:15.340Z",
+  "updatedAt": "2026-11-15T15:28:29.864Z",
   "games": [
     {
       "id": "arcs",
@@ -2310,7 +2310,7 @@
       "name": "Le Hobbit : Histoire d'un Aller et Retour",
       "bggName": "The Hobbit: There and Back Again",
       "pitch": "Roll & write de Knizia en 8 chapitres qui suivent le roman",
-      "status": "reserve",
+      "status": "etudier",
       "price": 26.95,
       "playersMin": 1,
       "playersMax": 4,
