@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T15:19:07.785Z",
+  "updatedAt": "2026-11-15T15:27:15.340Z",
   "games": [
     {
       "id": "arcs",
@@ -1301,11 +1301,11 @@
       "awards": [],
       "myNote": "",
       "price": 35.95,
-      "status": "etudier",
+      "status": "reserve",
       "modes": [
         "compet"
       ],
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "id": "terraforming-mars-ares",
       "name": "Terraforming Mars : Expédition Arès",
       "bggName": "Terraforming Mars Ares Expedition",
@@ -1335,6 +1335,7 @@
           "site": "BoardGameGeek",
           "score": 7.6,
           "max": 10,
+          "count": null,
           "url": "https://boardgamematcher.com/fr/jeu/terraforming-mars-ares-expedition",
           "note": "Classé #186"
         },
@@ -1342,12 +1343,15 @@
           "site": "AV Club",
           "score": 9,
           "max": 10,
-          "url": "https://www.avclub.com/terrafarming-mars-ares-expedition-review"
+          "count": null,
+          "url": "https://www.avclub.com/terrafarming-mars-ares-expedition-review",
+          "note": ""
         },
         {
           "site": "Tabletop Gaming",
           "score": null,
           "max": 10,
+          "count": null,
           "url": "https://www.tabletopgaming.co.uk/?p=2716",
           "note": "Bon jeu, mais peu d'interaction"
         },
