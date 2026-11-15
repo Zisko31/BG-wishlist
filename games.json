@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T15:17:44.016Z",
+  "updatedAt": "2026-11-15T15:18:05.455Z",
   "games": [
     {
       "id": "arcs",
@@ -2039,7 +2039,7 @@
         "Gus&Co Awards 2025 – meilleur jeu à deux"
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Règles accessibles dès 8 ans, parties de 30 min",
         "Très bon en duel",
@@ -2109,7 +2109,7 @@
       "name": "Star Wars : La Bataille de Hoth",
       "bggName": "Star Wars: Battle of Hoth",
       "pitch": "Mémoire 44 version Star Wars : bataille de figurines rapide sur la planète de glace",
-      "status": "etudier",
+      "status": "possede",
       "price": 45.95,
       "playersMin": 2,
       "playersMax": 4,
