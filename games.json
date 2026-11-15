@@ -2730,7 +2730,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Négociation et bluff très forts",
         "Combats sans dés"
@@ -2748,10 +2748,35 @@
           "count": 1,
           "url": "https://zatu.com/fr/blogs/reviews/a-game-of-thrones-bg-review",
           "note": ""
+        },
+        {
+          "site": "Tric Trac",
+          "score": 8.14,
+          "max": 10,
+          "count": 309,
+          "url": "https://us.trictrac.net/boardgame/le-trone-de-fer-le-jeu-de-plateau",
+          "note": "Meilleur à 6 ; parties de 3 à 5 h"
+        },
+        {
+          "site": "Vin d'jeu",
+          "score": 8.67,
+          "max": 10,
+          "count": 3,
+          "url": "https://www.vindjeu.eu/prd/2019/03/31/le-trone-de-fer-le-jeu-de-plateau-seconde-edition/",
+          "note": "Excellent jeu de conquête, mais long (4 à 5 h)"
+        },
+        {
+          "site": "Esprit Jeu (clients)",
+          "score": 4.7,
+          "max": 5,
+          "count": 11,
+          "url": "https://www.espritjeu.com/jeu-de-societe/le-trone-de-fer-jeu-de-plateau-2nd-edition.html",
+          "note": "Définitivement épuisé chez Esprit Jeu"
         }
       ],
       "photos": [
-        "https://boardgaming.com/wp-content/uploads/2003/01/A-Game-of-Thrones-The-Board-Game-game-in-play-580x290.jpg"
+        "https://www.vindjeu.eu/prd/wp-content/uploads/2019/03/2036-Trone-de-Fer-2-1024x683.jpg",
+        "https://www.vindjeu.eu/prd/wp-content/uploads/2019/03/2036-Trone-de-Fer-4-1024x683.jpg"
       ],
       "status": "possede",
       "id": "trone-de-fer",
@@ -2774,7 +2799,7 @@
       "modes": [
         "compet"
       ],
-      "image": "https://boardgaming.com/wp-content/uploads/2003/01/A-Game-of-Thrones-The-Board-Game-Second-Edition-200x200.jpg",
+      "image": "https://www.vindjeu.eu/prd/wp-content/uploads/2019/03/2036-Trone-de-Fer-1.jpg",
       "description": "Chaque joueur dirige une grande Maison de Westeros. On pose des ordres face cachée (proche de Diplomacy), on négocie, on enchérit sur les pistes d'influence, puis on résout les combats avec des cartes Maison, sans dés. Victoire à 7 châteaux ou au plus grand nombre au 10e tour."
     },
     {
@@ -3217,6 +3242,110 @@
         }
       ],
       "myNote": "Déjà à moi (version normale, pas Legendary). Coche beaucoup de cases, thème Grèce antique / dieux / monstres topissime, mais un poil fouillis et tourne pas top à 2.",
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "oltree",
+      "name": "Oltréé",
+      "bggName": "Oltréé",
+      "pitch": "Coopératif narratif : des patrouilleurs protègent les terres d'un empire déchu, chronique après chronique",
+      "status": "reserve",
+      "price": 54.9,
+      "priceSrc": "Philibert",
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersBest": "2-3",
+      "durMin": 60,
+      "durMax": 120,
+      "age": 10,
+      "weight": 2.3,
+      "rules": 2,
+      "strategy": 3,
+      "luck": 4,
+      "twoPlayer": 4,
+      "modes": [
+        "coop"
+      ],
+      "image": "https://www.ludum.fr/44921-large_default/oltree.jpg",
+      "photos": [
+        "https://www.vindjeu.eu/prd/wp-content/uploads/2014/10/DSC_1090-1024x683.jpg",
+        "https://www.ludum.fr/44920-large_default/oltree.jpg"
+      ],
+      "description": "Les joueurs incarnent des patrouilleurs basés dans un fortin. Chaque partie suit une « chronique », une histoire complète avec ses missions, ses problèmes à régler, ses événements et ses péripéties. À son tour, on fait 2 actions (explorer, construire, combattre, aider les villages…) et on lance un dé qui fait avancer la chronique et les menaces.\nIl faut se coordonner pour réussir les missions avant la fin de la chronique. Plusieurs chroniques et 3 niveaux de difficulté dans la boîte.",
+      "pros": [
+        "Vraies histoires (chroniques) et thème médiéval très présent",
+        "Très bon à 2, parties d'environ 1 h",
+        "Règles fluides une fois lancées, magnifiques illustrations de Vincent Dutrait"
+      ],
+      "cons": [
+        "Beaucoup de hasard (dés), même si on ne perd jamais sur un seul lancer",
+        "Coopératif : ni deck building ni enchères",
+        "Livret de règles touffu et quelques coquilles"
+      ],
+      "ratings": [
+        {
+          "site": "Gus&Co",
+          "score": 5,
+          "max": 5,
+          "url": "https://gusandco.net/2021/12/12/oltree-jeu-plateau-critique/",
+          "note": "« Passe très bien à 2 » ; beaucoup de hasard ; plutôt 12 ans que 10"
+        },
+        {
+          "site": "Vin d'jeu",
+          "score": 9,
+          "max": 10,
+          "count": 1,
+          "url": "https://www.vindjeu.eu/prd/2022/01/27/oltree/",
+          "note": "Accessible et fluide, enfants/ados se régaleront"
+        },
+        {
+          "site": "Tric Trac",
+          "score": 8.57,
+          "max": 10,
+          "count": 28,
+          "url": "https://www.trictrac.net/jeu-de-societe/oltree-1/avis/complete"
+        },
+        {
+          "site": "BoardGameGeek (via Ludum)",
+          "score": 7.5,
+          "max": 10,
+          "url": "https://www.ludum.fr/jeux-de-societe-strategie/oltree-1409"
+        },
+        {
+          "site": "MyLudo (via Ludum)",
+          "score": 8,
+          "max": 10,
+          "url": "https://www.ludum.fr/jeux-de-societe-strategie/oltree-1409"
+        },
+        {
+          "site": "Ludum (clients)",
+          "score": 5,
+          "max": 5,
+          "count": 4,
+          "url": "https://www.ludum.fr/jeux-de-societe-strategie/oltree-1409"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.5,
+          "max": 5,
+          "url": "https://www.philibertnet.com/fr/studio-h/93229-oltree-3616450005181.html"
+        },
+        {
+          "site": "Tric Trac (forum)",
+          "score": null,
+          "max": null,
+          "url": "https://cafr.trictrac.net/forum/sujet/oltree-le-jdp",
+          "note": "Jamais plus d'1 h à 2 sur les chroniques longues ; « enfants de 13 et 10 ans ont beaucoup aimé »"
+        }
+      ],
+      "awards": [],
+      "links": [
+        {
+          "label": "Critique Gus&Co",
+          "url": "https://gusandco.net/2021/12/12/oltree-jeu-plateau-critique/"
+        }
+      ],
+      "myNote": "Choisi plutôt que The Witcher : L'Ancien Monde (plus court, mieux à 2, histoire).",
       "updatedAt": "2026-11-15"
     }
   ]
