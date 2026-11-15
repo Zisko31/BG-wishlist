@@ -1934,7 +1934,7 @@
       ],
       "awards": [],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Fonctionne pleinement à 2",
         "Chaque chapitre apporte une mécanique nouvelle",
@@ -2005,7 +2005,7 @@
       "name": "Heredity – Le Livre de Swan",
       "bggName": "Heredity",
       "pitch": "Aventure narrative coopérative : une famille survit dans un monde post-apocalyptique",
-      "status": "etudier",
+      "status": "favori",
       "price": 44.95,
       "playersMin": 1,
       "playersMax": 4,
@@ -2863,7 +2863,7 @@
         "https://www.ludum.fr/46117-large_default/le-destin-de-la-communaute-le-seigneur-des-anneaux.jpg",
         "https://www.ludum.fr/46112-large_default/le-destin-de-la-communaute-le-seigneur-des-anneaux.jpg"
       ],
-      "status": "propose",
+      "status": "etudier",
       "id": "destin-communaute",
       "name": "Le Seigneur des Anneaux : Le Destin de la Communauté",
       "bggName": "The Lord of the Rings: Fate of the Fellowship",
@@ -2975,7 +2975,7 @@
         "https://www.boardgamequest.com/wp-content/uploads/2019/11/Marvel-Champions-Iron-Man.jpg",
         "https://www.boardgamequest.com/wp-content/uploads/2019/11/Marvel-Champions-Ultron.jpg"
       ],
-      "status": "propose",
+      "status": "favori",
       "id": "marvel-champions",
       "name": "Marvel Champions : Le Jeu de Cartes",
       "bggName": "Marvel Champions: The Card Game",
@@ -3001,104 +3001,12 @@
     },
     {
       "links": [],
-      "awards": [],
-      "myNote": "",
-      "updatedAt": "2026-11-15",
-      "pros": [
-        "Règles très simples pour un jeu de stratégie",
-        "Fonctionne bien à 2 sans adaptation (BGQ)",
-        "Peu de hasard"
-      ],
-      "cons": [
-        "VF annoncée pour février 2027 (VO anglaise 63,95 € chez Philibert)",
-        "Aventuriers représentés par des cubes : thème plus léger que la licence"
-      ],
-      "ratings": [
-        {
-          "site": "BoardGameGeek",
-          "score": 7.7,
-          "max": 10,
-          "count": null,
-          "url": "https://www.ludum.fr/jeux-de-strategie-inities/les-seigneurs-d-eauprofonde-jeu-de-plateau-13992",
-          "note": "Affiché sur Ludum ; complexité 2,4/5"
-        },
-        {
-          "site": "MyLudo",
-          "score": 7.4,
-          "max": 10,
-          "count": null,
-          "url": "https://www.ludum.fr/jeux-de-strategie-inities/les-seigneurs-d-eauprofonde-jeu-de-plateau-13992",
-          "note": "Affiché sur Ludum"
-        },
-        {
-          "site": "Board Game Quest (US)",
-          "score": 4.5,
-          "max": 5,
-          "count": 1,
-          "url": "https://www.boardgamequest.com/lords-of-waterdeep-board-game-review/",
-          "note": "« Très accessible », tourne bien à 2"
-        },
-        {
-          "site": "Tric Trac",
-          "score": 8.53,
-          "max": 10,
-          "count": 72,
-          "url": "https://us.trictrac.net/boardgame/lords-of-waterdeep",
-          "note": "Pose d'ouvriers simple et fluide, ~1 h à 2 ; extension Skullport souvent jugée indispensable"
-        },
-        {
-          "site": "Vin d'jeu",
-          "score": 8.22,
-          "max": 10,
-          "count": 4,
-          "url": "https://www.vindjeu.eu/prd/2012/05/29/lords-of-waterdeep/",
-          "note": "Peu original, un peu de hasard dans les quêtes, idéal pour débuter"
-        },
-        {
-          "site": "Tric Trac (forum)",
-          "score": null,
-          "max": null,
-          "count": null,
-          "url": "https://cafr.trictrac.net/forum/sujet/lords-of-waterdeep",
-          "note": "Un parent y joue avec ses enfants de 11 et 13 ans ; thème D&D peu ressenti"
-        }
-      ],
-      "photos": [
-        "https://www.ludum.fr/45650-large_default/les-seigneurs-d-eauprofonde-jeu-de-plateau.jpg",
-        "https://www.ludum.fr/45651-large_default/les-seigneurs-d-eauprofonde-jeu-de-plateau.jpg"
-      ],
-      "status": "propose",
-      "id": "seigneurs-eauprofonde",
-      "name": "Les Seigneurs d'Eauprofonde",
-      "bggName": "Lords of Waterdeep",
-      "pitch": "Donjons & Dragons : envoyer des aventuriers en quête pour contrôler la Cité des Splendeurs",
-      "price": 44.9,
-      "priceSrc": "Ludum (VF en précommande)",
-      "playersMin": 2,
-      "playersMax": 5,
-      "playersBest": "2–4",
-      "durMin": 60,
-      "durMax": 120,
-      "age": 12,
-      "weight": 2.4,
-      "rules": 2,
-      "strategy": 4,
-      "luck": 2,
-      "twoPlayer": 4,
-      "modes": [
-        "compet"
-      ],
-      "image": "https://www.ludum.fr/45649-large_default/les-seigneurs-d-eauprofonde-jeu-de-plateau.jpg",
-      "description": "Placement d'ouvriers dans l'univers des Royaumes Oubliés (D&D). On place ses agents pour recruter guerriers, magiciens, voleurs et clercs, puis on les dépense pour accomplir des quêtes. Chacun a un Seigneur secret qui rapporte des points bonus, et les cartes Intrigue permettent de gêner les autres. 8 manches."
-    },
-    {
-      "links": [],
       "awards": [
         "As d'Or 2015",
         "Tric Trac d'Or 2014",
         "Dice Tower – meilleur jeu de stratégie 2014"
       ],
-      "myNote": "",
+      "myNote": "Déjà dans la ludothèque. Je le trouve un peu trop abstrait : la carte ne représente pas des territoires, juste des cases.",
       "updatedAt": "2026-11-15",
       "pros": [
         "Presque aucun hasard une fois le plateau posé",
@@ -3180,7 +3088,7 @@
         "https://www.ludum.fr/381-large_default/five-tribes.jpg",
         "https://www.ludum.fr/382-large_default/five-tribes.jpg"
       ],
-      "status": "propose",
+      "status": "possede",
       "id": "five-tribes",
       "name": "Five Tribes",
       "bggName": "Five Tribes: The Djinns of Naqala",
@@ -3203,115 +3111,6 @@
       ],
       "image": "https://www.ludum.fr/16415-large_default/five-tribes.jpg",
       "description": "De Bruno Cathala, chez Days of Wonder (Heat, Small World). On prend tous les pions d'une tuile et on les sème un par un sur les tuiles voisines ; la couleur du dernier pion déclenche l'action (assassins, marchands, bâtisseurs, vizirs, sages). On enchérit pour l'ordre du tour, on invoque des Djinns aux pouvoirs spéciaux et on contrôle des territoires. À 2, chacun joue deux tours par manche."
-    },
-    {
-      "links": [],
-      "awards": [],
-      "myNote": "",
-      "updatedAt": "2026-11-15",
-      "pros": [
-        "Franchise Star Wars très fidèle à la série",
-        "Parties courtes (30–60 min)",
-        "Peu de règles, le livre de missions sert d'aide de jeu",
-        "Deux extensions (saisons 2 et 3)"
-      ],
-      "cons": [
-        "Campagne de base jugée courte",
-        "Spoile la saison 1 si on ne l'a pas vue"
-      ],
-      "ratings": [
-        {
-          "site": "BoardGameGeek",
-          "score": 7.5,
-          "max": 10,
-          "count": null,
-          "url": "https://www.ludum.fr/jeux-de-strategie-inities/the-mandalorian-adventures-7138",
-          "note": "Affiché sur Ludum ; complexité 2,2/5"
-        },
-        {
-          "site": "MyLudo",
-          "score": 7.4,
-          "max": 10,
-          "count": null,
-          "url": "https://www.ludum.fr/jeux-de-strategie-inities/the-mandalorian-adventures-7138",
-          "note": "Affiché sur Ludum"
-        },
-        {
-          "site": "Ludum (clients)",
-          "score": 4,
-          "max": 5,
-          "count": 1,
-          "url": "https://www.ludum.fr/jeux-de-strategie-inities/the-mandalorian-adventures-7138",
-          "note": ""
-        },
-        {
-          "site": "Philibert (internautes)",
-          "score": 4.4,
-          "max": 5,
-          "count": null,
-          "url": "https://www.philibertnet.com/fr/blog/articles/10-jeux-pour-jouer-dans-lunivers-de-star-wars",
-          "note": ""
-        },
-        {
-          "site": "Board Game Quest (US)",
-          "score": 4,
-          "max": 5,
-          "count": 1,
-          "url": "https://www.boardgamequest.com/the-mandalorian-adventures-review/",
-          "note": "« Très thématique », campagne un peu courte"
-        },
-        {
-          "site": "Vin d'jeu",
-          "score": 8.5,
-          "max": 10,
-          "count": 1,
-          "url": "https://www.vindjeu.eu/prd/2025/02/02/star-wars-the-mandalorian-adventures/",
-          "note": "Dynamique, ~1 h ; un peu répétitif, surtout pour fans"
-        },
-        {
-          "site": "Tric Trac (forum)",
-          "score": null,
-          "max": null,
-          "count": null,
-          "url": "https://forum.trictrac.net/t/the-mandalorian-corey-konieczka/219456?page=2",
-          "note": "Trop simple pour des adultes, rejouabilité faible (4 cartes) ; conseillé aux familles 8+"
-        },
-        {
-          "site": "Gus&Co",
-          "score": null,
-          "max": null,
-          "count": null,
-          "url": "https://gusandco.net/2024/04/26/the-mandalorian-adventures-jeu-societe-cooperatif-corey-konieczka/",
-          "note": "Présentation (pas un test noté)"
-        }
-      ],
-      "photos": [
-        "https://www.ludum.fr/23232-large_default/the-mandalorian-adventures.jpg",
-        "https://www.ludum.fr/23233-large_default/the-mandalorian-adventures.jpg"
-      ],
-      "status": "propose",
-      "id": "mandalorian-adventures",
-      "name": "The Mandalorian : Adventures",
-      "bggName": "The Mandalorian: Adventures",
-      "pitch": "Star Wars : rejouer la saison 1 de la série en coopératif, mission par mission",
-      "price": 44.95,
-      "priceSrc": "Philibert",
-      "playersMin": 1,
-      "playersMax": 4,
-      "playersBest": "2",
-      "durMin": 30,
-      "durMax": 60,
-      "age": 12,
-      "weight": 2.2,
-      "rules": 2,
-      "strategy": 3,
-      "luck": 3,
-      "twoPlayer": 4,
-      "modes": [
-        "coop"
-      ],
-      "image": "https://www.ludum.fr/26444-large_default/the-mandalorian-adventures.jpg",
-      "description": "Par Corey Konieczka (auteur de Star Wars Rébellion). Chaque joueur prend un personnage de la série (Mando, Greef Karga, IG-11…) avec son paquet de compétences. Le plateau est un livre de missions qui suit les épisodes. On choisit ses actions sur des emplacements : dépasser un seuil déclenche des événements, ce qui permet de doser le risque. Des enveloppes scellées débloquent du contenu."
     }
   ]
 }
