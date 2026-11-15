@@ -59,7 +59,9 @@
           "site": "Play-In (clients)",
           "score": 5,
           "max": 5,
-          "url": "https://www.play-in.com/fr/produit/571249/arcs"
+          "url": "https://www.play-in.com/fr/produit/571249/arcs",
+          "count": 5,
+          "note": ""
         },
         {
           "site": "GamesRadar+",
@@ -111,7 +113,7 @@
         }
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "priceSrc": "Philibert"
     },
     {
@@ -177,7 +179,9 @@
           "site": "Play-In (clients)",
           "score": 4.8,
           "max": 5,
-          "url": "https://www.play-in.com/produit/249561-root"
+          "url": "https://www.play-in.com/fr/produit/249561/root",
+          "count": 25,
+          "note": ""
         },
         {
           "site": "Gus&Co",
@@ -215,7 +219,7 @@
         }
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "priceSrc": "Philibert"
     },
     {
@@ -1540,7 +1544,7 @@
           "site": "Play-In (clients)",
           "score": 4.9,
           "max": 5,
-          "count": null,
+          "count": 21,
           "url": "https://www.play-in.com/fr/produit/390426/gloomhaven-les-machoires-du-lion",
           "note": ""
         },
@@ -1985,7 +1989,7 @@
           "score": 4.8,
           "max": 5,
           "count": null,
-          "url": "https://www.play-in.com/fr/recherche?s=Heredity%20%E2%80%93%20Le%20Livre%20de%20Swan",
+          "url": "https://www.play-in.com/fr/produit/504133/heredity",
           "note": ""
         },
         {
@@ -2093,8 +2097,8 @@
           "site": "Play-In (clients)",
           "score": 4,
           "max": 5,
-          "count": null,
-          "url": "https://www.play-in.com/fr/recherche?s=Star%20Wars%20%3A%20La%20Bataille%20de%20Hoth",
+          "count": 1,
+          "url": "https://www.play-in.com/fr/produit/602218/star-wars-la-bataille-de-hoth",
           "note": ""
         },
         {
@@ -2234,7 +2238,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Petit prix, 30 min",
         "Facile dès 10 ans",
@@ -2279,10 +2283,10 @@
         },
         {
           "site": "Play-In (clients)",
-          "score": 3,
+          "score": 4,
           "max": 5,
-          "count": null,
-          "url": "https://www.play-in.com/fr/recherche?s=Le%20Hobbit%20%3A%20Histoire%20d%27un%20Aller%20et%20Retour",
+          "count": 2,
+          "url": "https://www.play-in.com/fr/produit/610594/le-hobbit-histoire-d-un-aller-et-retour",
           "note": ""
         },
         {
@@ -2482,7 +2486,7 @@
         "Nommé Kennerspiel des Jahres 2020"
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Négociation et narration très immersives",
         "Nommé au Kennerspiel des Jahres 2020"
@@ -2521,8 +2525,8 @@
           "site": "Play-In (clients)",
           "score": 4.8,
           "max": 5,
-          "count": null,
-          "url": "https://www.play-in.com/fr/recherche?s=Le%20Dilemme%20du%20Roi",
+          "count": 9,
+          "url": "https://www.play-in.com/fr/produit/296650/le-dilemme-du-roi",
           "note": ""
         },
         {
