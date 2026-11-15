@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T15:18:56.668Z",
+  "updatedAt": "2026-11-15T15:19:07.785Z",
   "games": [
     {
       "id": "arcs",
@@ -436,7 +436,7 @@
       "name": "Tigre & Euphrate",
       "bggName": "Tigris & Euphrates",
       "pitch": "Classique de Knizia : bâtir des royaumes et se disputer leurs chefs",
-      "status": "etudier",
+      "status": "reserve",
       "price": null,
       "playersMin": 2,
       "playersMax": 4,
@@ -472,12 +472,15 @@
           "site": "BoardGameGeek",
           "score": null,
           "max": 10,
+          "count": null,
+          "url": "",
           "note": "Note à relever"
         },
         {
           "site": "Board Game Arena",
           "score": null,
           "max": 10,
+          "count": null,
           "url": "https://fr.boardgamearena.com/news?id=608",
           "note": "« Chef-d'œuvre intemporel »"
         },
@@ -528,7 +531,7 @@
         }
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14"
+      "updatedAt": "2026-11-15"
     },
     {
       "id": "star-wars-rebellion",
