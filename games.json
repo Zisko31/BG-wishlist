@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14",
+  "updatedAt": "2026-11-15T15:17:44.016Z",
   "games": [
     {
       "id": "arcs",
@@ -1483,11 +1483,11 @@
       "awards": [],
       "myNote": "",
       "price": 63.9,
-      "status": "etudier",
+      "status": "favori",
       "modes": [
         "coop"
       ],
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "id": "gloomhaven-machoires-du-lion",
       "name": "Gloomhaven : Les Mâchoires du Lion",
       "bggName": "Gloomhaven Jaws of the Lion",
@@ -1528,13 +1528,16 @@
           "score": 5,
           "max": 5,
           "count": 5,
-          "url": "https://www.espritjeu.com/jeux-de-strategie/gloomhaven-les-machoires-du-lion.html"
+          "url": "https://www.espritjeu.com/jeux-de-strategie/gloomhaven-les-machoires-du-lion.html",
+          "note": ""
         },
         {
           "site": "Play-In (clients)",
           "score": 4.9,
           "max": 5,
-          "url": "https://www.play-in.com/fr/produit/390426/gloomhaven-les-machoires-du-lion"
+          "count": null,
+          "url": "https://www.play-in.com/fr/produit/390426/gloomhaven-les-machoires-du-lion",
+          "note": ""
         },
         {
           "site": "Tric Trac (FR)",
@@ -1727,7 +1730,7 @@
         },
         {
           "site": "Tric Trac (FR)",
-          "score": 8.0,
+          "score": 8,
           "max": 10,
           "count": 7,
           "url": "https://us.trictrac.net/boardgame/unmatched-battle-of-legends",
@@ -2179,7 +2182,7 @@
         },
         {
           "site": "Tric Trac (FR)",
-          "score": 8.0,
+          "score": 8,
           "max": 10,
           "count": 5,
           "url": "https://www.trictrac.net/recherche?search=Sleeping%20Gods",
@@ -3013,7 +3016,7 @@
       "durMin": 45,
       "durMax": 90,
       "age": 12,
-      "weight": 3.0,
+      "weight": 3,
       "rules": 3,
       "strategy": 4,
       "luck": 3,
@@ -3118,7 +3121,7 @@
       "name": "Five Tribes",
       "bggName": "Five Tribes: The Djinns of Naqala",
       "pitch": "Mille et une nuits : déplacer les tribus façon awalé pour prendre le sultanat",
-      "price": 55.0,
+      "price": 55,
       "priceSrc": "Philibert",
       "playersMin": 2,
       "playersMax": 4,
