@@ -2781,7 +2781,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Thème Seigneur des Anneaux très présent (Gandalf contre le Balrog, Éowyn contre les Nazgûl…)",
         "Système Pandemic : planification à 2 cerveaux",
@@ -2833,6 +2833,30 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/the-lord-of-the-rings-fate-of-the-fellowship-review/",
           "note": "Thème superbe, système d'actions parfois frustrant"
+        },
+        {
+          "site": "Gus&Co",
+          "score": 4,
+          "max": 5,
+          "count": null,
+          "url": "https://gusandco.net/2025/08/20/seigneur-anneaux-destin-communaute-avis-leacock/",
+          "note": "Immersion totale, mais hasard des dés parfois brutal ; 2-3 h"
+        },
+        {
+          "site": "Vin d'jeu",
+          "score": 8.5,
+          "max": 10,
+          "count": 1,
+          "url": "https://www.vindjeu.eu/prd/2025/10/25/le-seigneur-des-anneaux-le-destin-de-la-communaute/",
+          "note": "Facile à apprendre et à sortir, contrairement à La Guerre de l'Anneau"
+        },
+        {
+          "site": "Tric Trac (forum)",
+          "score": null,
+          "max": null,
+          "count": null,
+          "url": "https://forum.trictrac.net/t/le-seigneur-des-anneaux-le-destin-de-la-communaute/223604",
+          "note": "Parties ~2 h à 2 ; certains le trouvent trop simple à 2 → jouer 3 paires de persos"
         }
       ],
       "photos": [
@@ -2869,7 +2893,7 @@
         "Board Game Quest – meilleur jeu coopératif 2019"
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Franchise Marvel, chaque héros joue vraiment différemment",
         "Excellent à 2",
@@ -2921,6 +2945,30 @@
           "count": null,
           "url": "https://www.boardgamequest.com/quick-hits-marvel-champions-the-card-game-review/",
           "note": "Meilleur jeu coopératif BGQ 2019, n°1 de leur top Marvel"
+        },
+        {
+          "site": "Tric Trac",
+          "score": 8.45,
+          "max": 10,
+          "count": 62,
+          "url": "https://us.trictrac.net/boardgame/marvel-champions-le-jeu-de-cartes",
+          "note": "Un avis : joué avec son fils de 11 ans « qui a adoré »"
+        },
+        {
+          "site": "Meeple Mountain",
+          "score": null,
+          "max": null,
+          "count": null,
+          "url": "https://www.meeplemountain.com/reviews/marvel-champions-the-card-game/",
+          "note": "Très positif ; un des jeux de cartes évolutifs les plus accessibles, la boîte de base suffit"
+        },
+        {
+          "site": "Tric Trac (forum)",
+          "score": null,
+          "max": null,
+          "count": null,
+          "url": "https://forum.trictrac.net/t/les-sessions-du-club-marvel-champions-jce/218426",
+          "note": "Moins « pompe à fric » que SdA/Arkham, mais tirage parfois punitif"
         }
       ],
       "photos": [
@@ -2955,7 +3003,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Règles très simples pour un jeu de stratégie",
         "Fonctionne bien à 2 sans adaptation (BGQ)",
@@ -2989,6 +3037,30 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/lords-of-waterdeep-board-game-review/",
           "note": "« Très accessible », tourne bien à 2"
+        },
+        {
+          "site": "Tric Trac",
+          "score": 8.53,
+          "max": 10,
+          "count": 72,
+          "url": "https://us.trictrac.net/boardgame/lords-of-waterdeep",
+          "note": "Pose d'ouvriers simple et fluide, ~1 h à 2 ; extension Skullport souvent jugée indispensable"
+        },
+        {
+          "site": "Vin d'jeu",
+          "score": 8.22,
+          "max": 10,
+          "count": 4,
+          "url": "https://www.vindjeu.eu/prd/2012/05/29/lords-of-waterdeep/",
+          "note": "Peu original, un peu de hasard dans les quêtes, idéal pour débuter"
+        },
+        {
+          "site": "Tric Trac (forum)",
+          "score": null,
+          "max": null,
+          "count": null,
+          "url": "https://cafr.trictrac.net/forum/sujet/lords-of-waterdeep",
+          "note": "Un parent y joue avec ses enfants de 11 et 13 ans ; thème D&D peu ressenti"
         }
       ],
       "photos": [
@@ -3027,7 +3099,7 @@
         "Dice Tower – meilleur jeu de stratégie 2014"
       ],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Presque aucun hasard une fois le plateau posé",
         "Règles courtes, énorme profondeur",
@@ -3078,6 +3150,30 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/five-tribes-review/",
           "note": "Co-jeu de l'année BGQ 2014"
+        },
+        {
+          "site": "Tric Trac",
+          "score": 8.8,
+          "max": 10,
+          "count": 470,
+          "url": "https://us.trictrac.net/boardgame/five-tribes",
+          "note": "Test Tric Trac : « simple à prendre en main, difficile à maîtriser », très bon à 2"
+        },
+        {
+          "site": "Vin d'jeu",
+          "score": 7.5,
+          "max": 10,
+          "count": 1,
+          "url": "https://www.vindjeu.eu/2014/10/14/five-tribes/",
+          "note": "Plus tactique/opportuniste que stratégique, thème plaqué ; meilleur à 2 qu'à 4"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": null,
+          "count": null,
+          "url": "https://gusandco.net/2014/09/15/critique-de-jeu-five-tribes-les-chameaux-ont-deux-bosses-bruno/",
+          "note": "« Meilleur jeu de l'année », peu de hasard une fois la mise en place faite ; risque d'analysis-paralysis"
         }
       ],
       "photos": [
@@ -3112,7 +3208,7 @@
       "links": [],
       "awards": [],
       "myNote": "",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-15",
       "pros": [
         "Franchise Star Wars très fidèle à la série",
         "Parties courtes (30–60 min)",
@@ -3163,6 +3259,30 @@
           "count": 1,
           "url": "https://www.boardgamequest.com/the-mandalorian-adventures-review/",
           "note": "« Très thématique », campagne un peu courte"
+        },
+        {
+          "site": "Vin d'jeu",
+          "score": 8.5,
+          "max": 10,
+          "count": 1,
+          "url": "https://www.vindjeu.eu/prd/2025/02/02/star-wars-the-mandalorian-adventures/",
+          "note": "Dynamique, ~1 h ; un peu répétitif, surtout pour fans"
+        },
+        {
+          "site": "Tric Trac (forum)",
+          "score": null,
+          "max": null,
+          "count": null,
+          "url": "https://forum.trictrac.net/t/the-mandalorian-corey-konieczka/219456?page=2",
+          "note": "Trop simple pour des adultes, rejouabilité faible (4 cartes) ; conseillé aux familles 8+"
+        },
+        {
+          "site": "Gus&Co",
+          "score": null,
+          "max": null,
+          "count": null,
+          "url": "https://gusandco.net/2024/04/26/the-mandalorian-adventures-jeu-societe-cooperatif-corey-konieczka/",
+          "note": "Présentation (pas un test noté)"
         }
       ],
       "photos": [
