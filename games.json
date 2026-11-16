@@ -436,108 +436,6 @@
       "priceSrc": "Philibert"
     },
     {
-      "id": "tigre-euphrate",
-      "name": "Tigre & Euphrate",
-      "bggName": "Tigris & Euphrates",
-      "pitch": "Classique de Knizia : bâtir des royaumes et se disputer leurs chefs",
-      "status": "reserve",
-      "price": null,
-      "playersMin": 2,
-      "playersMax": 4,
-      "durMin": 60,
-      "durMax": 120,
-      "age": 12,
-      "weight": null,
-      "rules": 3,
-      "strategy": 5,
-      "luck": 2,
-      "twoPlayer": 4,
-      "modes": [
-        "compet"
-      ],
-      "image": "https://www.boardgamebliss.com/cdn/shop/products/Tigris_Euphrates.jpg?v=1578609017&width=900",
-      "photos": [
-        "https://www.vindjeu.eu/prd/wp-content/uploads/2017/06/1536-Tigris-2.jpg",
-        "https://www.vindjeu.eu/prd/wp-content/uploads/2017/06/1536-Tigris-6-e1496401997825.jpg"
-      ],
-      "description": "On pose des tuiles (fermes, temples, marchés, villes) pour bâtir des royaumes en Mésopotamie. Chaque joueur a quatre chefs (roi, prêtre, marchand, fermier). Quand deux chefs de même couleur se retrouvent dans le même royaume, ils s'affrontent.\nLe gagnant est celui qui a le plus de points dans sa MOINS bonne couleur : il faut rester équilibré.",
-      "pros": [
-        "Très stratégique, peu de hasard",
-        "Beaucoup de conflit pour un jeu « allemand »",
-        "Mise en place rapide (5 min)",
-        "Jouable en ligne sur Board Game Arena"
-      ],
-      "cons": [
-        "Thème assez abstrait",
-        "Visuellement moins spectaculaire"
-      ],
-      "ratings": [
-        {
-          "site": "BoardGameGeek",
-          "score": null,
-          "max": 10,
-          "count": null,
-          "url": "",
-          "note": "Note à relever"
-        },
-        {
-          "site": "Board Game Arena",
-          "score": null,
-          "max": 10,
-          "count": null,
-          "url": "https://fr.boardgamearena.com/news?id=608",
-          "note": "« Chef-d'œuvre intemporel »"
-        },
-        {
-          "site": "Tric Trac (FR)",
-          "score": 8.93,
-          "max": 10,
-          "count": 520,
-          "url": "https://www.trictrac.net/recherche?search=Tigre%20%26%20Euphrate",
-          "note": "Moyenne des membres (éd. 2015)"
-        },
-        {
-          "site": "Vin d'jeu (BE)",
-          "score": 8.75,
-          "max": 10,
-          "count": 2,
-          "url": "https://www.vindjeu.eu/?s=Tigre%20%26%20Euphrate",
-          "note": "Reproche : hasard de la pioche des tuiles"
-        },
-        {
-          "site": "Meeple Mountain (US)",
-          "score": null,
-          "max": 5,
-          "count": 1,
-          "url": "https://www.meeplemountain.com/?s=Tigris%20%26%20Euphrates",
-          "note": "Verdict « Perfect »"
-        },
-        {
-          "site": "Philibert (internautes)",
-          "score": 4.9,
-          "max": 5,
-          "count": null,
-          "url": "https://www.philibertnet.com/en/public-list/5969-top-10-placements-de-tuiles",
-          "note": "Prix non trouvé"
-        }
-      ],
-      "awards": [
-        "Deutscher Spielepreis 1998 (1er prix)"
-      ],
-      "links": [
-        {
-          "label": "Wikipédia (EN)",
-          "url": "https://en.wikipedia.org/wiki/Tigris_and_Euphrates"
-        },
-        {
-          "label": "Essayer sur Board Game Arena",
-          "url": "https://fr.boardgamearena.com/news?id=608"
-        }
-      ],
-      "myNote": "",
-      "updatedAt": "2026-11-15"
-    },
-    {
       "id": "star-wars-rebellion",
       "name": "Star Wars Rébellion",
       "bggName": "Star Wars Rebellion",
@@ -1113,13 +1011,13 @@
         }
       ],
       "awards": [],
-      "myNote": "",
+      "myNote": "Mis de côté : thème plaqué et matériel terne, risque que mon fils n'accroche pas. Pour une partie entre adultes.",
       "price": 51.95,
       "status": "reserve",
       "modes": [
         "compet"
       ],
-      "updatedAt": "2026-11-15",
+      "updatedAt": "2026-11-16",
       "id": "concordia",
       "name": "Concordia",
       "bggName": "Concordia",
@@ -3363,6 +3261,105 @@
       ],
       "myNote": "Choisi plutôt que The Witcher : L'Ancien Monde (plus court, mieux à 2, histoire).",
       "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "sda-jce",
+      "name": "Le Seigneur des Anneaux : le jeu de cartes (JCE, édition révisée)",
+      "bggName": "The Lord of the Rings: The Card Game – Revised Core Set",
+      "pitch": "Coopératif à cartes en Terre du Milieu : on construit son paquet de héros et on enchaîne les quêtes des livres",
+      "status": "reserve",
+      "price": 54.9,
+      "priceSrc": "Ludum",
+      "playersMin": 1,
+      "playersMax": 4,
+      "playersBest": "1-2",
+      "durMin": 60,
+      "durMax": 120,
+      "age": 14,
+      "weight": 3.6,
+      "rules": 4,
+      "strategy": 4,
+      "luck": 3,
+      "twoPlayer": 4,
+      "modes": [
+        "coop"
+      ],
+      "image": "https://www.ludum.fr/6551-large_default/le-seigneur-des-anneaux-jce-edition-revisee.jpg",
+      "photos": [
+        "https://www.ludum.fr/6549-large_default/le-seigneur-des-anneaux-jce-edition-revisee.jpg",
+        "https://www.ludum.fr/6550-large_default/le-seigneur-des-anneaux-jce-edition-revisee.jpg"
+      ],
+      "description": "Chaque joueur dirige 3 héros de la Terre du Milieu (Aragorn, Legolas, Gimli…) et un paquet de cartes qu'il construit lui-même. Ensemble, on affronte un scénario : un paquet « rencontre » fait surgir ennemis, lieux et traîtrises, et il faut progresser dans la quête avant que la menace ne devienne trop grande.\nLa boîte de base contient 3 scénarios ; les extensions « Saga » rejouent l'histoire des livres (Le Hobbit, La Communauté de l'Anneau…) en campagne.",
+      "pros": [
+        "Univers de Tolkien très bien rendu, illustrations superbes",
+        "Construction de paquet profonde, très peu de calcul de hasard pur",
+        "Excellent à 2, campagnes qui suivent les livres"
+      ],
+      "cons": [
+        "Uniquement des cartes, pas de plateau",
+        "Difficile : on perd beaucoup au début (14 ans et +)",
+        "Jeu à extensions : la boîte de base ne suffit pas longtemps (Saga ≈ 63 €)",
+        "Fait doublon avec Marvel Champions, plus simple"
+      ],
+      "ratings": [
+        {
+          "site": "BoardGameGeek (via Ludum)",
+          "score": 8.4,
+          "max": 10,
+          "url": "https://www.ludum.fr/seigneur-des-anneaux-jce/le-seigneur-des-anneaux-jce-edition-revisee-819",
+          "note": "Complexité 3,6/5"
+        },
+        {
+          "site": "MyLudo (via Ludum)",
+          "score": 8.3,
+          "max": 10,
+          "url": "https://www.ludum.fr/seigneur-des-anneaux-jce/le-seigneur-des-anneaux-jce-edition-revisee-819"
+        },
+        {
+          "site": "Ludum (clients)",
+          "score": 5,
+          "max": 5,
+          "count": 2,
+          "url": "https://www.ludum.fr/seigneur-des-anneaux-jce/le-seigneur-des-anneaux-jce-edition-revisee-819"
+        },
+        {
+          "site": "Philibert (internautes)",
+          "score": 4.9,
+          "max": 5,
+          "count": 12,
+          "url": "https://www.philibertnet.com/en/le-seigneur-des-anneaux-jce/105526-le-seigneur-des-anneaux-jce-edition-revisee-3558380090939.html",
+          "note": "« Sur les 10 premières parties, j'ai dû en gagner 2 »"
+        },
+        {
+          "site": "Play-In (clients)",
+          "score": 4.9,
+          "max": 5,
+          "url": "https://www.play-in.com/fr/produit/201919/le-seigneur-des-anneaux-le-jeu-de-cartes-edition-revisee"
+        },
+        {
+          "site": "Tric Trac (forum)",
+          "score": null,
+          "max": null,
+          "url": "https://www.trictrac.net/forum/sujet/les-sessions-du-club-le-seigneur-des-anneaux-jce",
+          "note": "Top 10 des solos sur BGG ; « à 2 joueurs ce jeu est aussi un régal »"
+        },
+        {
+          "site": "Tric Trac (avis)",
+          "score": null,
+          "max": null,
+          "url": "https://trictrac.net/jeu-de-societe/le-seigneur-des-anneaux-jce/avis/complete",
+          "note": "Avis partagés : certains le trouvent mécanique et peu immersif"
+        }
+      ],
+      "awards": [],
+      "links": [
+        {
+          "label": "Gamme complète (Ludum)",
+          "url": "https://www.ludum.fr/blog/nos-selections/seigneur-des-anneaux-jce-les-14-jeux-de-societe-et-extensions"
+        }
+      ],
+      "myNote": "À garder pour plus tard, si on accroche à Marvel Champions.",
+      "updatedAt": "2026-11-16"
     }
   ]
 }
